@@ -16,7 +16,7 @@
     }
 
     @include breakPoints(mobile) {
-      height: 26lvh;
+      height: 24lvh;
     }
 
     @include breakPoints(tablet) {
