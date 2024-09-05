@@ -544,7 +544,12 @@
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTWO #bgONE {
-    height: 27lvh;
+    height: 26lvh;
+  }
+}
+@media (min-width: 310px) and (max-width: 767px) and (orientation: landscape) {
+  #topTWO #bgONE {
+    height: 28lvh;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
