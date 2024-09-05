@@ -544,7 +544,7 @@
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTWO #bgONE {
-    height: 24lvh;
+    height: 27lvh;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
