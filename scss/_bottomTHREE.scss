@@ -1,7 +1,6 @@
 #bottomTHREE {
   display: flex;
   flex-direction: column;
-  // flex-wrap: wrap;
   width: inherit;
   height: fit-content;
 
@@ -241,7 +240,6 @@
             }
 
             @include breakPoints(mobile) {
-              // width: 15em;
               margin-left: 0;
             }
           }
