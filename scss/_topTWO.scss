@@ -16,14 +16,14 @@
     }
 
     @include breakPoints(mobile) {
-      height: 27lvh;
-    }
-
-    @media (min-width: 310px) and (max-width: 767px) and (orientation: landscape) {
-      height: 29lvh;
+      height: 25lvh;
     }
 
     @include breakPoints(tablet) {
+      height: 29lvh;
+    }
+
+    @media (min-width: 767px) and (max-width: 1023px) and (orientation: landscape) {
       height: 29lvh;
     }
 
