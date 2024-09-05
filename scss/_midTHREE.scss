@@ -1,0 +1,471 @@
+#midTHREE {
+  width: inherit;
+  height: max-content;
+
+  #allinone {
+    display: flex;
+    flex-direction: row;
+
+    @include breakPoints(small) {
+      flex-direction: column;
+    }
+
+    @include breakPoints(mobile) {
+      flex-direction: column;
+    }
+
+    #left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 30%;
+      height: 45em;
+      background-color: rgb(255, 255, 255);
+
+      @include breakPoints(small) {
+        width: 100%;
+        background-image: url('../images/leafsANDBEANS.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 50%;
+      }
+
+      @include breakPoints(mobile) {
+        width: 100%;
+        background-image: url('../images/leafsANDBEANS.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 50%;
+      }
+
+      @include breakPoints(tablet) {
+        width: 50%;
+      }
+
+      #illuONE {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1.5em;
+
+        @include breakPoints(mobile) {
+          margin-left: 4em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-left: 15%;
+        }
+
+        #pic {
+          width: 8em;
+          height: 4em;
+          background-image: url('../images/pure.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1em;
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: start;
+          }
+        }
+      }
+
+      #illuTWO {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1.5em;
+
+        @include breakPoints(mobile) {
+          margin-left: 4em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-left: 15%;
+        }
+
+        #pic {
+          width: 8em;
+          height: 4em;
+          background-image: url('../images/threebeansWBG.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1em;
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: start;
+          }
+        }
+      }
+
+      #illuTHREE {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1.5em;
+
+        @include breakPoints(mobile) {
+          margin-left: 4em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-left: 15%;
+        }
+
+        #pic {
+          width: 8em;
+          height: 4em;
+          background-image: url('../images/roasting.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1em;
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: start;
+          }
+        }
+      }
+    }
+
+    #mid {
+      width: 40%;
+      height: 45em;
+      background-image: url('../images/coffee.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: rgb(255, 255, 255);
+      background-position-y: 50%;
+
+      @include breakPoints(small) {
+        display: none;
+      }
+
+      @include breakPoints(mobile) {
+        display: none;
+      }
+
+      @include breakPoints(tablet) {
+        display: none;
+      }
+    }
+
+    #right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      position: relative;
+      width: 30%;
+      height: 45em;
+      background-color: rgb(255, 255, 255);
+      overflow: hidden;
+
+      @include breakPoints(small) {
+        width: 100%;
+        background-image: url('../images/leafsANDBEANS.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 50%;
+      }
+
+      @include breakPoints(mobile) {
+        width: 100%;
+        background-image: url('../images/leafsANDBEANS.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 50%;
+      }
+
+      @include breakPoints(tablet) {
+        width: 50%;
+      }
+
+      #illuONE {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+
+        @include breakPoints(small) {
+          flex-direction: row-reverse;
+          width: 100%;
+          margin: 0 1em 0 0;
+          position: relative;
+          right: 0em;
+        }
+
+        @include breakPoints(mobile) {
+          flex-direction: row-reverse;
+          width: 100%;
+          margin-left: 0;
+          position: relative;
+          right: 0em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-left: 15%;
+        }
+
+        #pic {
+          width: 9em;
+          height: 4em;
+          background-image: url('../images/quality.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+
+          @include breakPoints(small) {
+            margin-left: 0.5em;
+          }
+
+          @include breakPoints(mobile) {
+            margin-left: 1em;
+          }
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1em;
+
+          @include breakPoints(small) {
+            margin-left: 0;
+            align-items: end;
+            text-align: end;
+          }
+
+          @include breakPoints(mobile) {
+            width: 62%;
+            margin-left: 0;
+            align-items: end;
+            text-align: end;
+          }
+
+          @media (min-width: 399px) and (max-width: 408px) {
+            width: 68%;
+          }
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: start;
+
+            @include breakPoints(small) {
+              text-align: end;
+            }
+
+            @include breakPoints(mobile) {
+              text-align: end;
+            }
+          }
+        }
+      }
+
+      #illuTWO {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+
+        @include breakPoints(small) {
+          flex-direction: row-reverse;
+          width: 100%;
+          margin: 0 1em 0 0;
+          position: relative;
+          right: 0em;
+        }
+
+        @include breakPoints(mobile) {
+          flex-direction: row-reverse;
+          width: 100%;
+          margin-left: 0;
+          position: relative;
+          right: 0em;
+        }
+
+        @media (min-width: 399px) and (max-width: 413px) {
+          right: 1.5em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-left: 15%;
+        }
+
+        #pic {
+          width: 9em;
+          height: 4em;
+          background-image: url('../images/twoBEANS.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+
+          @include breakPoints(small) {
+            margin-left: 0.5em;
+          }
+
+          @include breakPoints(mobile) {
+            margin-left: 1.5em;
+          }
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1em;
+
+          @include breakPoints(small) {
+            margin-left: 0;
+            align-items: end;
+            text-align: end;
+          }
+
+          @include breakPoints(mobile) {
+            width: 62%;
+            margin-left: 0;
+            align-items: end;
+            text-align: end;
+          }
+
+          @media (min-width: 399px) and (max-width: 407px) {
+            width: 84%;
+          }
+
+          @media (min-width: 407px) and (max-width: 413px) {
+            width: 84%;
+          }
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: start;
+
+            @include breakPoints(small) {
+              text-align: end;
+            }
+
+            @include breakPoints(mobile) {
+              text-align: end;
+            }
+          }
+        }
+      }
+
+      #illuTHREE {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+
+        @include breakPoints(small) {
+          flex-direction: row-reverse;
+          width: 100%;
+          margin: 0 1em 0 0;
+          position: relative;
+          right: 0em;
+        }
+
+        @include breakPoints(mobile) {
+          flex-direction: row-reverse;
+          width: 100%;
+          position: relative;
+          margin-left: 0;
+          right: 0em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-left: 15%;
+        }
+
+        #pic {
+          width: 9em;
+          height: 4em;
+          background-image: url('../images/aromaCOFFEE.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+
+          @include breakPoints(small) {
+            margin-left: 0.5em;
+          }
+
+          @include breakPoints(mobile) {
+            margin-left: 1em;
+          }
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1em;
+
+          @include breakPoints(small) {
+            margin-left: 0;
+            align-items: end;
+            text-align: end;
+          }
+
+          @include breakPoints(mobile) {
+            width: 62%;
+            margin-left: 0;
+            align-items: end;
+            text-align: end;
+          }
+
+          @media (min-width: 399px) and (max-width: 408px) {
+            width: 68%;
+          }
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: start;
+
+            @include breakPoints(small) {
+              text-align: end;
+            }
+
+            @include breakPoints(mobile) {
+              text-align: end;
+            }
+          }
+        }
+      }
+    }
+  }
+}

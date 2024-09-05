@@ -1,0 +1,26 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  #burgerONE {
+    position: fixed;
+    width: 1.5em;
+    height: 1.4em;
+    top: 0.5em;
+    left: 0.7em;
+    background-color: rgb(77, 139, 85);
+    color: rgb(255, 249, 241);
+    border-radius: 20%;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+    font-size: 32px;
+    text-align: center;
+    z-index: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

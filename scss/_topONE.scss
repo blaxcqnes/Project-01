@@ -1,0 +1,299 @@
+#topONE {
+  position: relative;
+  width: inherit;
+  height: 52rem;
+
+  @include breakPoints(small) {
+    height: 43rem;
+  }
+
+  @include breakPoints(mobile) {
+    height: 43rem;
+  }
+
+  #bgONE {
+    position: absolute;
+    background-image: url('../images/topCOFFE.jpg');
+    width: inherit;
+    height: inherit;
+    filter: brightness(27%);
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2em;
+
+    @include breakPoints(small) {
+      margin-top: 0;
+    }
+
+    @include breakPoints(mobile) {
+      margin-top: 0;
+    }
+
+    #left {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: fit-content;
+      align-items: center;
+
+      @include breakPoints(small) {
+        display: none;
+      }
+
+      @include breakPoints(mobile) {
+        display: none;
+      }
+
+      @include breakPoints(tablet) {
+        margin-top: 2.5em;
+      }
+
+      p {
+        color: rgb(244, 244, 244);
+        font-size: 14px;
+      }
+
+      #iconsONE {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0.7em;
+
+        #insta {
+          background-image: url('/images/instagram.svg');
+          width: 22px;
+          height: 22px;
+          margin-right: 1.7em;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        #x {
+          background-image: url('/images/x.svg');
+          width: 24px;
+          height: 24px;
+          margin-right: 1.6em;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        #telegram {
+          background-image: url('/images/telegram.svg');
+          width: 21px;
+          height: 21px;
+          margin-right: 1.9em;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        #youtube {
+          background-image: url('/images/youtube.svg');
+          width: 22px;
+          height: 22px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    #mid {
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      align-items: center;
+
+      @include breakPoints(small) {
+        margin-top: 1em;
+      }
+
+      @include breakPoints(mobile) {
+        margin-top: 1em;
+      }
+
+      #logo {
+        background-image: url('../images/logo.png');
+        width: 100px;
+        height: 94px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 2em;
+        list-style: none;
+        text-transform: capitalize;
+        font-size: 17px;
+
+        @include breakPoints(small) {
+          display: none;
+        }
+
+        @include breakPoints(mobile) {
+          display: none;
+        }
+
+        @include breakPoints(tablet) {
+          display: none;
+        }
+
+        #homeONE {
+          width: fit-content;
+          color: rgb(123, 255, 141);
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        li {
+          width: fit-content;
+          padding-left: 1.5em;
+          color: rgb(244, 244, 244);
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    #right {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: fit-content;
+      align-items: center;
+
+      @include breakPoints(small) {
+        display: none;
+      }
+
+      @include breakPoints(mobile) {
+        display: none;
+      }
+
+      @include breakPoints(tablet) {
+        margin-top: 2.5em;
+      }
+
+      #iconsTWO {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0.7em;
+
+        #user {
+          background-image: url('/images/user.svg');
+          width: 30px;
+          height: 30px;
+          margin-right: 3.2em;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        #bag {
+          background-image: url('/images/bag.svg');
+          width: 30px;
+          height: 30px;
+          margin-right: 3.2em;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        #search {
+          background-image: url('/images/search.svg');
+          width: 30px;
+          height: 30px;
+          margin-right: 3.2em;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  #title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8em;
+    align-items: center;
+
+    @include breakPoints(small) {
+      margin-top: 4em;
+    }
+
+    @include breakPoints(mobile) {
+      margin-top: 3em;
+    }
+
+    #one {
+      font-size: 75px;
+      font-weight: 700;
+      color: rgb(77, 139, 85);
+
+      @include breakPoints(small) {
+        font-size: 53px;
+      }
+    }
+
+    #two {
+      width: auto;
+      text-align: center;
+      font-size: 75px;
+      font-weight: 700;
+      color: rgb(244, 244, 244);
+
+      @include breakPoints(small) {
+        font-size: 53px;
+      }
+
+      @include breakPoints(mobile) {
+        font-size: 57px;
+      }
+    }
+
+    #three {
+      width: 40em;
+      font-size: 15.5px;
+      color: rgb(244, 244, 244);
+      text-align: justify;
+
+      @include breakPoints(small) {
+        width: min(100% - 4em, 30em);
+        font-size: 13px;
+      }
+
+      @include breakPoints(mobile) {
+        width: min(100% - 4em, 30em);
+        font-size: 14.5px;
+      }
+
+      @include breakPoints(tablet) {
+        text-align: center;
+      }
+    }
+  }
+}

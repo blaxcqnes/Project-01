@@ -1,0 +1,275 @@
+#bottomTHREE {
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  width: inherit;
+  height: fit-content;
+
+  #bg {
+    background-image: url('../images/bottomCOFFE.jpg');
+    width: inherit;
+    height: 31em;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(90%);
+    opacity: 0.5;
+
+    @media (min-width: 310px) and (max-width: 839.9px) {
+      height: 75em;
+    }
+
+    @media (min-width: 840px) and (max-width: 1259.9px) {
+      height: 48em;
+    }
+  }
+
+  #all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 4em;
+
+    #upperSEC {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow: hidden;
+
+      @media (min-width: 310px) and (max-width: 839.9px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #left {
+        display: flex;
+        flex-direction: column;
+        width: 26em;
+        margin: 0 1em 0 1em;
+
+        #pic {
+          background-image: url('../images/logo.png');
+          width: 100px;
+          height: 94px;
+        }
+
+        #one {
+          width: 65%;
+          margin-top: 3em;
+          color: rgb(168, 168, 168);
+        }
+
+        #icons {
+          display: flex;
+          flex-direction: row;
+          margin-top: 3em;
+
+          #insta {
+            background-image: url('/images/instagram.svg');
+            width: 22px;
+            height: 22px;
+            margin-right: 1.7em;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          #x {
+            background-image: url('/images/x.svg');
+            width: 24px;
+            height: 24px;
+            margin-right: 1.6em;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          #telegram {
+            background-image: url('/images/telegram.svg');
+            width: 21px;
+            height: 21px;
+            margin-right: 1.9em;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          #youtube {
+            background-image: url('/images/youtube.svg');
+            width: 22px;
+            height: 22px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      #mid {
+        display: flex;
+        flex-direction: column;
+        width: 26em;
+        margin: 0 1em 0 1em;
+
+        @media (min-width: 310px) and (max-width: 839.9px) {
+          margin-top: 5em;
+        }
+
+        @media (min-width: 839.9px) and (max-width: 1259.9px) {
+          margin-left: 2em;
+          margin-right: 0em;
+        }
+
+        #title {
+          width: 10em;
+          font-size: 31px;
+          font-weight: 700;
+          color: rgb(77, 139, 85);
+          border-bottom: 2px solid rgb(77, 139, 85);
+        }
+
+        #location {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 3em;
+
+          #pic {
+            background-image: url('../images/location.svg');
+            width: 27px;
+            height: 27px;
+          }
+
+          #one {
+            width: 65%;
+            margin-left: 1em;
+            color: rgb(255, 255, 255);
+
+            span {
+              color: rgb(77, 139, 85);
+              font-weight: 700;
+            }
+          }
+        }
+
+        #phone {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 3em;
+
+          #pic {
+            background-image: url('../images/location.svg');
+            width: 27px;
+            height: 27px;
+          }
+
+          #one {
+            width: 65%;
+            margin-left: 1em;
+            color: rgb(255, 255, 255);
+
+            span {
+              color: rgb(77, 139, 85);
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      #right {
+        display: flex;
+        flex-direction: column;
+        width: 26em;
+        margin: 0 1em 0 1em;
+
+        @media (min-width: 310px) and (max-width: 1259.9px) {
+          margin-top: 5em;
+        }
+
+        #title {
+          width: 10em;
+          font-size: 31px;
+          font-weight: 700;
+          color: rgb(77, 139, 85);
+          border-bottom: 2px solid rgb(77, 139, 85);
+        }
+
+        #email {
+          display: flex;
+          flex-direction: row;
+          width: 32em;
+          margin-top: 2em;
+          position: relative;
+          align-items: center;
+
+          input {
+            width: 20em;
+            height: 4em;
+            padding: 1em;
+            border: none;
+            border-radius: 2em;
+            outline: none;
+          }
+
+          #subscribe {
+            width: 13em;
+            height: 4.2em;
+            margin-left: 1em;
+            position: absolute;
+            right: 10em;
+            border: none;
+            border-radius: 40px;
+            background-color: rgb(123, 255, 141);
+            font-size: 13px;
+            color: #1d1d1d;
+            transition: all 0.2s ease;
+
+            &:hover {
+              cursor: pointer;
+              background-color: rgb(109, 223, 124);
+            }
+
+            @media (min-width: 310px) and (max-width: 399.9px) {
+              width: 10em;
+              right: 14em;
+              margin-left: 0;
+            }
+
+            @include breakPoints(mobile) {
+              // width: 15em;
+              margin-left: 0;
+            }
+          }
+        }
+
+        #agreement {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 1em 0 2em 0;
+
+          input {
+            width: 1.5em;
+            height: 5em;
+          }
+
+          #one {
+            margin-left: 0.5em;
+            color: rgb(255, 255, 255);
+
+            @media (min-width: 310px) and (max-width: 420px) {
+              width: 60%;
+              margin-left: 1.5em;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
