@@ -4,11 +4,23 @@
   height: 52rem;
 
   @include breakPoints(small) {
-    height: 43rem;
+    height: 42em;
   }
 
   @include breakPoints(mobile) {
-    height: 43rem;
+    height: 44em;
+  }
+
+  @media (orientation: landscape) {
+    // height: 14em;
+
+    @include breakPoints(small) {
+      height: 42em;
+    }
+
+    @include breakPoints(mobile) {
+      height: 38em;
+    }
   }
 
   #bgONE {
@@ -257,6 +269,10 @@
       @include breakPoints(small) {
         font-size: 53px;
       }
+
+      @include breakPoints(mobile) {
+        font-size: 55px;
+      }
     }
 
     #two {
@@ -271,7 +287,7 @@
       }
 
       @include breakPoints(mobile) {
-        font-size: 57px;
+        font-size: 55px;
       }
     }
 
@@ -283,12 +299,19 @@
 
       @include breakPoints(small) {
         width: min(100% - 4em, 30em);
+        margin-top: 2em;
         font-size: 13px;
       }
 
       @include breakPoints(mobile) {
         width: min(100% - 4em, 30em);
-        font-size: 14.5px;
+        // width: 33em;
+        margin-top: 2em;
+        font-size: 13px;
+      }
+
+      @media (min-width: 650px) and (max-width: 767px) {
+        width: 40em;
       }
 
       @include breakPoints(tablet) {

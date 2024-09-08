@@ -236,12 +236,22 @@
 }
 @media (min-width: 310px) and (max-width: 399px) {
   #topONE {
-    height: 43rem;
+    height: 42em;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topONE {
-    height: 43rem;
+    height: 44em;
+  }
+}
+@media (orientation: landscape) and (min-width: 310px) and (max-width: 399px) {
+  #topONE {
+    height: 42em;
+  }
+}
+@media (orientation: landscape) and (min-width: 399px) and (max-width: 767px) {
+  #topONE {
+    height: 38em;
   }
 }
 #topONE #bgONE {
@@ -483,6 +493,11 @@
     font-size: 53px;
   }
 }
+@media (min-width: 399px) and (max-width: 767px) {
+  #topONE #title #one {
+    font-size: 55px;
+  }
+}
 #topONE #title #two {
   width: auto;
   text-align: center;
@@ -497,7 +512,7 @@
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topONE #title #two {
-    font-size: 57px;
+    font-size: 55px;
   }
 }
 #topONE #title #three {
@@ -509,13 +524,20 @@
 @media (min-width: 310px) and (max-width: 399px) {
   #topONE #title #three {
     width: min(100% - 4em, 30em);
+    margin-top: 2em;
     font-size: 13px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topONE #title #three {
     width: min(100% - 4em, 30em);
-    font-size: 14.5px;
+    margin-top: 2em;
+    font-size: 13px;
+  }
+}
+@media (min-width: 650px) and (max-width: 767px) {
+  #topONE #title #three {
+    width: 40em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -539,12 +561,12 @@
 }
 @media (min-width: 310px) and (max-width: 399px) {
   #topTWO #bgONE {
-    height: 24lvh;
+    height: 34lvh;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTWO #bgONE {
-    height: 25lvh;
+    height: 36lvh;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -552,14 +574,24 @@
     height: 29lvh;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) and (orientation: landscape) {
-  #topTWO #bgONE {
-    height: 29lvh;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topTWO #bgONE {
     height: 42lvh;
+  }
+}
+@media (orientation: landscape) {
+  #topTWO #bgONE {
+    height: 14em;
+  }
+}
+@media (orientation: landscape) and (min-width: 310px) and (max-width: 399px) {
+  #topTWO #bgONE {
+    height: 10em;
+  }
+}
+@media (orientation: landscape) and (min-width: 399px) and (max-width: 767px) {
+  #topTWO #bgONE {
+    height: 11em;
   }
 }
 #topTWO #bgTWO {
@@ -923,40 +955,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTHREE #right {
     margin-top: 3em;
   }
 }
-@media (min-width: 1023px) and (max-width: 1439px) {
-  #topTHREE #right {
-    width: 49%;
-  }
-}
 #topTHREE #right #pic {
   background-image: url("../images/pouringBEANS.jpg");
-  width: 40em;
-  height: 38.2em;
-  transform: scale(70%);
+  width: 22em;
+  height: 22em;
   background-repeat: no-repeat;
+  background-size: contain;
 }
-@media (min-width: 310px) and (max-width: 399px) {
+@media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
   #topTHREE #right #pic {
-    height: 38.2em;
-    transform: scale(42%);
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #right #pic {
-    height: 38.2em;
-    transform: scale(50%);
-  }
-}
-@media (min-width: 1023px) and (max-width: 1439px) {
-  #topTHREE #right #pic {
-    height: 38.2em;
-    transform: scale(60%);
+    width: 20em;
+    height: 20em;
+    margin: 8em 0 3em 0;
   }
 }
 #topTHREE #right #pic #one {
@@ -967,36 +984,26 @@
   width: min-content;
   color: black;
   font-weight: 700;
-  font-size: 40px;
-  padding: 40px 50px 40px 45px;
+  padding: 30px 40px 30px 35px;
   border-radius: 50%;
   box-shadow: 0em 0em 0.5em #969696;
   text-align: center;
 }
-@media (min-width: 310px) and (max-width: 399px) {
+@media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
   #topTHREE #right #pic #one {
-    font-size: 40px;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #right #pic #one {
-    font-size: 45px;
+    left: 8.5em;
+    top: 4.5em;
+    font-size: 19px;
   }
 }
 #topTHREE #right #pic #one span {
   color: rgb(77, 139, 85);
-  font-size: 38px;
   font-weight: 700;
   text-align: start;
 }
-@media (min-width: 310px) and (max-width: 399px) {
+@media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
   #topTHREE #right #pic #one span {
-    font-size: 45px;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #right #pic #one span {
-    font-size: 50px;
+    font-size: 25px;
   }
 }
 

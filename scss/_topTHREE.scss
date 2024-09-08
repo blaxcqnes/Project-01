@@ -306,36 +306,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     @include breakPoints(tablet) {
       margin-top: 3em;
     }
 
-    @include breakPoints(laptop) {
-      width: 49%;
-    }
+    // @include breakPoints(laptop) {
+    //   width: 49%;
+    // }
 
     #pic {
       background-image: url('../images/pouringBEANS.jpg');
-      width: 40em;
-      height: 38.2em;
-      transform: scale(70%);
+      width: 22em;
+      height: 22em;
+      // transform: scale(70%);
       background-repeat: no-repeat;
+      background-size: contain;
 
-      @include breakPoints(small) {
-        height: 38.2em;
-        transform: scale(42%);
+      // @include breakPoints(small) {
+      //   height: 38.2em;
+      //   transform: scale(42%);
+      // }
+
+      @media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
+        width: 20em;
+        height: 20em;
+        margin: 8em 0 3em 0;
       }
 
-      @include breakPoints(mobile) {
-        height: 38.2em;
-        transform: scale(50%);
-      }
+      // @include breakPoints(mobile) {
+      //   height: 38.2em;
+      //   transform: scale(50%);
+      // }
 
-      @include breakPoints(laptop) {
-        height: 38.2em;
-        transform: scale(60%);
-      }
+      // @include breakPoints(laptop) {
+      //   height: 38.2em;
+      //   transform: scale(60%);
+      // }
 
       #one {
         position: absolute;
@@ -344,33 +352,45 @@
         width: min-content;
         color: black;
         font-weight: 700;
-        font-size: 40px;
-        padding: 40px 50px 40px 45px;
+        // font-size: 40px;
+        // padding: 40px 50px 40px 45px;
+        padding: 30px 40px 30px 35px;
         border-radius: 50%;
         box-shadow: 0em 0em 0.5em #969696;
         text-align: center;
 
-        @include breakPoints(small) {
-          font-size: 40px;
+        // @include breakPoints(small) {
+        //   font-size: 40px;
+        // }
+
+        @media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
+          left: 8.5em;
+          top: 4.5em;
+          // padding: 30px 40px 30px 35px;
+          font-size: 19px;
         }
 
-        @include breakPoints(mobile) {
-          font-size: 45px;
-        }
+        // @include breakPoints(mobile) {
+        //   font-size: 45px;
+        // }
 
         span {
           color: rgb(77, 139, 85);
-          font-size: 38px;
+          // font-size: 38px;
           font-weight: 700;
           text-align: start;
 
-          @include breakPoints(small) {
-            font-size: 45px;
+          // @include breakPoints(small) {
+          //   font-size: 45px;
+          // }
+
+          @media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
+            font-size: 25px;
           }
 
-          @include breakPoints(mobile) {
-            font-size: 50px;
-          }
+          // @include breakPoints(mobile) {
+          //   font-size: 50px;
+          // }
         }
       }
     }

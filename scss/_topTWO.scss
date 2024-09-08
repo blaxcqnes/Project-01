@@ -11,24 +11,52 @@
     height: 50lvh;
     background-color: rgb(77, 139, 85);
 
+    // @media (min-width: 310px) and (max-width: 399px) and (orientation: landscape) {
+    //   height: 10em;
+    // }
+
+    // @media (min-width: 400px) and (max-width: 399px) and (orientation: landscape) {
+    //   height: 10em;
+    // }
+
+    // @media (orientation: landscape) {
+    //   height: 14em;
+
+    //   @include breakPoints(small) {
+    //     height: 10em;
+    //   }
+
+    //   @include breakPoints(mobile) {
+    //     height: 12em;
+    //   }
+    // }
+
     @include breakPoints(small) {
-      height: 24lvh;
+      height: 34lvh;
     }
 
     @include breakPoints(mobile) {
-      height: 25lvh;
+      height: 36lvh;
     }
 
     @include breakPoints(tablet) {
       height: 29lvh;
     }
 
-    @media (min-width: 767px) and (max-width: 1023px) and (orientation: landscape) {
-      height: 29lvh;
-    }
-
     @include breakPoints(laptop) {
       height: 42lvh;
+    }
+
+    @media (orientation: landscape) {
+      height: 14em;
+
+      @include breakPoints(small) {
+        height: 10em;
+      }
+
+      @include breakPoints(mobile) {
+        height: 11em;
+      }
     }
   }
 
