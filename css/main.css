@@ -556,47 +556,27 @@
 #topTWO #bgONE {
   background-image: url("../images/leafPATTERNS.png");
   width: inherit;
-  height: 50lvh;
+  height: 22em;
   background-color: rgb(77, 139, 85);
 }
 @media (min-width: 310px) and (max-width: 399px) {
   #topTWO #bgONE {
-    height: 34lvh;
+    height: 10em;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTWO #bgONE {
-    height: 36lvh;
+    height: 11em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTWO #bgONE {
-    height: 29lvh;
+    height: 12em;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topTWO #bgONE {
-    height: 42lvh;
-  }
-}
-@media (orientation: landscape) {
-  #topTWO #bgONE {
     height: 17.5em;
-  }
-}
-@media (orientation: landscape) and (min-width: 310px) and (max-width: 399px) {
-  #topTWO #bgONE {
-    height: 10em;
-  }
-}
-@media (orientation: landscape) and (min-width: 399px) and (max-width: 767px) {
-  #topTWO #bgONE {
-    height: 11em;
-  }
-}
-@media (orientation: landscape) and (min-width: 767px) and (max-width: 1023px) {
-  #topTWO #bgONE {
-    height: 12em;
   }
 }
 #topTWO #bgTWO {
