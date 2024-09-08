@@ -79,6 +79,14 @@
         position: relative;
         align-items: center;
 
+        @include breakPoints(small) {
+          margin-top: 6em;
+        }
+
+        @include breakPoints(mobile) {
+          margin-top: 6em;
+        }
+
         #pic {
           display: flex;
           flex-direction: row;
@@ -159,6 +167,14 @@
         margin: 4em 0 4em 0;
         position: relative;
         align-items: center;
+
+        @include breakPoints(small) {
+          margin-top: 3em;
+        }
+
+        @include breakPoints(mobile) {
+          margin-top: 3em;
+        }
 
         #pic {
           display: flex;
@@ -257,6 +273,14 @@
         position: relative;
         align-items: center;
 
+        @include breakPoints(small) {
+          margin-top: 3em;
+        }
+
+        @include breakPoints(mobile) {
+          margin-top: 3em;
+        }
+
         #pic {
           display: flex;
           flex-direction: row;
@@ -336,6 +360,14 @@
         margin: 4em 0 4em 0;
         position: relative;
         align-items: center;
+
+        @include breakPoints(small) {
+          margin-top: 3em;
+        }
+
+        @include breakPoints(mobile) {
+          margin-top: 3em;
+        }
 
         #pic {
           display: flex;

@@ -90,7 +90,7 @@
       #three {
         width: min(100% - 4em, 40em);
         margin-top: 2em;
-        font-size: 20px;
+        font-size: 18px;
         color: rgb(0, 0, 0);
         text-align: justify;
 
@@ -101,20 +101,20 @@
 
         @include breakPoints(mobile) {
           width: min(100% - 4em, 30em);
-          font-size: 14px;
+          font-size: 13px;
           align-self: center;
         }
 
         @include breakPoints(tablet) {
-          font-size: 15px;
+          font-size: 13px;
         }
 
         @include breakPoints(laptop) {
-          font-size: 15px;
+          font-size: 13px;
         }
 
         @include breakPoints(large) {
-          font-size: 16px;
+          font-size: 14px;
         }
       }
     }
@@ -228,22 +228,22 @@
     #buttons {
       display: flex;
       flex-direction: row;
-      margin: 3em 0 0 1em;
+      margin: 3em 0 4.5em 1em;
 
       @include breakPoints(small) {
         flex-direction: column;
         align-items: center;
-        margin-left: 0;
+        margin: 3em 0 0 0;
       }
 
       @include breakPoints(mobile) {
         justify-content: space-evenly;
-        margin-left: 0;
+        margin: 3em 0 0 0;
       }
 
       @include breakPoints(tablet) {
         justify-content: space-evenly;
-        margin-left: 0;
+        margin: 3em 0 0 0;
       }
 
       #read {
@@ -307,90 +307,72 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    align-self: center;
 
     @include breakPoints(tablet) {
       margin-top: 3em;
     }
 
-    // @include breakPoints(laptop) {
-    //   width: 49%;
-    // }
-
     #pic {
       background-image: url('../images/pouringBEANS.jpg');
-      width: 22em;
-      height: 22em;
-      // transform: scale(70%);
+      width: 25em;
+      height: 25em;
+      margin-right: 2em;
       background-repeat: no-repeat;
       background-size: contain;
+      align-self: center;
 
-      // @include breakPoints(small) {
-      //   height: 38.2em;
-      //   transform: scale(42%);
-      // }
-
-      @media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
-        width: 20em;
-        height: 20em;
-        margin: 8em 0 3em 0;
+      @include breakPoints(small) {
+        width: 16em;
+        height: 16em;
+        margin: 10em 0 3em 0;
       }
 
-      // @include breakPoints(mobile) {
-      //   height: 38.2em;
-      //   transform: scale(50%);
-      // }
+      @include breakPoints(mobile) {
+        width: 18em;
+        height: 18em;
+        margin: 9em 0 3em 0;
+      }
 
-      // @include breakPoints(laptop) {
-      //   height: 38.2em;
-      //   transform: scale(60%);
-      // }
+      @include breakPoints(tablet) {
+        width: 20em;
+        height: 20em;
+        margin: 3em 0 3em 0;
+      }
+
+      @include breakPoints(laptop) {
+        width: 23em;
+        height: 23em;
+      }
 
       #one {
         position: absolute;
-        left: -1.5em;
-        top: -1.5em;
+        top: 0;
+        left: -3em;
         width: min-content;
         color: black;
         font-weight: 700;
-        // font-size: 40px;
-        // padding: 40px 50px 40px 45px;
-        padding: 30px 40px 30px 35px;
+        padding: 30px;
         border-radius: 50%;
         box-shadow: 0em 0em 0.5em #969696;
         text-align: center;
 
-        // @include breakPoints(small) {
-        //   font-size: 40px;
-        // }
-
-        @media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
-          left: 8.5em;
-          top: 4.5em;
-          // padding: 30px 40px 30px 35px;
-          font-size: 19px;
+        @media (min-width: 310px) and (max-width: 1022.99px) {
+          left: -1em;
         }
 
-        // @include breakPoints(mobile) {
-        //   font-size: 45px;
-        // }
+        @media (min-width: 310px) and (max-width: 766.99px) {
+          top: 6em;
+        }
+
+        @media (min-width: 310px) and (max-width: 767px) {
+          padding: 25px;
+        }
 
         span {
           color: rgb(77, 139, 85);
-          // font-size: 38px;
           font-weight: 700;
           text-align: start;
-
-          // @include breakPoints(small) {
-          //   font-size: 45px;
-          // }
-
-          @media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
-            font-size: 25px;
-          }
-
-          // @include breakPoints(mobile) {
-          //   font-size: 50px;
-          // }
         }
       }
     }

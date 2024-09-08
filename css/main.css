@@ -241,17 +241,12 @@
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topONE {
-    height: 44em;
-  }
-}
-@media (orientation: landscape) and (min-width: 310px) and (max-width: 399px) {
-  #topONE {
-    height: 42em;
-  }
-}
-@media (orientation: landscape) and (min-width: 399px) and (max-width: 767px) {
-  #topONE {
     height: 38em;
+  }
+}
+@media (min-width: 399px) and (max-width: 443.99px) {
+  #topONE {
+    height: 43em;
   }
 }
 #topONE #bgONE {
@@ -715,7 +710,7 @@
 #topTHREE #left #texts #three {
   width: min(100% - 4em, 40em);
   margin-top: 2em;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(0, 0, 0);
   text-align: justify;
 }
@@ -728,23 +723,23 @@
 @media (min-width: 399px) and (max-width: 767px) {
   #topTHREE #left #texts #three {
     width: min(100% - 4em, 30em);
-    font-size: 14px;
+    font-size: 13px;
     align-self: center;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTHREE #left #texts #three {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topTHREE #left #texts #three {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 @media (min-width: 1439px) and (max-width: 2560px) {
   #topTHREE #left #texts #three {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 #topTHREE #left #contact {
@@ -861,25 +856,25 @@
 #topTHREE #left #buttons {
   display: flex;
   flex-direction: row;
-  margin: 3em 0 0 1em;
+  margin: 3em 0 4.5em 1em;
 }
 @media (min-width: 310px) and (max-width: 399px) {
   #topTHREE #left #buttons {
     flex-direction: column;
     align-items: center;
-    margin-left: 0;
+    margin: 3em 0 0 0;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTHREE #left #buttons {
     justify-content: space-evenly;
-    margin-left: 0;
+    margin: 3em 0 0 0;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTHREE #left #buttons {
     justify-content: space-evenly;
-    margin-left: 0;
+    margin: 3em 0 0 0;
   }
 }
 #topTHREE #left #buttons #read {
@@ -941,6 +936,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  align-self: center;
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTHREE #right {
@@ -949,47 +945,72 @@
 }
 #topTHREE #right #pic {
   background-image: url("../images/pouringBEANS.jpg");
-  width: 22em;
-  height: 22em;
+  width: 25em;
+  height: 25em;
+  margin-right: 2em;
   background-repeat: no-repeat;
   background-size: contain;
+  align-self: center;
 }
-@media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 310px) and (max-width: 399px) {
+  #topTHREE #right #pic {
+    width: 16em;
+    height: 16em;
+    margin: 10em 0 3em 0;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #topTHREE #right #pic {
+    width: 18em;
+    height: 18em;
+    margin: 9em 0 3em 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
   #topTHREE #right #pic {
     width: 20em;
     height: 20em;
-    margin: 8em 0 3em 0;
+    margin: 3em 0 3em 0;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1439px) {
+  #topTHREE #right #pic {
+    width: 23em;
+    height: 23em;
   }
 }
 #topTHREE #right #pic #one {
   position: absolute;
-  left: -1.5em;
-  top: -1.5em;
+  top: 0;
+  left: -3em;
   width: -moz-min-content;
   width: min-content;
   color: black;
   font-weight: 700;
-  padding: 30px 40px 30px 35px;
+  padding: 30px;
   border-radius: 50%;
   box-shadow: 0em 0em 0.5em #969696;
   text-align: center;
 }
-@media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 310px) and (max-width: 1022.99px) {
   #topTHREE #right #pic #one {
-    left: 8.5em;
-    top: 4.5em;
-    font-size: 19px;
+    left: -1em;
+  }
+}
+@media (min-width: 310px) and (max-width: 766.99px) {
+  #topTHREE #right #pic #one {
+    top: 6em;
+  }
+}
+@media (min-width: 310px) and (max-width: 767px) {
+  #topTHREE #right #pic #one {
+    padding: 25px;
   }
 }
 #topTHREE #right #pic #one span {
   color: rgb(77, 139, 85);
   font-weight: 700;
   text-align: start;
-}
-@media (min-width: 399px) and (max-width: 767px) and (orientation: landscape) {
-  #topTHREE #right #pic #one span {
-    font-size: 25px;
-  }
 }
 
 #midONE {
@@ -1081,6 +1102,16 @@
   position: relative;
   align-items: center;
 }
+@media (min-width: 310px) and (max-width: 399px) {
+  #midONE #allinone #FIRST #wheelONE {
+    margin-top: 6em;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midONE #allinone #FIRST #wheelONE {
+    margin-top: 6em;
+  }
+}
 #midONE #allinone #FIRST #wheelONE #pic {
   display: flex;
   flex-direction: row;
@@ -1157,6 +1188,16 @@
   margin: 4em 0 4em 0;
   position: relative;
   align-items: center;
+}
+@media (min-width: 310px) and (max-width: 399px) {
+  #midONE #allinone #FIRST #wheelTWO {
+    margin-top: 3em;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midONE #allinone #FIRST #wheelTWO {
+    margin-top: 3em;
+  }
 }
 #midONE #allinone #FIRST #wheelTWO #pic {
   display: flex;
@@ -1253,6 +1294,16 @@
   position: relative;
   align-items: center;
 }
+@media (min-width: 310px) and (max-width: 399px) {
+  #midONE #allinone #SECOND #wheelTHREE {
+    margin-top: 3em;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midONE #allinone #SECOND #wheelTHREE {
+    margin-top: 3em;
+  }
+}
 #midONE #allinone #SECOND #wheelTHREE #pic {
   display: flex;
   flex-direction: row;
@@ -1328,6 +1379,16 @@
   margin: 4em 0 4em 0;
   position: relative;
   align-items: center;
+}
+@media (min-width: 310px) and (max-width: 399px) {
+  #midONE #allinone #SECOND #wheelFOUR {
+    margin-top: 3em;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midONE #allinone #SECOND #wheelFOUR {
+    margin-top: 3em;
+  }
 }
 #midONE #allinone #SECOND #wheelFOUR #pic {
   display: flex;
