@@ -48,7 +48,7 @@
     }
 
     @media (orientation: landscape) {
-      height: 14em;
+      height: 17.5em;
 
       @include breakPoints(small) {
         height: 10em;
@@ -56,6 +56,10 @@
 
       @include breakPoints(mobile) {
         height: 11em;
+      }
+
+      @include breakPoints(tablet) {
+        height: 12em;
       }
     }
   }
