@@ -14,7 +14,7 @@
   #one {
     width: min(100% - 4em, 50em);
     height: 17em;
-    margin-top: 5em;
+    margin-top: 5.5em;
     font-size: 17px;
     font-weight: 700;
     background-image: url('../images/leafsANDBEANS.png');
@@ -105,10 +105,21 @@
             #AG {
               filter: brightness(70%);
               transform: rotateZ(20deg);
+
+              @media (min-width: 310px) and (max-width: 767px) {
+                filter: brightness(100%);
+                transform: none;
+                cursor: default;
+              }
             }
 
             #two {
               padding: 22px 27px;
+
+              @media (min-width: 310px) and (max-width: 767px) {
+                padding: 25px 30px;
+                cursor: default;
+              }
             }
           }
 
@@ -194,10 +205,21 @@
             #AG {
               filter: brightness(70%);
               transform: rotateZ(20deg);
+
+              @media (min-width: 310px) and (max-width: 767px) {
+                filter: brightness(100%);
+                transform: none;
+                cursor: default;
+              }
             }
 
             #two {
               padding: 22px 27px;
+
+              @media (min-width: 310px) and (max-width: 767px) {
+                padding: 25px 30px;
+                cursor: default;
+              }
             }
           }
 
@@ -299,10 +321,21 @@
             #AG {
               filter: brightness(70%);
               transform: rotateZ(20deg);
+
+              @media (min-width: 310px) and (max-width: 767px) {
+                filter: brightness(100%);
+                transform: none;
+                cursor: default;
+              }
             }
 
             #two {
               padding: 22px 27px;
+
+              @media (min-width: 310px) and (max-width: 767px) {
+                padding: 25px 30px;
+                cursor: default;
+              }
             }
           }
 
@@ -387,10 +420,21 @@
             #AG {
               filter: brightness(70%);
               transform: rotateZ(20deg);
+
+              @media (min-width: 310px) and (max-width: 767px) {
+                filter: brightness(100%);
+                transform: none;
+                cursor: default;
+              }
             }
 
             #two {
               padding: 22px 27px;
+
+              @media (min-width: 310px) and (max-width: 767px) {
+                padding: 25px 30px;
+                cursor: default;
+              }
             }
           }
 

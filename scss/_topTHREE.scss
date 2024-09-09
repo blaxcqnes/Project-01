@@ -345,6 +345,10 @@
         height: 23em;
       }
 
+      @media (min-width: 1350px) {
+        margin-right: 4em;
+      }
+
       #one {
         position: absolute;
         top: 0;
