@@ -2525,6 +2525,7 @@
   width: 30em;
   height: 42em;
   position: absolute;
+  margin: 2em;
   background-repeat: no-repeat;
 }
 #bottomTWO #title {
