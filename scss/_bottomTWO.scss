@@ -5,14 +5,28 @@
   height: fit-content;
   position: relative;
   background-color: rgb(255, 255, 255);
+  overflow: hidden;
 
   #bg {
     background-image: url('../images/croissant.png');
-    width: 30em;
-    height: 42em;
+    width: 100%;
+    height: 50em;
     position: absolute;
     margin: 2em;
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
+    background-size: contain;
+
+    @include breakPoints(small) {
+      width: inherit;
+      height: 280em;
+      background-repeat: unset;
+    }
+
+    @include breakPoints(mobile) {
+      width: inherit;
+      height: 245em;
+      background-repeat: unset;
+    }
   }
 
   #title {

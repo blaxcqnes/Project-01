@@ -1,8 +1,9 @@
 #midFOUR {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: inherit;
-  height: 40em;
+  height: 28em;
   align-items: center;
 
   @media (min-width: 613px) {
@@ -11,7 +12,7 @@
 
   #bg {
     width: 100%;
-    height: 40em;
+    height: inherit;
     position: absolute;
     background-image: url('../images/thumbnailCOFFEE.jpg');
     filter: brightness(35%);
@@ -31,15 +32,10 @@
     @include breakPoints(tablet) {
       background-position-x: 30%;
     }
-
-    // @media (min-width: 613px) {
-    //   height: 38em;
-    // }
   }
 
   #one {
     width: min(100% - 2em, 12em);
-    margin-top: 3em;
     font-size: 60px;
     color: rgb(77, 139, 85);
     font-weight: 700;
@@ -47,7 +43,7 @@
     line-height: 1em;
 
     @media (min-width: 310px) and (max-width: 357px) {
-      font-size: 52px;
+      font-size: 46px;
     }
   }
 
@@ -64,7 +60,10 @@
     color: rgb(244, 244, 244);
 
     @include breakPoints(small) {
-      margin-left: 0;
+      margin: 3em 0 0 0;
+      width: 16em;
+      height: 3.2em;
+      font-size: 12px;
     }
 
     @include breakPoints(mobile) {
