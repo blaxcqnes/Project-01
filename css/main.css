@@ -2274,7 +2274,7 @@
 }
 #midFOUR #one {
   width: min(100% - 2em, 12em);
-  margin-top: 2.5em;
+  margin-top: 3em;
   font-size: 60px;
   color: rgb(77, 139, 85);
   font-weight: 700;
@@ -2344,6 +2344,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: brightness(60%);
   opacity: 0.6;
   z-index: -1;
 }
@@ -2516,14 +2517,22 @@
   width: inherit;
   height: -moz-fit-content;
   height: fit-content;
+  position: relative;
   background-color: rgb(255, 255, 255);
+}
+#bottomTWO #bg {
+  background-image: url("../images/croissant.png");
+  width: 30em;
+  height: 42em;
+  position: absolute;
+  background-repeat: no-repeat;
 }
 #bottomTWO #title {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   width: inherit;
-  margin-top: 7em;
+  margin-top: 5em;
   align-items: center;
 }
 #bottomTWO #title #one {
@@ -2884,12 +2893,12 @@
 }
 @media (min-width: 310px) and (max-width: 399px) {
   #bottomTWO #bottom {
-    margin-top: -2em;
+    margin-top: 3em;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #bottomTWO #bottom {
-    margin-top: 0em;
+    margin-top: 3em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {

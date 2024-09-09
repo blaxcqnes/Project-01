@@ -3,14 +3,23 @@
   flex-direction: column;
   width: inherit;
   height: fit-content;
+  position: relative;
   background-color: rgb(255, 255, 255);
+
+  #bg {
+    background-image: url('../images/croissant.png');
+    width: 30em;
+    height: 42em;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
 
   #title {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: inherit;
-    margin-top: 7em;
+    margin-top: 5em;
     align-items: center;
 
     #one {
@@ -384,11 +393,11 @@
     margin-top: -8em;
 
     @include breakPoints(small) {
-      margin-top: -2em;
+      margin-top: 3em;
     }
 
     @include breakPoints(mobile) {
-      margin-top: 0em;
+      margin-top: 3em;
     }
 
     @include breakPoints(tablet) {
