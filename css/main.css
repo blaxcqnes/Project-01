@@ -3626,6 +3626,7 @@
 #bottomTHREE #all #upperSEC {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
 }
@@ -3635,9 +3636,9 @@
     align-items: center;
   }
 }
-@media (min-width: 1050px) and (max-width: 1259.99px) {
+@media (min-width: 310px) and (max-width: 1050px) {
   #bottomTHREE #all #upperSEC {
-    justify-content: center;
+    justify-content: unset;
   }
 }
 #bottomTHREE #all #upperSEC #left {
