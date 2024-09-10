@@ -445,7 +445,7 @@
         height: fit-content;
 
         @include breakPoints(small) {
-          height: 33em;
+          height: 29em;
         }
 
         #pic {
@@ -601,6 +601,31 @@
           font-size: 22px;
         }
       }
+
+      #cartSMALL {
+        display: none;
+        width: 11em;
+        height: 4em;
+        margin-top: 2em;
+        transition: all 0.5s ease;
+        border-radius: 2em;
+        border-style: none;
+        background-color: rgb(123, 255, 141);
+        font-size: 14px;
+
+        @include breakPoints(small) {
+          display: inline-block !important;
+        }
+
+        @include breakPoints(mobile) {
+          display: inline-block !important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(109, 223, 124);
+        }
+      }
     }
 
     #sec {
@@ -624,7 +649,7 @@
         height: fit-content;
 
         @include breakPoints(small) {
-          height: 33em;
+          height: 29em;
         }
 
         #pic {
@@ -780,6 +805,31 @@
           font-size: 22px;
         }
       }
+
+      #cartSMALL {
+        display: none;
+        width: 11em;
+        height: 4em;
+        margin-top: 2em;
+        transition: all 0.5s ease;
+        border-radius: 2em;
+        border-style: none;
+        background-color: rgb(123, 255, 141);
+        font-size: 14px;
+
+        @include breakPoints(small) {
+          display: inline-block !important;
+        }
+
+        @include breakPoints(mobile) {
+          display: inline-block !important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(109, 223, 124);
+        }
+      }
     }
 
     #third {
@@ -803,7 +853,7 @@
         height: fit-content;
 
         @include breakPoints(small) {
-          height: 33em;
+          height: 29em;
         }
 
         #pic {
@@ -959,6 +1009,31 @@
           font-size: 22px;
         }
       }
+
+      #cartSMALL {
+        display: none;
+        width: 11em;
+        height: 4em;
+        margin-top: 2em;
+        transition: all 0.5s ease;
+        border-radius: 2em;
+        border-style: none;
+        background-color: rgb(123, 255, 141);
+        font-size: 14px;
+
+        @include breakPoints(small) {
+          display: inline-block !important;
+        }
+
+        @include breakPoints(mobile) {
+          display: inline-block !important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(109, 223, 124);
+        }
+      }
     }
 
     #fourth {
@@ -982,7 +1057,7 @@
         height: fit-content;
 
         @include breakPoints(small) {
-          height: 33em;
+          height: 29em;
         }
 
         #pic {
@@ -1136,6 +1211,31 @@
 
         @media (min-width: 1100px) {
           font-size: 22px;
+        }
+      }
+
+      #cartSMALL {
+        display: none;
+        width: 11em;
+        height: 4em;
+        margin-top: 2em;
+        transition: all 0.5s ease;
+        border-radius: 2em;
+        border-style: none;
+        background-color: rgb(123, 255, 141);
+        font-size: 14px;
+
+        @include breakPoints(small) {
+          display: inline-block !important;
+        }
+
+        @include breakPoints(mobile) {
+          display: inline-block !important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(109, 223, 124);
         }
       }
     }
