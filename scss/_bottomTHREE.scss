@@ -229,7 +229,7 @@
 
           #subscribe {
             width: 13em;
-            height: 4em;
+            height: 3.9em;
             margin-left: 1em;
             position: absolute;
             right: 9.3em;
@@ -247,7 +247,8 @@
 
             @media (min-width: 310px) and (max-width: 399px) {
               width: 11em;
-              right: 12.5em;
+              height: 4.1em;
+              right: 13em;
               margin-left: 0;
             }
 
@@ -256,14 +257,16 @@
             }
 
             @media (min-width: 399px) and (max-width: 470px) {
-              right: 12.5em;
+              right: 13em;
             }
 
             @include breakPoints(mobile) {
+              height: 4.1em;
               margin-left: 0;
             }
 
             @include breakPoints(tablet) {
+              height: 4.1em;
               right: 10em;
             }
           }
