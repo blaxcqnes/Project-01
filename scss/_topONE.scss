@@ -15,22 +15,6 @@
     height: 43em;
   }
 
-  // @media (orientation: landscape) {
-  //   // height: 14em;
-
-  //   @include breakPoints(small) {
-  //     height: 42em;
-  //   }
-
-  //   @include breakPoints(mobile) {
-  //     height: 38em;
-  //   }
-
-  //   @media (min-width: 399px) and (max-width: 443.99px) {
-  //     height: 43em;
-  //   }
-  // }
-
   #bgONE {
     position: absolute;
     background-image: url('../images/topCOFFE.jpg');
