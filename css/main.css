@@ -3609,12 +3609,12 @@
 }
 @media (min-width: 310px) and (max-width: 839.9px) {
   #bottomTHREE #bg {
-    height: 75em;
+    height: 72em;
   }
 }
 @media (min-width: 840px) and (max-width: 1259.9px) {
   #bottomTHREE #bg {
-    height: 52em;
+    height: 49em;
   }
 }
 #bottomTHREE #all {
@@ -3876,6 +3876,7 @@
 }
 @media (min-width: 310px) and (max-width: 1259.99px) {
   #bottomTHREE #all #lowerSEC {
+    height: 3em;
     margin-top: 0;
     align-items: end;
   }
