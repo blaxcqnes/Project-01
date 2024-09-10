@@ -14,11 +14,11 @@
     opacity: 0.5;
 
     @media (min-width: 310px) and (max-width: 839.9px) {
-      height: 72em;
+      height: 71.5em;
     }
 
     @media (min-width: 840px) and (max-width: 1259.9px) {
-      height: 49em;
+      height: 48.5em;
     }
   }
 
@@ -229,10 +229,10 @@
 
           #subscribe {
             width: 13em;
-            height: 3.9em;
+            height: 4em;
             margin-left: 1em;
             position: absolute;
-            right: 9em;
+            right: 9.5em;
             border: none;
             border-radius: 40px;
             background-color: rgb(123, 255, 141);
@@ -247,7 +247,7 @@
 
             @media (min-width: 310px) and (max-width: 399px) {
               width: 11em;
-              right: 12em;
+              right: 11em;
               margin-left: 0;
             }
 
@@ -256,7 +256,7 @@
             }
 
             @media (min-width: 399px) and (max-width: 470px) {
-              right: 10em;
+              right: 10.5em;
             }
 
             @include breakPoints(mobile) {

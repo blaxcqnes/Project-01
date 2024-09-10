@@ -3609,12 +3609,12 @@
 }
 @media (min-width: 310px) and (max-width: 839.9px) {
   #bottomTHREE #bg {
-    height: 72em;
+    height: 71.5em;
   }
 }
 @media (min-width: 840px) and (max-width: 1259.9px) {
   #bottomTHREE #bg {
-    height: 49em;
+    height: 48.5em;
   }
 }
 #bottomTHREE #all {
@@ -3807,10 +3807,10 @@
 }
 #bottomTHREE #all #upperSEC #right #email #subscribe {
   width: 13em;
-  height: 3.9em;
+  height: 4em;
   margin-left: 1em;
   position: absolute;
-  right: 9em;
+  right: 9.5em;
   border: none;
   border-radius: 40px;
   background-color: rgb(123, 255, 141);
@@ -3825,7 +3825,7 @@
 @media (min-width: 310px) and (max-width: 399px) {
   #bottomTHREE #all #upperSEC #right #email #subscribe {
     width: 11em;
-    right: 12em;
+    right: 11em;
     margin-left: 0;
   }
 }
@@ -3836,7 +3836,7 @@
 }
 @media (min-width: 399px) and (max-width: 470px) {
   #bottomTHREE #all #upperSEC #right #email #subscribe {
-    right: 10em;
+    right: 10.5em;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
