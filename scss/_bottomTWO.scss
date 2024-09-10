@@ -13,7 +13,6 @@
     height: 50em;
     position: absolute;
     margin: 2em;
-    // background-repeat: no-repeat;
     background-size: contain;
 
     @include breakPoints(small) {
@@ -322,6 +321,7 @@
           display: flex;
           flex-direction: row;
           margin: 3em 0 0 0;
+          z-index: 1;
 
           @include breakPoints(small) {
             flex-direction: column;
