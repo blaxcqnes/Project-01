@@ -1928,13 +1928,10 @@
 #midTHREE #allinone #right {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
-  position: relative;
   width: 30%;
   height: 45em;
   background-color: rgb(255, 255, 255);
-  overflow: hidden;
 }
 @media (min-width: 310px) and (max-width: 399px) {
   #midTHREE #allinone #right {
@@ -1961,30 +1958,17 @@
 }
 #midTHREE #allinone #right #illuONE {
   display: flex;
-  flex-direction: row;
-  margin-left: 1em;
-}
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuONE {
-    flex-direction: row-reverse;
-    width: 100%;
-    margin: 0 1em 0 0;
-    position: relative;
-    right: 0em;
-  }
+  flex-direction: row-reverse;
+  margin-right: 1.5em;
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #midTHREE #allinone #right #illuONE {
-    flex-direction: row-reverse;
-    width: 100%;
-    margin-left: 0;
-    position: relative;
-    right: 0em;
+    margin-right: 4em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #midTHREE #allinone #right #illuONE {
-    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 #midTHREE #allinone #right #illuONE #pic {
@@ -1994,90 +1978,34 @@
   background-repeat: no-repeat;
   align-self: center;
 }
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuONE #pic {
-    margin-left: 0.5em;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuONE #pic {
-    margin-left: 1em;
-  }
-}
 #midTHREE #allinone #right #illuONE #desc {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
-}
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuONE #desc {
-    margin-left: 0;
-    align-items: end;
-    text-align: end;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuONE #desc {
-    width: 62%;
-    margin-left: 0;
-    align-items: end;
-    text-align: end;
-  }
-}
-@media (min-width: 399px) and (max-width: 408px) {
-  #midTHREE #allinone #right #illuONE #desc {
-    width: 68%;
-  }
+  margin-right: 1em;
+  align-items: end;
 }
 #midTHREE #allinone #right #illuONE #desc #one {
   font-size: 18px;
   font-weight: 700;
+  text-align: end;
 }
 #midTHREE #allinone #right #illuONE #desc #two {
   width: min(100% - 3em, 14em);
-  text-align: start;
-}
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuONE #desc #two {
-    text-align: end;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuONE #desc #two {
-    text-align: end;
-  }
+  text-align: end;
 }
 #midTHREE #allinone #right #illuTWO {
   display: flex;
-  flex-direction: row;
-  margin-left: 1em;
-}
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuTWO {
-    flex-direction: row-reverse;
-    width: 100%;
-    margin: 0 1em 0 0;
-    position: relative;
-    right: 0em;
-  }
+  flex-direction: row-reverse;
+  margin-right: 1.5em;
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #midTHREE #allinone #right #illuTWO {
-    flex-direction: row-reverse;
-    width: 100%;
-    margin-left: 0;
-    position: relative;
-    right: 0em;
-  }
-}
-@media (min-width: 399px) and (max-width: 413px) {
-  #midTHREE #allinone #right #illuTWO {
-    right: 1.5em;
+    margin-right: 4em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #midTHREE #allinone #right #illuTWO {
-    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 #midTHREE #allinone #right #illuTWO #pic {
@@ -2087,90 +2015,34 @@
   background-repeat: no-repeat;
   align-self: center;
 }
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuTWO #pic {
-    margin-left: 0.5em;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuTWO #pic {
-    margin-left: 1.5em;
-  }
-}
 #midTHREE #allinone #right #illuTWO #desc {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
-}
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuTWO #desc {
-    margin-left: 0;
-    align-items: end;
-    text-align: end;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuTWO #desc {
-    width: 62%;
-    margin-left: 0;
-    align-items: end;
-    text-align: end;
-  }
-}
-@media (min-width: 399px) and (max-width: 407px) {
-  #midTHREE #allinone #right #illuTWO #desc {
-    width: 84%;
-  }
-}
-@media (min-width: 407px) and (max-width: 413px) {
-  #midTHREE #allinone #right #illuTWO #desc {
-    width: 84%;
-  }
+  margin-right: 1em;
+  align-items: end;
 }
 #midTHREE #allinone #right #illuTWO #desc #one {
   font-size: 18px;
   font-weight: 700;
+  text-align: end;
 }
 #midTHREE #allinone #right #illuTWO #desc #two {
   width: min(100% - 3em, 14em);
-  text-align: start;
-}
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuTWO #desc #two {
-    text-align: end;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuTWO #desc #two {
-    text-align: end;
-  }
+  text-align: end;
 }
 #midTHREE #allinone #right #illuTHREE {
   display: flex;
-  flex-direction: row;
-  margin-left: 1em;
-}
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuTHREE {
-    flex-direction: row-reverse;
-    width: 100%;
-    margin: 0 1em 0 0;
-    position: relative;
-    right: 0em;
-  }
+  flex-direction: row-reverse;
+  margin-right: 1.5em;
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #midTHREE #allinone #right #illuTHREE {
-    flex-direction: row-reverse;
-    width: 100%;
-    position: relative;
-    margin-left: 0;
-    right: 0em;
+    margin-right: 4em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #midTHREE #allinone #right #illuTHREE {
-    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 #midTHREE #allinone #right #illuTHREE #pic {
@@ -2180,58 +2052,20 @@
   background-repeat: no-repeat;
   align-self: center;
 }
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuTHREE #pic {
-    margin-left: 0.5em;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuTHREE #pic {
-    margin-left: 1em;
-  }
-}
 #midTHREE #allinone #right #illuTHREE #desc {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
-}
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuTHREE #desc {
-    margin-left: 0;
-    align-items: end;
-    text-align: end;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuTHREE #desc {
-    width: 62%;
-    margin-left: 0;
-    align-items: end;
-    text-align: end;
-  }
-}
-@media (min-width: 399px) and (max-width: 408px) {
-  #midTHREE #allinone #right #illuTHREE #desc {
-    width: 68%;
-  }
+  margin-right: 1em;
+  align-items: end;
 }
 #midTHREE #allinone #right #illuTHREE #desc #one {
   font-size: 18px;
   font-weight: 700;
+  text-align: end;
 }
 #midTHREE #allinone #right #illuTHREE #desc #two {
   width: min(100% - 3em, 14em);
-  text-align: start;
-}
-@media (min-width: 310px) and (max-width: 399px) {
-  #midTHREE #allinone #right #illuTHREE #desc #two {
-    text-align: end;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuTHREE #desc #two {
-    text-align: end;
-  }
+  text-align: end;
 }
 
 #midFOUR {

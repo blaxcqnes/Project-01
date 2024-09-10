@@ -182,13 +182,10 @@
     #right {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-evenly;
-      position: relative;
       width: 30%;
       height: 45em;
       background-color: rgb(255, 255, 255);
-      overflow: hidden;
 
       @include breakPoints(small) {
         width: 100%;
@@ -212,27 +209,15 @@
 
       #illuONE {
         display: flex;
-        flex-direction: row;
-        margin-left: 1em;
-
-        @include breakPoints(small) {
-          flex-direction: row-reverse;
-          width: 100%;
-          margin: 0 1em 0 0;
-          position: relative;
-          right: 0em;
-        }
+        flex-direction: row-reverse;
+        margin-right: 1.5em;
 
         @include breakPoints(mobile) {
-          flex-direction: row-reverse;
-          width: 100%;
-          margin-left: 0;
-          position: relative;
-          right: 0em;
+          margin-right: 4em;
         }
 
         @include breakPoints(tablet) {
-          margin-left: 15%;
+          margin-right: 15%;
         }
 
         #pic {
@@ -241,85 +226,38 @@
           background-image: url('../images/quality.svg');
           background-repeat: no-repeat;
           align-self: center;
-
-          @include breakPoints(small) {
-            margin-left: 0.5em;
-          }
-
-          @include breakPoints(mobile) {
-            margin-left: 1em;
-          }
         }
 
         #desc {
           display: flex;
           flex-direction: column;
-          margin-left: 1em;
-
-          @include breakPoints(small) {
-            margin-left: 0;
-            align-items: end;
-            text-align: end;
-          }
-
-          @include breakPoints(mobile) {
-            width: 62%;
-            margin-left: 0;
-            align-items: end;
-            text-align: end;
-          }
-
-          @media (min-width: 399px) and (max-width: 408px) {
-            width: 68%;
-          }
+          margin-right: 1em;
+          align-items: end;
 
           #one {
             font-size: 18px;
             font-weight: 700;
+            text-align: end;
           }
 
           #two {
             width: min(100% - 3em, 14em);
-            text-align: start;
-
-            @include breakPoints(small) {
-              text-align: end;
-            }
-
-            @include breakPoints(mobile) {
-              text-align: end;
-            }
+            text-align: end;
           }
         }
       }
 
       #illuTWO {
         display: flex;
-        flex-direction: row;
-        margin-left: 1em;
-
-        @include breakPoints(small) {
-          flex-direction: row-reverse;
-          width: 100%;
-          margin: 0 1em 0 0;
-          position: relative;
-          right: 0em;
-        }
+        flex-direction: row-reverse;
+        margin-right: 1.5em;
 
         @include breakPoints(mobile) {
-          flex-direction: row-reverse;
-          width: 100%;
-          margin-left: 0;
-          position: relative;
-          right: 0em;
-        }
-
-        @media (min-width: 399px) and (max-width: 413px) {
-          right: 1.5em;
+          margin-right: 4em;
         }
 
         @include breakPoints(tablet) {
-          margin-left: 15%;
+          margin-right: 15%;
         }
 
         #pic {
@@ -328,85 +266,38 @@
           background-image: url('../images/twoBEANS.svg');
           background-repeat: no-repeat;
           align-self: center;
-
-          @include breakPoints(small) {
-            margin-left: 0.5em;
-          }
-
-          @include breakPoints(mobile) {
-            margin-left: 1.5em;
-          }
         }
 
         #desc {
           display: flex;
           flex-direction: column;
-          margin-left: 1em;
-
-          @include breakPoints(small) {
-            margin-left: 0;
-            align-items: end;
-            text-align: end;
-          }
-
-          @include breakPoints(mobile) {
-            width: 62%;
-            margin-left: 0;
-            align-items: end;
-            text-align: end;
-          }
-
-          @media (min-width: 399px) and (max-width: 407px) {
-            width: 84%;
-          }
-
-          @media (min-width: 407px) and (max-width: 413px) {
-            width: 84%;
-          }
+          margin-right: 1em;
+          align-items: end;
 
           #one {
             font-size: 18px;
             font-weight: 700;
+            text-align: end;
           }
 
           #two {
             width: min(100% - 3em, 14em);
-            text-align: start;
-
-            @include breakPoints(small) {
-              text-align: end;
-            }
-
-            @include breakPoints(mobile) {
-              text-align: end;
-            }
+            text-align: end;
           }
         }
       }
 
       #illuTHREE {
         display: flex;
-        flex-direction: row;
-        margin-left: 1em;
-
-        @include breakPoints(small) {
-          flex-direction: row-reverse;
-          width: 100%;
-          margin: 0 1em 0 0;
-          position: relative;
-          right: 0em;
-        }
+        flex-direction: row-reverse;
+        margin-right: 1.5em;
 
         @include breakPoints(mobile) {
-          flex-direction: row-reverse;
-          width: 100%;
-          position: relative;
-          margin-left: 0;
-          right: 0em;
+          margin-right: 4em;
         }
 
         @include breakPoints(tablet) {
-          margin-left: 15%;
+          margin-right: 15%;
         }
 
         #pic {
@@ -415,54 +306,23 @@
           background-image: url('../images/aromaCOFFEE.svg');
           background-repeat: no-repeat;
           align-self: center;
-
-          @include breakPoints(small) {
-            margin-left: 0.5em;
-          }
-
-          @include breakPoints(mobile) {
-            margin-left: 1em;
-          }
         }
 
         #desc {
           display: flex;
           flex-direction: column;
-          margin-left: 1em;
-
-          @include breakPoints(small) {
-            margin-left: 0;
-            align-items: end;
-            text-align: end;
-          }
-
-          @include breakPoints(mobile) {
-            width: 62%;
-            margin-left: 0;
-            align-items: end;
-            text-align: end;
-          }
-
-          @media (min-width: 399px) and (max-width: 408px) {
-            width: 68%;
-          }
+          margin-right: 1em;
+          align-items: end;
 
           #one {
             font-size: 18px;
             font-weight: 700;
+            text-align: end;
           }
 
           #two {
             width: min(100% - 3em, 14em);
-            text-align: start;
-
-            @include breakPoints(small) {
-              text-align: end;
-            }
-
-            @include breakPoints(mobile) {
-              text-align: end;
-            }
+            text-align: end;
           }
         }
       }
