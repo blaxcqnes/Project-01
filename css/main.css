@@ -3798,19 +3798,33 @@
   align-items: center;
 }
 #bottomTHREE #all #upperSEC #right #email input {
-  width: 20em;
-  height: 4em;
+  width: 60%;
+  height: 21lvh;
   padding: 1em;
   border: none;
   border-radius: 2em;
   outline: none;
 }
+@media (min-width: 310px) and (max-width: 350px) {
+  #bottomTHREE #all #upperSEC #right #email input {
+    width: 47%;
+  }
+}
+@media (min-width: 350px) and (max-width: 399px) {
+  #bottomTHREE #all #upperSEC #right #email input {
+    width: 52%;
+  }
+}
+@media (min-width: 399px) and (max-width: 450px) {
+  #bottomTHREE #all #upperSEC #right #email input {
+    width: 55%;
+  }
+}
 #bottomTHREE #all #upperSEC #right #email #subscribe {
-  width: 13em;
-  height: 3.8em;
-  margin-left: 1em;
-  position: absolute;
-  right: 9.3em;
+  width: 35%;
+  height: 21lvh;
+  position: relative;
+  right: 5em;
   border: none;
   border-radius: 40px;
   background-color: rgb(123, 255, 141);
@@ -3820,38 +3834,12 @@
 }
 @media (min-width: 310px) and (max-width: 399px) {
   #bottomTHREE #all #upperSEC #right #email #subscribe {
-    width: 11em;
-    height: 4.1em;
-    right: 13em;
-    margin-left: 0;
+    width: 25%;
   }
 }
-@media (min-width: 310px) and (max-width: 350px) {
+@media (min-width: 399px) and (max-width: 450px) {
   #bottomTHREE #all #upperSEC #right #email #subscribe {
-    right: 15em;
-  }
-}
-@media (min-width: 399px) and (max-width: 470px) {
-  #bottomTHREE #all #upperSEC #right #email #subscribe {
-    right: 13em;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #bottomTHREE #all #upperSEC #right #email #subscribe {
-    height: 4.1em;
-    margin-left: 0;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  #bottomTHREE #all #upperSEC #right #email #subscribe {
-    height: 3.8em;
-    right: 10em;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1439px) {
-  #bottomTHREE #all #upperSEC #right #email #subscribe {
-    height: 3.8em;
-    right: 11.5em;
+    width: 30%;
   }
 }
 #bottomTHREE #all #upperSEC #right #email #subscribe:hover {
