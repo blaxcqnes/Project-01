@@ -3844,8 +3844,14 @@
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #bottomTHREE #all #upperSEC #right #email #subscribe {
-    height: 4.1em;
+    height: 3.8em;
     right: 10em;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1439px) {
+  #bottomTHREE #all #upperSEC #right #email #subscribe {
+    height: 3.8em;
+    right: 11.5em;
   }
 }
 #bottomTHREE #all #upperSEC #right #email #subscribe:hover {

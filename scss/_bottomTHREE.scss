@@ -261,8 +261,13 @@
             }
 
             @include breakPoints(tablet) {
-              height: 4.1em;
+              height: 3.8em;
               right: 10em;
+            }
+
+            @include breakPoints(laptop) {
+              height: 3.8em;
+              right: 11.5em;
             }
 
             &:hover {
