@@ -229,7 +229,7 @@
 
           #subscribe {
             width: 13em;
-            height: 3.9em;
+            height: 3.8em;
             margin-left: 1em;
             position: absolute;
             right: 9.3em;
@@ -239,11 +239,6 @@
             font-size: 13px;
             color: #1d1d1d;
             transition: all 0.2s ease;
-
-            &:hover {
-              cursor: pointer;
-              background-color: rgb(109, 223, 124);
-            }
 
             @media (min-width: 310px) and (max-width: 399px) {
               width: 11em;
@@ -268,6 +263,11 @@
             @include breakPoints(tablet) {
               height: 4.1em;
               right: 10em;
+            }
+
+            &:hover {
+              cursor: pointer;
+              background-color: rgb(109, 223, 124);
             }
           }
         }
