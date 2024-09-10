@@ -1594,7 +1594,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 32em;
+    height: 31.5em;
     align-items: center;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -3808,7 +3808,7 @@
   margin-top: 3em;
 }
 #bottomTHREE #all #upperSEC #mid #phone #pic {
-  background-image: url("../images/location.svg");
+  background-image: url("../images/call.svg");
   width: 27px;
   height: 27px;
 }
@@ -3843,7 +3843,7 @@
   display: flex;
   flex-direction: row;
   width: 32em;
-  margin-top: 2em;
+  margin-top: 3em;
   position: relative;
   align-items: center;
 }
@@ -3857,10 +3857,10 @@
 }
 #bottomTHREE #all #upperSEC #right #email #subscribe {
   width: 13em;
-  height: 4.2em;
+  height: 3.8em;
   margin-left: 1em;
   position: absolute;
-  right: 10em;
+  right: 9em;
   border: none;
   border-radius: 40px;
   background-color: rgb(123, 255, 141);
@@ -3872,11 +3872,21 @@
   cursor: pointer;
   background-color: rgb(109, 223, 124);
 }
-@media (min-width: 310px) and (max-width: 399.9px) {
+@media (min-width: 310px) and (max-width: 399px) {
   #bottomTHREE #all #upperSEC #right #email #subscribe {
-    width: 10em;
-    right: 14em;
+    width: 11em;
+    right: 12em;
     margin-left: 0;
+  }
+}
+@media (min-width: 310px) and (max-width: 350px) {
+  #bottomTHREE #all #upperSEC #right #email #subscribe {
+    right: 15em;
+  }
+}
+@media (min-width: 399px) and (max-width: 470px) {
+  #bottomTHREE #all #upperSEC #right #email #subscribe {
+    right: 10em;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
@@ -3902,7 +3912,7 @@
   #bottomTHREE #all #upperSEC #right #agreement #one {
     width: 60%;
     margin-left: 1.5em;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
