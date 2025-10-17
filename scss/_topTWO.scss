@@ -1,0 +1,60 @@
+#topTWO {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: inherit;
+  align-items: center;
+
+  #bgONE {
+    background-image: url('../images/leafPATTERNS.png');
+    width: inherit;
+    height: 22em;
+    background-color: rgb(77, 139, 85);
+
+    @include breakPoints(small) {
+      height: 10em;
+    }
+
+    @include breakPoints(mobile) {
+      height: 11em;
+    }
+
+    @include breakPoints(tablet) {
+      height: 12em;
+    }
+
+    @include breakPoints(laptop) {
+      height: 17.5em;
+    }
+  }
+
+  #bgTWO {
+    background-image: url('../images/topBEANS.png');
+    position: absolute;
+    width: 51.6em;
+    height: 40em;
+    top: -15em;
+    transform: scale(77%);
+    background-repeat: no-repeat;
+
+    @include breakPoints(small) {
+      top: -18em;
+      transform: scale(35%);
+    }
+
+    @include breakPoints(mobile) {
+      top: -18em;
+      transform: scale(40%);
+    }
+
+    @include breakPoints(tablet) {
+      top: -20em;
+      transform: scale(55%);
+    }
+
+    @include breakPoints(laptop) {
+      top: -16em;
+      transform: scale(60%);
+    }
+  }
+}

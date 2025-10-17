@@ -1,0 +1,331 @@
+#midTHREE {
+  width: inherit;
+  height: max-content;
+
+  #allinone {
+    display: flex;
+    flex-direction: row;
+
+    @include breakPoints(small) {
+      flex-direction: column;
+    }
+
+    @include breakPoints(mobile) {
+      flex-direction: column;
+    }
+
+    #left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 30%;
+      height: 45em;
+      background-color: rgb(255, 255, 255);
+
+      @include breakPoints(small) {
+        width: 100%;
+        background-image: url('../images/leafsANDBEANS.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 50%;
+      }
+
+      @include breakPoints(mobile) {
+        width: 100%;
+        background-image: url('../images/leafsANDBEANS.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 50%;
+      }
+
+      @include breakPoints(tablet) {
+        width: 50%;
+      }
+
+      #illuONE {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1.5em;
+
+        @include breakPoints(mobile) {
+          margin-left: 4em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-left: 15%;
+        }
+
+        #pic {
+          width: 8em;
+          height: 4em;
+          background-image: url('../images/pure.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1em;
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: start;
+          }
+        }
+      }
+
+      #illuTWO {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1.5em;
+
+        @include breakPoints(mobile) {
+          margin-left: 4em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-left: 15%;
+        }
+
+        #pic {
+          width: 8em;
+          height: 4em;
+          background-image: url('../images/threebeansWBG.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1em;
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: start;
+          }
+        }
+      }
+
+      #illuTHREE {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1.5em;
+
+        @include breakPoints(mobile) {
+          margin-left: 4em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-left: 15%;
+        }
+
+        #pic {
+          width: 8em;
+          height: 4em;
+          background-image: url('../images/roasting.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1em;
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: start;
+          }
+        }
+      }
+    }
+
+    #mid {
+      width: 40%;
+      height: 45em;
+      background-image: url('../images/coffee.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: rgb(255, 255, 255);
+      background-position-y: 50%;
+
+      @include breakPoints(small) {
+        display: none;
+      }
+
+      @include breakPoints(mobile) {
+        display: none;
+      }
+
+      @include breakPoints(tablet) {
+        display: none;
+      }
+    }
+
+    #right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 30%;
+      height: 45em;
+      background-color: rgb(255, 255, 255);
+
+      @include breakPoints(small) {
+        width: 100%;
+        background-image: url('../images/leafsANDBEANS.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 50%;
+      }
+
+      @include breakPoints(mobile) {
+        width: 100%;
+        background-image: url('../images/leafsANDBEANS.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 50%;
+      }
+
+      @include breakPoints(tablet) {
+        width: 50%;
+      }
+
+      #illuONE {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 1.5em;
+
+        @include breakPoints(mobile) {
+          margin-right: 4em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-right: 15%;
+        }
+
+        #pic {
+          width: 9em;
+          height: 4em;
+          background-image: url('../images/quality.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-right: 1em;
+          align-items: end;
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: end;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: end;
+          }
+        }
+      }
+
+      #illuTWO {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 1.5em;
+
+        @include breakPoints(mobile) {
+          margin-right: 4em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-right: 15%;
+        }
+
+        #pic {
+          width: 9em;
+          height: 4em;
+          background-image: url('../images/twoBEANS.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-right: 1em;
+          align-items: end;
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: end;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: end;
+          }
+        }
+      }
+
+      #illuTHREE {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 1.5em;
+
+        @include breakPoints(mobile) {
+          margin-right: 4em;
+        }
+
+        @include breakPoints(tablet) {
+          margin-right: 15%;
+        }
+
+        #pic {
+          width: 9em;
+          height: 4em;
+          background-image: url('../images/aromaCOFFEE.svg');
+          background-repeat: no-repeat;
+          align-self: center;
+        }
+
+        #desc {
+          display: flex;
+          flex-direction: column;
+          margin-right: 1em;
+          align-items: end;
+
+          #one {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: end;
+          }
+
+          #two {
+            width: min(100% - 3em, 14em);
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}

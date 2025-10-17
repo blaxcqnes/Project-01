@@ -1,0 +1,26 @@
+@import '../scss/_mediaQuery.scss';
+@import '../scss/_container.scss';
+@import '../scss/_MOB.scss';
+@import '../scss/_topONE.scss';
+@import '../scss/_topTWO.scss';
+@import '../scss/_topTHREE.scss';
+@import '../scss/_midONE.scss';
+@import '../scss/_midTWO.scss';
+@import '../scss/_midTHREE.scss';
+@import '../scss/_midFOUR.scss';
+@import '../scss/_bottomONE.scss';
+@import '../scss/_bottomTWO.scss';
+@import '../scss/_bottomTHREE.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  user-select: none;
+}
+
+body {
+  height: auto;
+  background-color: rgb(28, 28, 28);
+}
