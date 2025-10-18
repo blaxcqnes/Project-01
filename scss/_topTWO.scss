@@ -3,67 +3,67 @@
   flex-direction: column;
   width: 100%;
   height: fit-content;
-  align-items: center;
   position: relative;
+  align-items: center;
 
   #bgONE {
     background-image: url('../images/leafPATTERNS.png');
     width: 100%;
-    height: 45dvh;
+    height: 295px;
     background-color: rgb(77, 139, 85);
 
     @include breakPoints(small) {
-      height: 28dvh;
+      height: 185px;
     }
 
     @include breakPoints(mobile) {
-      height: 28dvh;
+      height: 200px;
     }
 
     @media (min-width: 499px) and (max-width: 767px) {
-      height: 35dvh;
+      height: 230px;
     }
 
     @include breakPoints(tablet) {
-      height: 38dvh;
+      height: 250px;
     }
 
     @include breakPoints(laptop) {
-      height: 42dvh;
+      height: 265px;
     }
   }
 
   #bgTWO {
     background-image: url('../images/topBEANS.png');
     position: absolute;
-    width: 51.6em;
-    height: 40em;
-    top: -16em;
+    width: 774px;
+    height: 609px;
+    top: -250px;
     transform: scale(70%);
     background-repeat: no-repeat;
 
     @include breakPoints(small) {
-      top: -16em;
+      top: -250px;
       transform: scale(36%);
     }
 
     @include breakPoints(mobile) {
-      top: -16em;
+      top: -250px;
       transform: scale(40%);
     }
 
     @media (min-width: 499px) and (max-width: 767px) {
-      top: -16em;
+      top: -250px;
       transform: scale(48%);
     }
 
     @include breakPoints(tablet) {
-      top: -16em;
+      top: -250px;
       transform: scale(55%);
     }
 
     @include breakPoints(laptop) {
-      top: -16em;
+      top: -250px;
       transform: scale(60%);
     }
   }

@@ -4,26 +4,26 @@
   row-gap: 40px;
   position: relative;
   width: 100%;
-  height: 110dvh;
+  height: 800px;
 
   @include breakPoints(small) {
-    height: 98dvh;
+    height: 600px;
   }
 
   @include breakPoints(mobile) {
-    height: 100dvh;
+    height: 650px;
   }
 
   @media (min-width: 499px) and (max-width: 767px) {
-    height: 85dvh;
+    height: 580px;
   }
 
   @include breakPoints(tablet) {
-    height: 100dvh;
+    height: 680px;
   }
 
   @include breakPoints(laptop) {
-    height: 105dvh;
+    height: 780px;
   }
 
   #bgONE {
@@ -109,7 +109,7 @@
       display: flex;
       flex-direction: column;
       row-gap: 25px;
-      width: max-content;
+      width: fit-content;
       align-items: center;
 
       @include breakPoints(small) {
@@ -224,11 +224,11 @@
     }
 
     #two {
-      width: auto;
+      width: fit-content;
       text-align: center;
       font-size: 75px;
       font-weight: 700;
-      color: rgb(244, 244, 244);
+      color: #f4f4f4;
 
       @include breakPoints(small) {
         font-size: 53px;
@@ -245,24 +245,28 @@
 
     #three {
       width: 40em;
-      font-size: 15.5px;
+      font-size: 16px;
       color: rgb(244, 244, 244);
       text-align: justify;
 
       @include breakPoints(small) {
-        width: min(100% - 4em, 30em);
-        margin-top: 2em;
+        width: 80%;
+        margin-top: 20px;
         font-size: 13px;
       }
 
       @include breakPoints(mobile) {
-        width: min(100% - 4em, 30em);
-        margin-top: 2em;
+        width: 80%;
+        margin-top: 20px;
         font-size: 13px;
       }
 
       @media (min-width: 650px) and (max-width: 767px) {
-        width: 40em;
+        width: 70%;
+      }
+
+      @media (min-width: 707px) and (max-width: 767px) {
+        font-size: 14px;
       }
 
       @include breakPoints(tablet) {

@@ -168,31 +168,31 @@
   row-gap: 40px;
   position: relative;
   width: 100%;
-  height: 110dvh;
+  height: 800px;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topONE {
-    height: 98dvh;
+    height: 600px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topONE {
-    height: 100dvh;
+    height: 650px;
   }
 }
 @media (min-width: 499px) and (max-width: 767px) {
   #topONE {
-    height: 85dvh;
+    height: 580px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topONE {
-    height: 100dvh;
+    height: 680px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topONE {
-    height: 105dvh;
+    height: 780px;
   }
 }
 #topONE #bgONE {
@@ -274,7 +274,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  width: max-content;
+  width: fit-content;
   align-items: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
@@ -386,11 +386,11 @@
   }
 }
 #topONE #title #two {
-  width: auto;
+  width: fit-content;
   text-align: center;
   font-size: 75px;
   font-weight: 700;
-  color: rgb(244, 244, 244);
+  color: #f4f4f4;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topONE #title #two {
@@ -409,27 +409,32 @@
 }
 #topONE #title #three {
   width: 40em;
-  font-size: 15.5px;
+  font-size: 16px;
   color: rgb(244, 244, 244);
   text-align: justify;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topONE #title #three {
-    width: min(100% - 4em, 30em);
-    margin-top: 2em;
+    width: 80%;
+    margin-top: 20px;
     font-size: 13px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topONE #title #three {
-    width: min(100% - 4em, 30em);
-    margin-top: 2em;
+    width: 80%;
+    margin-top: 20px;
     font-size: 13px;
   }
 }
 @media (min-width: 650px) and (max-width: 767px) {
   #topONE #title #three {
-    width: 40em;
+    width: 70%;
+  }
+}
+@media (min-width: 707px) and (max-width: 767px) {
+  #topONE #title #three {
+    font-size: 14px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -443,76 +448,76 @@
   flex-direction: column;
   width: 100%;
   height: fit-content;
-  align-items: center;
   position: relative;
+  align-items: center;
 }
 #topTWO #bgONE {
   background-image: url("../images/leafPATTERNS.png");
   width: 100%;
-  height: 45dvh;
+  height: 295px;
   background-color: rgb(77, 139, 85);
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTWO #bgONE {
-    height: 28dvh;
+    height: 185px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTWO #bgONE {
-    height: 28dvh;
+    height: 200px;
   }
 }
 @media (min-width: 499px) and (max-width: 767px) {
   #topTWO #bgONE {
-    height: 35dvh;
+    height: 230px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTWO #bgONE {
-    height: 38dvh;
+    height: 250px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topTWO #bgONE {
-    height: 42dvh;
+    height: 265px;
   }
 }
 #topTWO #bgTWO {
   background-image: url("../images/topBEANS.png");
   position: absolute;
-  width: 51.6em;
-  height: 40em;
-  top: -16em;
+  width: 774px;
+  height: 609px;
+  top: -250px;
   transform: scale(70%);
   background-repeat: no-repeat;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTWO #bgTWO {
-    top: -16em;
+    top: -250px;
     transform: scale(36%);
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTWO #bgTWO {
-    top: -16em;
+    top: -250px;
     transform: scale(40%);
   }
 }
 @media (min-width: 499px) and (max-width: 767px) {
   #topTWO #bgTWO {
-    top: -16em;
+    top: -250px;
     transform: scale(48%);
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTWO #bgTWO {
-    top: -16em;
+    top: -250px;
     transform: scale(55%);
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topTWO #bgTWO {
-    top: -16em;
+    top: -250px;
     transform: scale(60%);
   }
 }
