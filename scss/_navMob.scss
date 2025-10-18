@@ -1,0 +1,173 @@
+#navMob {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  width: 0;
+  height: 0;
+  position: relative;
+
+  @media (min-width: 767px) {
+    display: none;
+  }
+
+  #burger {
+    width: 45px;
+    height: 40px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 5px;
+    background-color: #4d8b55;
+    color: #fff9f1;
+    box-shadow: 0 0 3px #000000;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #menu {
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3f7146;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+
+    #navContent {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4dvh;
+      width: 0;
+      opacity: 0;
+      background-color: #4d8b55;
+
+      #account {
+        margin-top: 20px;
+        align-self: center;
+
+        #iconsTWO {
+          display: flex;
+          flex-direction: row;
+          column-gap: 40px;
+
+          #user {
+            background-image: url('/images/mobile/user.svg');
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+          }
+
+          #bag {
+            background-image: url('/images/mobile/bag.svg');
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+          }
+
+          #search {
+            background-image: url('/images/mobile/search.svg');
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 25px;
+        padding: 10px 0 0 25px;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 17px;
+
+        #homeONE {
+          width: fit-content;
+          color: #7bff8d;
+          cursor: pointer;
+        }
+
+        li {
+          width: fit-content;
+          color: #f4f4f4;
+          cursor: pointer;
+        }
+      }
+
+      #follow {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        padding: 10px 0 0 25px;
+
+        p {
+          color: #f4f4f4;
+          font-size: 14px;
+        }
+
+        #iconsONE {
+          display: flex;
+          flex-direction: row;
+          column-gap: 25px;
+          margin-top: 40px;
+
+          #insta {
+            background-image: url('/images/mobile/instagram.svg');
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
+
+          #x {
+            background-image: url('/images/mobile/x.svg');
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+          }
+
+          #telegram {
+            background-image: url('/images/mobile/telegram.svg');
+            width: 19px;
+            height: 19px;
+            cursor: pointer;
+          }
+
+          #youtube {
+            background-image: url('/images/mobile/youtube.svg');
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      #closeONE {
+        width: 88%;
+        height: 8%;
+        margin-top: 15px;
+        align-self: center;
+        transition: all 0.5s ease;
+        border: none;
+        border-radius: 40px;
+        background-color: rgb(123, 255, 141);
+        font-size: 14px;
+        color: #1d1d1d;
+        z-index: -1;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(109, 223, 124);
+        }
+      }
+    }
+  }
+}

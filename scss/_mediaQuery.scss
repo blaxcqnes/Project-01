@@ -1,6 +1,6 @@
 @mixin breakPoints($point) {
   @if $point ==small {
-    @media (min-width: 310px) and (max-width: 399px) {
+    @media (min-width: 300px) and (max-width: 399px) {
       @content;
     }
   }
@@ -23,14 +23,14 @@
     }
   }
 
-  @if $point ==large {
-    @media (min-width: 1439px) and (max-width: 2560px) {
+  @if $point ==medium {
+    @media (min-width: 1439px) and (max-width: 1529px) {
       @content;
     }
   }
 
-  @if $point ==default {
-    @media (min-width: 1510px) and (max-width: 1525px) {
+  @if $point ==large {
+    @media (min-width: 1529px) and (max-width: 1839px) {
       @content;
     }
   }

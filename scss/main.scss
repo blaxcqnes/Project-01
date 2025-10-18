@@ -1,6 +1,6 @@
 @import '../scss/_mediaQuery.scss';
 @import '../scss/_container.scss';
-@import '../scss/_MOB.scss';
+@import '../scss/_navMob.scss';
 @import '../scss/_topONE.scss';
 @import '../scss/_topTWO.scss';
 @import '../scss/_topTHREE.scss';
@@ -18,9 +18,17 @@
   box-sizing: border-box;
   font-family: 'Poppins';
   user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: all 0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   height: auto;
-  background-color: rgb(28, 28, 28);
+  background-color: #1c1c1c;
 }
