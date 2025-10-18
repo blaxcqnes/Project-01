@@ -1,7 +1,7 @@
 #topTHREE {
   display: flex;
   flex-direction: row;
-  column-gap: 90px;
+  column-gap: 4%;
   width: 100%;
   height: fit-content;
   padding: 30px 20px 30px 20px;
@@ -26,6 +26,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+    width: 58%;
+
+    @media (min-width: 300px) and (max-width: 1023px) {
+      width: 100%;
+    }
 
     #texts {
       display: flex;
@@ -200,8 +205,8 @@
       }
 
       #read {
-        width: inherit;
-        height: inherit;
+        width: 360px;
+        height: 60px;
         border: none;
         border-radius: 40px;
         background-color: #7bff8d;
@@ -230,8 +235,8 @@
       }
 
       #shop {
-        width: inherit;
-        height: inherit;
+        width: 360px;
+        height: 60px;
         border: none;
         border-radius: 40px;
         background-color: #3c3c3c;
@@ -264,19 +269,15 @@
   #right {
     display: flex;
     flex-direction: column;
+    width: 38%;
     align-items: center;
     position: relative;
     align-self: center;
 
-    @include breakPoints(tablet) {
-      margin-top: 3em;
-    }
-
     #pic {
       background-image: url('../images/pouringBEANS.jpg');
-      width: 25em;
-      height: 25em;
-      margin-right: 2em;
+      width: 350px;
+      height: 350px;
       background-repeat: no-repeat;
       background-size: contain;
       align-self: center;
@@ -284,28 +285,21 @@
       @include breakPoints(small) {
         width: 16em;
         height: 16em;
-        margin: 10em 0 3em 0;
       }
 
       @include breakPoints(mobile) {
         width: 18em;
         height: 18em;
-        margin: 9em 0 3em 0;
       }
 
       @include breakPoints(tablet) {
         width: 20em;
         height: 20em;
-        margin: 3em 0 3em 0;
       }
 
       @include breakPoints(laptop) {
         width: 23em;
         height: 23em;
-      }
-
-      @media (min-width: 1350px) {
-        margin-right: 4em;
       }
 
       #one {
