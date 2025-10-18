@@ -33,7 +33,7 @@ if (smallAndMobileScreens.matches) {
     navMob.style.width = 'auto';
     navMob.style.height = 'auto';
     menu.style.opacity = '1';
-    menu.style.width = '44dvh';
+    menu.style.width = '41.5dvh';
     menu.style.height = '100%';
     navContent.style.opacity = '1';
     navContent.style.width = '41dvh';
