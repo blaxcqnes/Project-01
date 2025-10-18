@@ -30,7 +30,7 @@ if (smallAndMobileScreens.matches) {
   burger.style.opacity = '1';
   burger.addEventListener('click', function () {
     burger.style.zIndex = '1';
-    navMob.style.width = 'auto';
+    navMob.style.width = 'fit-content';
     navMob.style.height = 'auto';
     menu.style.opacity = '1';
     menu.style.width = '41.5dvh';
