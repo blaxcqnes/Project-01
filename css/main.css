@@ -444,16 +444,17 @@
   width: 100%;
   height: fit-content;
   align-items: center;
+  position: relative;
 }
 #topTWO #bgONE {
   background-image: url("../images/leafPATTERNS.png");
   width: 100%;
-  height: 60dvh;
+  height: 45dvh;
   background-color: rgb(77, 139, 85);
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTWO #bgONE {
-    height: 30dvh;
+    height: 28dvh;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
@@ -473,7 +474,7 @@
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topTWO #bgONE {
-    height: 44dvh;
+    height: 42dvh;
   }
 }
 #topTWO #bgTWO {
@@ -481,37 +482,37 @@
   position: absolute;
   width: 51.6em;
   height: 40em;
-  top: 35em;
+  top: -16em;
   transform: scale(70%);
   background-repeat: no-repeat;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTWO #bgTWO {
-    top: 24em;
+    top: -16em;
     transform: scale(36%);
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTWO #bgTWO {
-    top: 24em;
+    top: -16em;
     transform: scale(40%);
   }
 }
 @media (min-width: 499px) and (max-width: 767px) {
   #topTWO #bgTWO {
-    top: 19em;
+    top: -16em;
     transform: scale(48%);
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTWO #bgTWO {
-    top: 25em;
+    top: -16em;
     transform: scale(55%);
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topTWO #bgTWO {
-    top: 28em;
+    top: -16em;
     transform: scale(60%);
   }
 }
