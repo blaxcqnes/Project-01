@@ -5,6 +5,7 @@
   width: 0;
   height: 0;
   position: relative;
+  overflow-y: hidden;
 
   @media (min-width: 767px) {
     display: none;

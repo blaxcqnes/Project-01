@@ -13,6 +13,7 @@
   width: 0;
   height: 0;
   position: relative;
+  overflow-y: hidden;
 }
 @media (min-width: 767px) {
   #navMob {
@@ -166,7 +167,7 @@
   flex-direction: column;
   row-gap: 40px;
   position: relative;
-  width: inherit;
+  width: 100%;
   height: 110dvh;
 }
 @media (min-width: 300px) and (max-width: 399px) {
@@ -181,7 +182,17 @@
 }
 @media (min-width: 499px) and (max-width: 767px) {
   #topONE {
-    height: 90dvh;
+    height: 85dvh;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #topONE {
+    height: 100dvh;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1439px) {
+  #topONE {
+    height: 105dvh;
   }
 }
 #topONE #bgONE {
@@ -430,34 +441,39 @@
 #topTWO {
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: inherit;
+  width: 100%;
+  height: fit-content;
   align-items: center;
 }
 #topTWO #bgONE {
   background-image: url("../images/leafPATTERNS.png");
-  width: inherit;
-  height: 22em;
+  width: 100%;
+  height: 60dvh;
   background-color: rgb(77, 139, 85);
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTWO #bgONE {
-    height: 10em;
+    height: 30dvh;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTWO #bgONE {
-    height: 11em;
+    height: 28dvh;
+  }
+}
+@media (min-width: 499px) and (max-width: 767px) {
+  #topTWO #bgONE {
+    height: 35dvh;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTWO #bgONE {
-    height: 12em;
+    height: 38dvh;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topTWO #bgONE {
-    height: 17.5em;
+    height: 44dvh;
   }
 }
 #topTWO #bgTWO {
@@ -465,31 +481,37 @@
   position: absolute;
   width: 51.6em;
   height: 40em;
-  top: -15em;
-  transform: scale(77%);
+  top: 35em;
+  transform: scale(70%);
   background-repeat: no-repeat;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTWO #bgTWO {
-    top: -18em;
-    transform: scale(35%);
+    top: 24em;
+    transform: scale(36%);
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTWO #bgTWO {
-    top: -18em;
+    top: 24em;
     transform: scale(40%);
+  }
+}
+@media (min-width: 499px) and (max-width: 767px) {
+  #topTWO #bgTWO {
+    top: 19em;
+    transform: scale(48%);
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTWO #bgTWO {
-    top: -20em;
+    top: 25em;
     transform: scale(55%);
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #topTWO #bgTWO {
-    top: -16em;
+    top: 28em;
     transform: scale(60%);
   }
 }
