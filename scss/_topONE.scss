@@ -7,7 +7,7 @@
   height: 800px;
 
   @include breakPoints(small) {
-    height: 600px;
+    height: 650px;
   }
 
   @include breakPoints(mobile) {

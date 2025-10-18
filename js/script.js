@@ -32,57 +32,31 @@ if (smallAndMobileScreens.matches) {
     burger.style.zIndex = '1';
     navMob.style.width = '100%';
     navMob.style.height = 'auto';
+    navMob.style.transition = 'all 0.2s ease-in';
+    menu.style.height = '100%';
     menu.style.opacity = '1';
     menu.style.width = '88%';
-    menu.style.height = '100%';
+    menu.style.transition = 'all 0.2s ease-in';
     navContent.style.opacity = '1';
     navContent.style.width = '95%';
     navContent.style.height = '100%';
+    navContent.style.transition = 'all 0.2s ease-in';
     closeONE.style.zIndex = '2';
 
     closeONE.addEventListener('click', function () {
-      burger.style.zIndex = '2';
+      closeONE.style.zIndex = '-1';
       navMob.style.width = '0';
       navMob.style.height = '0';
-      menu.style.opacity = '0';
+      navMob.style.transition = 'all 0.2s ease-out';
       menu.style.width = '0';
+      menu.style.opacity = '0';
       menu.style.height = '0';
-      navContent.style.opacity = '0';
+      menu.style.transition = 'all 0.2s ease-out';
       navContent.style.width = '0';
+      navContent.style.opacity = '0';
       navContent.style.height = '0';
-      closeONE.style.zIndex = '-1';
+      navContent.style.transition = 'all 0.2s ease-out';
+      burger.style.zIndex = '2';
     });
   });
 }
-
-// let con = document.querySelector('#container');
-// let burgerONE = document.querySelector('#burgerONE');
-// let mob = document.querySelector('#MOB');
-// let closeONE = document.querySelector('#closeONE');
-// let topONE = document.querySelector('#topONE');
-// let mobile = window.matchMedia('(min-width: 310px) and (max-width: 1023px)');
-
-// if (mobile.matches) {
-//   burgerONE.style.display = 'inline';
-// } else {
-//   burgerONE.style.display = 'none';
-// }
-
-// topONE.addEventListener('click', function () {
-//   mob.style.display = 'none';
-//   burgerONE.style.display = 'inline';
-// });
-
-// burgerONE.addEventListener('click', function () {
-//   burgerONE.style.display = 'none';
-
-//   mob.style.cssText = `
-//   display: flex;
-//   flex-direction: row;
-//     `;
-// });
-
-// closeONE.addEventListener('click', function () {
-//   mob.style.display = 'none';
-//   burgerONE.style.display = 'inline';
-// });
