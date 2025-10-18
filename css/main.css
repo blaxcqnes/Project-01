@@ -144,8 +144,8 @@
   cursor: pointer;
 }
 #navMob #menu #navContent #closeONE {
-  width: 88%;
-  height: 8%;
+  width: 90%;
+  height: 7%;
   margin-top: 15px;
   align-self: center;
   transition: all 0.5s ease;

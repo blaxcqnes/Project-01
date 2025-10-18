@@ -30,16 +30,15 @@ if (smallAndMobileScreens.matches) {
   burger.style.opacity = '1';
   burger.addEventListener('click', function () {
     burger.style.zIndex = '1';
-    navMob.style.width = 'fit-content';
+    navMob.style.width = '100%';
     navMob.style.height = 'auto';
     menu.style.opacity = '1';
-    menu.style.width = '41.5dvh';
+    menu.style.width = '88%';
     menu.style.height = '100%';
     navContent.style.opacity = '1';
-    navContent.style.width = '41dvh';
+    navContent.style.width = '95%';
     navContent.style.height = '100%';
     closeONE.style.zIndex = '2';
-    navContent.style.width = '200pt';
 
     closeONE.addEventListener('click', function () {
       burger.style.zIndex = '2';
