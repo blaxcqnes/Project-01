@@ -1,4 +1,4 @@
-#container {
+#B-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-#navMob {
+#C-navMob {
   display: flex;
   flex-direction: column;
   row-gap: 0;
@@ -16,11 +16,11 @@
   overflow-y: hidden;
 }
 @media (min-width: 767px) {
-  #navMob {
+  #C-navMob {
     display: none;
   }
 }
-#navMob #burger {
+#C-navMob #navMobBurger {
   width: 45px;
   height: 40px;
   position: fixed;
@@ -37,7 +37,7 @@
   z-index: 2;
   cursor: pointer;
 }
-#navMob #menu {
+#C-navMob #navMobMenu {
   width: 0;
   height: 0;
   position: fixed;
@@ -48,7 +48,7 @@
   z-index: 1;
   transition: all 0.2s ease-in-out;
 }
-#navMob #menu #navContent {
+#C-navMob #navMobMenu #navMobContent {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -56,34 +56,34 @@
   opacity: 0;
   background-color: #4d8b55;
 }
-#navMob #menu #navContent #account {
+#C-navMob #navMobMenu #navMobContent #navMobAccount {
   margin-top: 20px;
   align-self: center;
 }
-#navMob #menu #navContent #account #iconsTWO {
+#C-navMob #navMobMenu #navMobContent #navMobAccount #navMobIcons {
   display: flex;
   flex-direction: row;
   column-gap: 40px;
 }
-#navMob #menu #navContent #account #iconsTWO #user {
+#C-navMob #navMobMenu #navMobContent #navMobAccount #navMobIcons #user {
   background-image: url("/images/mobile/user.svg");
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
-#navMob #menu #navContent #account #iconsTWO #bag {
+#C-navMob #navMobMenu #navMobContent #navMobAccount #navMobIcons #bag {
   background-image: url("/images/mobile/bag.svg");
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
-#navMob #menu #navContent #account #iconsTWO #search {
+#C-navMob #navMobMenu #navMobContent #navMobAccount #navMobIcons #search {
   background-image: url("/images/mobile/search.svg");
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
-#navMob #menu #navContent ul {
+#C-navMob #navMobMenu #navMobContent ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -94,57 +94,57 @@
   font-weight: 700;
   font-size: 17px;
 }
-#navMob #menu #navContent ul #homeONE {
+#C-navMob #navMobMenu #navMobContent ul #home {
   width: fit-content;
   color: #7bff8d;
   cursor: pointer;
 }
-#navMob #menu #navContent ul li {
+#C-navMob #navMobMenu #navMobContent ul li {
   width: fit-content;
   color: #f4f4f4;
   cursor: pointer;
 }
-#navMob #menu #navContent #follow {
+#C-navMob #navMobMenu #navMobContent #navMobFollowUsOn {
   display: flex;
   flex-direction: column;
   width: fit-content;
   padding: 10px 0 0 25px;
 }
-#navMob #menu #navContent #follow p {
+#C-navMob #navMobMenu #navMobContent #navMobFollowUsOn p {
   color: #f4f4f4;
   font-size: 14px;
 }
-#navMob #menu #navContent #follow #iconsONE {
+#C-navMob #navMobMenu #navMobContent #navMobFollowUsOn #icons {
   display: flex;
   flex-direction: row;
   column-gap: 25px;
   margin-top: 40px;
 }
-#navMob #menu #navContent #follow #iconsONE #insta {
+#C-navMob #navMobMenu #navMobContent #navMobFollowUsOn #icons #instagram {
   background-image: url("/images/mobile/instagram.svg");
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
-#navMob #menu #navContent #follow #iconsONE #x {
+#C-navMob #navMobMenu #navMobContent #navMobFollowUsOn #icons #x {
   background-image: url("/images/mobile/x.svg");
   width: 22px;
   height: 22px;
   cursor: pointer;
 }
-#navMob #menu #navContent #follow #iconsONE #telegram {
+#C-navMob #navMobMenu #navMobContent #navMobFollowUsOn #icons #telegram {
   background-image: url("/images/mobile/telegram.svg");
   width: 19px;
   height: 19px;
   cursor: pointer;
 }
-#navMob #menu #navContent #follow #iconsONE #youtube {
+#C-navMob #navMobMenu #navMobContent #navMobFollowUsOn #icons #youtube {
   background-image: url("/images/mobile/youtube.svg");
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
-#navMob #menu #navContent #closeONE {
+#C-navMob #navMobMenu #navMobContent #navMobClose {
   width: 90%;
   height: 7%;
   margin-top: 15px;
@@ -157,12 +157,12 @@
   color: #1d1d1d;
   z-index: -1;
 }
-#navMob #menu #navContent #closeONE:hover {
+#C-navMob #navMobMenu #navMobContent #navMobClose:hover {
   cursor: pointer;
   background-color: rgb(109, 223, 124);
 }
 
-#topONE {
+#D-topOne {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -170,32 +170,27 @@
   width: 100%;
   height: 800px;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #topONE {
-    height: 650px;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #topONE {
+@media (min-width: 300px) and (max-width: 767px) {
+  #D-topOne {
     height: 650px;
   }
 }
 @media (min-width: 499px) and (max-width: 767px) {
-  #topONE {
+  #D-topOne {
     height: 580px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #topONE {
+  #D-topOne {
     height: 680px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #topONE {
+  #D-topOne {
     height: 780px;
   }
 }
-#topONE #bgONE {
+#D-topOne #topOneBgOne {
   position: absolute;
   background-image: url("../images/topCOFFE.jpg");
   width: inherit;
@@ -204,23 +199,18 @@
   opacity: 0.5;
   z-index: -1;
 }
-#topONE #header {
+#D-topOne #topOneHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 35px;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #topONE #header {
+@media (min-width: 300px) and (max-width: 767px) {
+  #D-topOne #topOneHeader {
     margin-top: 0;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #topONE #header {
-    margin-top: 0;
-  }
-}
-#topONE #header #left {
+#D-topOne #topOneHeader #topOneLeft {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
@@ -228,72 +218,67 @@
   align-items: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topONE #header #left {
+  #D-topOne #topOneHeader #topOneLeft {
     display: none;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #topONE #header #left {
+  #D-topOne #topOneHeader #topOneLeft {
     display: none;
   }
 }
-#topONE #header #left p {
+#D-topOne #topOneHeader #topOneLeft p {
   color: #f4f4f4;
   font-size: 14px;
 }
-#topONE #header #left #iconsONE {
+#D-topOne #topOneHeader #topOneLeft #topOneIconsOne {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
 }
-#topONE #header #left #iconsONE #insta {
+#D-topOne #topOneHeader #topOneLeft #topOneIconsOne #instagram {
   background-image: url("/images/instagram.svg");
   width: 22px;
   height: 22px;
   cursor: pointer;
 }
-#topONE #header #left #iconsONE #x {
+#D-topOne #topOneHeader #topOneLeft #topOneIconsOne #x {
   background-image: url("/images/x.svg");
   width: 24px;
   height: 24px;
   cursor: pointer;
 }
-#topONE #header #left #iconsONE #telegram {
+#D-topOne #topOneHeader #topOneLeft #topOneIconsOne #telegram {
   background-image: url("/images/telegram.svg");
   width: 21px;
   height: 21px;
   cursor: pointer;
 }
-#topONE #header #left #iconsONE #youtube {
+#D-topOne #topOneHeader #topOneLeft #topOneIconsOne #youtube {
   background-image: url("/images/youtube.svg");
   width: 22px;
   height: 22px;
   cursor: pointer;
 }
-#topONE #header #mid {
+#D-topOne #topOneHeader #topOneMid {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
   width: fit-content;
   align-items: center;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #topONE #header #mid {
+@media (min-width: 300px) and (max-width: 767px) {
+  #D-topOne #topOneHeader #topOneMid {
     margin-top: 20px;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #topONE #header #mid {
-    margin-top: 20px;
-  }
-}
-#topONE #header #mid #logo {
+#D-topOne #topOneHeader #topOneMid #logo {
   background-image: url("../images/logo.png");
   width: 100px;
   height: 94px;
   cursor: pointer;
 }
-#topONE #header #mid ul {
+#D-topOne #topOneHeader #topOneMid ul {
   display: flex;
   flex-direction: row;
   column-gap: 25px;
@@ -301,91 +286,76 @@
   text-transform: capitalize;
   font-size: 17px;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #topONE #header #mid ul {
+@media (min-width: 300px) and (max-width: 1023px) {
+  #D-topOne #topOneHeader #topOneMid ul {
     display: none;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #topONE #header #mid ul {
-    display: none;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  #topONE #header #mid ul {
-    display: none;
-  }
-}
-#topONE #header #mid ul #homeONE {
+#D-topOne #topOneHeader #topOneMid ul #hoome {
   width: fit-content;
   color: #7bff8d;
   cursor: pointer;
 }
-#topONE #header #mid ul li {
+#D-topOne #topOneHeader #topOneMid ul li {
   width: fit-content;
   color: #f4f4f4;
   cursor: pointer;
 }
-#topONE #header #right {
+#D-topOne #topOneHeader #topOneRight {
   display: flex;
   flex-direction: row;
   width: fit-content;
   align-items: center;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #topONE #header #right {
+@media (min-width: 300px) and (max-width: 767px) {
+  #D-topOne #topOneHeader #topOneRight {
     display: none;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #topONE #header #right {
-    display: none;
-  }
-}
-#topONE #header #right #iconsTWO {
+#D-topOne #topOneHeader #topOneRight #topOneIconsTwo {
   display: flex;
   flex-direction: row;
   column-gap: 40px;
 }
-#topONE #header #right #iconsTWO #user {
+#D-topOne #topOneHeader #topOneRight #topOneIconsTwo #user {
   background-image: url("/images/user.svg");
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
-#topONE #header #right #iconsTWO #bag {
+#D-topOne #topOneHeader #topOneRight #topOneIconsTwo #bag {
   background-image: url("/images/bag.svg");
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
-#topONE #header #right #iconsTWO #search {
+#D-topOne #topOneHeader #topOneRight #topOneIconsTwo #search {
   background-image: url("/images/search.svg");
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
-#topONE #title {
+#D-topOne #topOneTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#topONE #title #one {
+#D-topOne #topOneTitle #one {
   font-size: 75px;
   font-weight: 700;
   color: rgb(77, 139, 85);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topONE #title #one {
+  #D-topOne #topOneTitle #one {
     font-size: 53px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #topONE #title #one {
+  #D-topOne #topOneTitle #one {
     font-size: 55px;
   }
 }
-#topONE #title #two {
+#D-topOne #topOneTitle #two {
   width: fit-content;
   text-align: center;
   font-size: 75px;
@@ -393,57 +363,50 @@
   color: #f4f4f4;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topONE #title #two {
+  #D-topOne #topOneTitle #two {
     font-size: 53px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #topONE #title #two {
+  #D-topOne #topOneTitle #two {
     font-size: 55px;
   }
 }
 @media (min-width: 419px) and (max-width: 499px) {
-  #topONE #title #two {
+  #D-topOne #topOneTitle #two {
     width: min-content;
   }
 }
-#topONE #title #three {
+#D-topOne #topOneTitle #three {
   width: 40em;
   font-size: 16px;
   color: rgb(244, 244, 244);
   text-align: justify;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #topONE #title #three {
-    width: 80%;
-    margin-top: 20px;
-    font-size: 13px;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #topONE #title #three {
+@media (min-width: 300px) and (max-width: 767px) {
+  #D-topOne #topOneTitle #three {
     width: 80%;
     margin-top: 20px;
     font-size: 13px;
   }
 }
 @media (min-width: 650px) and (max-width: 767px) {
-  #topONE #title #three {
+  #D-topOne #topOneTitle #three {
     width: 70%;
   }
 }
 @media (min-width: 707px) and (max-width: 767px) {
-  #topONE #title #three {
+  #D-topOne #topOneTitle #three {
     font-size: 14px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #topONE #title #three {
+  #D-topOne #topOneTitle #three {
     text-align: center;
   }
 }
 
-#topTWO {
+#E-topTwo {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -451,38 +414,38 @@
   position: relative;
   align-items: center;
 }
-#topTWO #bgONE {
+#E-topTwo #topTwobgOne {
   background-image: url("../images/leafPATTERNS.png");
   width: 100%;
   height: 295px;
   background-color: rgb(77, 139, 85);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTWO #bgONE {
+  #E-topTwo #topTwobgOne {
     height: 185px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #topTWO #bgONE {
+  #E-topTwo #topTwobgOne {
     height: 200px;
   }
 }
 @media (min-width: 499px) and (max-width: 767px) {
-  #topTWO #bgONE {
+  #E-topTwo #topTwobgOne {
     height: 230px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #topTWO #bgONE {
+  #E-topTwo #topTwobgOne {
     height: 250px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #topTWO #bgONE {
+  #E-topTwo #topTwobgOne {
     height: 265px;
   }
 }
-#topTWO #bgTWO {
+#E-topTwo #topTwobgTwo {
   background-image: url("../images/topBEANS.png");
   position: absolute;
   width: 774px;
@@ -492,37 +455,37 @@
   background-repeat: no-repeat;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTWO #bgTWO {
+  #E-topTwo #topTwobgTwo {
     top: -250px;
     transform: scale(36%);
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #topTWO #bgTWO {
+  #E-topTwo #topTwobgTwo {
     top: -250px;
     transform: scale(40%);
   }
 }
 @media (min-width: 499px) and (max-width: 767px) {
-  #topTWO #bgTWO {
+  #E-topTwo #topTwobgTwo {
     top: -250px;
     transform: scale(48%);
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #topTWO #bgTWO {
+  #E-topTwo #topTwobgTwo {
     top: -250px;
     transform: scale(55%);
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #topTWO #bgTWO {
+  #E-topTwo #topTwobgTwo {
     top: -250px;
     transform: scale(60%);
   }
 }
 
-#topTHREE {
+#F-topThree {
   display: flex;
   flex-direction: row;
   column-gap: 4%;
@@ -531,123 +494,100 @@
   padding: 30px 20px 30px 20px;
   background-color: #ffffff;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE {
+@media (min-width: 300px) and (max-width: 1023px) {
+  #F-topThree {
     flex-direction: column;
     row-gap: 90px;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE {
-    flex-direction: column;
-    row-gap: 90px;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  #topTHREE {
-    flex-direction: column;
-    row-gap: 90px;
-  }
-}
-#topTHREE #left {
+#F-topThree #topThreeLeft {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
   width: 58%;
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  #topTHREE #left {
-    width: 100%;
+  #F-topThree #topThreeLeft {
+    width: inherit;
   }
 }
-#topTHREE #left #texts {
+#F-topThree #topThreeLeft #topThreeTexts {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #topTHREE #left #texts {
+  #F-topThree #topThreeLeft #topThreeTexts {
     align-items: center;
   }
 }
-#topTHREE #left #texts #one {
+#F-topThree #topThreeLeft #topThreeTexts #one {
   font-size: 40px;
   font-weight: 700;
   color: #4d8b55;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE #left #texts #one {
+  #F-topThree #topThreeLeft #topThreeTexts #one {
     font-size: 22px;
     text-align: center;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #left #texts #one {
+  #F-topThree #topThreeLeft #topThreeTexts #one {
     font-size: 32px;
     text-align: center;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #topTHREE #left #texts #one {
+  #F-topThree #topThreeLeft #topThreeTexts #one {
     font-size: 33px;
   }
 }
-#topTHREE #left #texts #two {
+#F-topThree #topThreeLeft #topThreeTexts #two {
   font-size: 40px;
   font-weight: 700;
   color: #000000;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE #left #texts #two {
+  #F-topThree #topThreeLeft #topThreeTexts #two {
     font-size: 22px;
     text-align: center;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #left #texts #two {
+  #F-topThree #topThreeLeft #topThreeTexts #two {
     font-size: 32px;
     text-align: center;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #topTHREE #left #texts #two {
+  #F-topThree #topThreeLeft #topThreeTexts #two {
     font-size: 33px;
   }
 }
-#topTHREE #left #texts #three {
+#F-topThree #topThreeLeft #topThreeTexts #three {
   width: 80%;
   margin-top: 25px;
-  font-size: 18px;
+  font-size: 17px;
   color: #000000;
   text-align: justify;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE #left #texts #three {
+@media (min-width: 300px) and (max-width: 767px) {
+  #F-topThree #topThreeLeft #topThreeTexts #three {
     font-size: 13px;
     align-self: center;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #left #texts #three {
-    font-size: 13px;
-    align-self: center;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  #topTHREE #left #texts #three {
+@media (min-width: 767px) and (max-width: 1439px) {
+  #F-topThree #topThreeLeft #topThreeTexts #three {
     font-size: 13px;
   }
 }
-@media (min-width: 1023px) and (max-width: 1439px) {
-  #topTHREE #left #texts #three {
-    font-size: 13px;
-  }
-}
-@media (min-width: 1529px) and (max-width: 1839px) {
-  #topTHREE #left #texts #three {
+@media (min-width: 1439px) and (max-width: 1839px) {
+  #F-topThree #topThreeLeft #topThreeTexts #three {
     font-size: 14px;
   }
 }
-#topTHREE #left #contact {
+#F-topThree #topThreeLeft #topThreeContacts {
   display: flex;
   flex-direction: row;
   column-gap: 45px;
@@ -655,76 +595,64 @@
   width: fit-content;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE #left #contact {
+  #F-topThree #topThreeLeft #topThreeContacts {
     display: flex;
     flex-direction: column;
     row-gap: 25px;
     align-self: center;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #left #contact {
+@media (min-width: 399px) and (max-width: 1023px) {
+  #F-topThree #topThreeLeft #topThreeContacts {
     display: flex;
     flex-direction: row;
     align-self: center;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  #topTHREE #left #contact {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-  }
-}
-#topTHREE #left #contact p {
+#F-topThree #topThreeLeft #topThreeContacts p {
   font-size: 17px;
   font-weight: 700;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE #left #contact p {
+  #F-topThree #topThreeLeft #topThreeContacts p {
     font-size: 14px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #left #contact p {
+  #F-topThree #topThreeLeft #topThreeContacts p {
     font-size: 15px;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  #topTHREE #left #contact p {
+@media (min-width: 767px) and (max-width: 1439px) {
+  #F-topThree #topThreeLeft #topThreeContacts p {
     font-size: 16px;
   }
 }
-@media (min-width: 1023px) and (max-width: 1439px) {
-  #topTHREE #left #contact p {
-    font-size: 16px;
-  }
-}
-#topTHREE #left #contact #download {
+#F-topThree #topThreeLeft #topThreeContacts #download {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
   align-items: center;
   cursor: pointer;
 }
-#topTHREE #left #contact #download #pic {
+#F-topThree #topThreeLeft #topThreeContacts #download #pic {
   background-image: url("../images/download.svg");
   width: 21px;
   height: 21px;
 }
-#topTHREE #left #contact #call {
+#F-topThree #topThreeLeft #topThreeContacts #call {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
   align-items: center;
   cursor: pointer;
 }
-#topTHREE #left #contact #call #pic {
+#F-topThree #topThreeLeft #topThreeContacts #call #pic {
   background-image: url("../images/call.svg");
   width: 21px;
   height: 21px;
 }
-#topTHREE #left #buttons {
+#F-topThree #topThreeLeft #topThreeButtons {
   display: flex;
   flex-direction: row;
   column-gap: 40px;
@@ -732,18 +660,18 @@
   height: 80%;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE #left #buttons {
+  #F-topThree #topThreeLeft #topThreeButtons {
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #topTHREE #left #buttons {
+  #F-topThree #topThreeLeft #topThreeButtons {
     justify-content: center;
   }
 }
-#topTHREE #left #buttons #read {
+#F-topThree #topThreeLeft #topThreeButtons #read {
   width: 360px;
   height: 60px;
   border: none;
@@ -752,68 +680,84 @@
   font-size: 13px;
   color: #1d1d1d;
 }
-#topTHREE #left #buttons #read:hover {
+#F-topThree #topThreeLeft #topThreeButtons #read:hover {
   cursor: pointer;
   background-color: #6ddf7c;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE #left #buttons #read {
+  #F-topThree #topThreeLeft #topThreeButtons #read {
     width: 100%;
     height: 60px;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #left #buttons #read {
+@media (min-width: 399px) and (max-width: 1023px) {
+  #F-topThree #topThreeLeft #topThreeButtons #read {
     width: 360px;
     height: 60px;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  #topTHREE #left #buttons #read {
-    width: 360px;
-    height: 60px;
-  }
-}
-#topTHREE #left #buttons #shop {
+#F-topThree #topThreeLeft #topThreeButtons #shop {
   width: 360px;
   height: 60px;
   border: none;
   border-radius: 40px;
   background-color: #3c3c3c;
   font-size: 13px;
-  color: rgb(244, 244, 244);
+  color: #f4f4f4;
 }
-#topTHREE #left #buttons #shop:hover {
+#F-topThree #topThreeLeft #topThreeButtons #shop:hover {
   cursor: pointer;
-  background-color: rgb(20, 20, 20);
+  background-color: #141414;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE #left #buttons #shop {
+  #F-topThree #topThreeLeft #topThreeButtons #shop {
     width: 100%;
     height: 60px;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #left #buttons #shop {
+@media (min-width: 399px) and (max-width: 1023px) {
+  #F-topThree #topThreeLeft #topThreeButtons #shop {
     width: 360px;
     height: 60px;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  #topTHREE #left #buttons #shop {
-    width: 360px;
-    height: 60px;
-  }
-}
-#topTHREE #right {
+#F-topThree #topThreeRight {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  column-gap: 5px;
   width: 38%;
   align-items: center;
   position: relative;
   align-self: center;
 }
-#topTHREE #right #pic {
+@media (min-width: 300px) and (max-width: 1023px) {
+  #F-topThree #topThreeRight {
+    flex-direction: column;
+    row-gap: 5px;
+    width: inherit;
+  }
+}
+#F-topThree #topThreeRight #one {
+  width: min-content;
+  align-self: flex-start;
+  color: #000000;
+  font-weight: 700;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0em 0em 5px #969696;
+  text-align: center;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  #F-topThree #topThreeRight #one {
+    align-self: center;
+  }
+}
+#F-topThree #topThreeRight #one span {
+  color: #4d8b55;
+  font-weight: 700;
+  text-align: start;
+}
+#F-topThree #topThreeRight #pic {
   background-image: url("../images/pouringBEANS.jpg");
   width: 350px;
   height: 350px;
@@ -822,199 +766,109 @@
   align-self: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #topTHREE #right #pic {
-    width: 16em;
-    height: 16em;
+  #F-topThree #topThreeRight #pic {
+    width: 280px;
+    height: 280px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #topTHREE #right #pic {
-    width: 18em;
-    height: 18em;
+  #F-topThree #topThreeRight #pic {
+    width: 300px;
+    height: 300px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #topTHREE #right #pic {
-    width: 20em;
-    height: 20em;
+  #F-topThree #topThreeRight #pic {
+    width: 380px;
+    height: 380px;
   }
 }
-@media (min-width: 1023px) and (max-width: 1439px) {
-  #topTHREE #right #pic {
-    width: 23em;
-    height: 23em;
+@media (min-width: 1023px) and (max-width: 1199px) {
+  #F-topThree #topThreeRight #pic {
+    height: 280px;
   }
-}
-#topTHREE #right #pic #one {
-  position: absolute;
-  top: 0;
-  left: -3em;
-  width: min-content;
-  color: black;
-  font-weight: 700;
-  padding: 30px;
-  border-radius: 50%;
-  box-shadow: 0em 0em 0.5em #969696;
-  text-align: center;
-}
-@media (min-width: 310px) and (max-width: 1022.99px) {
-  #topTHREE #right #pic #one {
-    left: -1em;
-  }
-}
-@media (min-width: 310px) and (max-width: 766.99px) {
-  #topTHREE #right #pic #one {
-    top: 6em;
-  }
-}
-@media (min-width: 310px) and (max-width: 767px) {
-  #topTHREE #right #pic #one {
-    padding: 25px;
-  }
-}
-#topTHREE #right #pic #one span {
-  color: rgb(77, 139, 85);
-  font-weight: 700;
-  text-align: start;
 }
 
-#midONE {
+#G-midOne {
   display: flex;
   flex-direction: column;
-  width: inherit;
-  position: relative;
+  row-gap: 60px;
+  width: 100%;
+  height: fit-content;
+  padding: 60px 20px 60px 20px;
   background-image: url("../images/paperBG.jpg");
-  width: inherit;
-  height: auto;
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  #midONE {
-    flex-direction: column;
-  }
-}
-#midONE #one {
-  width: min(100% - 4em, 50em);
-  height: 17em;
-  margin-top: 5.5em;
+#G-midOne #midOneTitle {
+  width: 85%;
   font-size: 17px;
   font-weight: 700;
-  background-image: url("../images/leafsANDBEANS.png");
-  background-repeat: no-repeat;
   align-self: center;
   text-align: justify;
-  line-height: 2em;
+  line-height: 45px;
   background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/leafsANDBEANS.png");
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #one {
-    height: 22em;
+  #G-midOne #midOneTitle {
     font-size: 14px;
   }
 }
-#midONE #allinone {
+#G-midOne #midOneWheelsHolder {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: -6em;
-  margin-bottom: 4em;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone {
-    margin-top: -10em;
+@media (min-width: 300px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder {
     flex-direction: column;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone {
-    margin-top: -8em;
-    flex-direction: column;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  #midONE #allinone {
-    margin-top: -8em;
-    flex-direction: row;
-  }
-}
-@media (min-width: 399px) and (max-width: 410px) {
-  #midONE #allinone {
-    margin-top: -8em;
-  }
-}
-#midONE #allinone #FIRST {
-  display: flex;
-  flex-direction: row;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #FIRST {
-    flex-direction: column;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #FIRST {
-    flex-direction: column;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  #midONE #allinone #FIRST {
-    flex-direction: column;
-  }
-}
-#midONE #allinone #FIRST #wheelONE {
+#G-midOne #midOneWheelsHolder #midOneWheelOne {
   display: flex;
   flex-direction: column;
-  margin: 4em 0 4em 0;
-  position: relative;
+  height: fit-content;
   align-items: center;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #FIRST #wheelONE {
-    margin-top: 6em;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #FIRST #wheelONE {
-    margin-top: 6em;
-  }
-}
-#midONE #allinone #FIRST #wheelONE #pic {
+#G-midOne #midOneWheelsHolder #midOneWheelOne #pic {
   display: flex;
   flex-direction: row;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #FIRST #wheelONE #pic {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #pic {
     transform: scale(80%);
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #FIRST #wheelONE #pic {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #pic {
     transform: scale(85%);
   }
 }
-#midONE #allinone #FIRST #wheelONE #pic:hover {
+#G-midOne #midOneWheelsHolder #midOneWheelOne #pic:hover {
   cursor: pointer;
 }
-#midONE #allinone #FIRST #wheelONE #pic:hover #AG {
+#G-midOne #midOneWheelsHolder #midOneWheelOne #pic:hover #bgOne {
   filter: brightness(70%);
   transform: rotateZ(20deg);
 }
-@media (min-width: 310px) and (max-width: 767px) {
-  #midONE #allinone #FIRST #wheelONE #pic:hover #AG {
+@media (min-width: 300px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #pic:hover #bgOne {
     filter: brightness(100%);
     transform: none;
     cursor: default;
   }
 }
-#midONE #allinone #FIRST #wheelONE #pic:hover #two {
+#G-midOne #midOneWheelsHolder #midOneWheelOne #pic:hover #two {
   padding: 22px 27px;
 }
-@media (min-width: 310px) and (max-width: 767px) {
-  #midONE #allinone #FIRST #wheelONE #pic:hover #two {
-    padding: 25px 30px;
+@media (min-width: 300px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #pic:hover #two {
+    padding: unset;
     cursor: default;
   }
 }
-#midONE #allinone #FIRST #wheelONE #pic #AG {
+#G-midOne #midOneWheelsHolder #midOneWheelOne #pic #bgOne {
   background-image: url("../images/coffeeONE.jpg");
   width: 17em;
   height: 17em;
@@ -1023,12 +877,12 @@
   background-position: 12% 12%;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #midONE #allinone #FIRST #wheelONE #pic #AG {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #pic #bgOne {
     width: 14em;
     height: 14em;
   }
 }
-#midONE #allinone #FIRST #wheelONE #pic #two {
+#G-midOne #midOneWheelsHolder #midOneWheelOne #pic #two {
   position: absolute;
   padding: 25px 30px;
   background-color: rgb(77, 139, 85);
@@ -1038,29 +892,29 @@
   font-weight: 700;
   transition: all 0.5s ease;
 }
-#midONE #allinone #FIRST #wheelONE #three {
+#G-midOne #midOneWheelsHolder #midOneWheelOne #three {
   margin-top: 1em;
   color: rgb(0, 0, 0);
   font-size: 25px;
   font-weight: 700;
 }
-#midONE #allinone #FIRST #wheelONE #four {
+#G-midOne #midOneWheelsHolder #midOneWheelOne #four {
   width: min(100% - 0em, 20em);
   margin-top: 1.5em;
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #FIRST #wheelONE #four {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #four {
     font-size: 13px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #midONE #allinone #FIRST #wheelONE #four {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #four {
     font-size: 13px;
     width: min(100% - 0em, 17em);
   }
 }
-#midONE #allinone #FIRST #wheelTWO {
+#G-midOne #midOneWheelsHolder #midOneWheelTwo {
   display: flex;
   flex-direction: column;
   margin: 4em 0 4em 0;
@@ -1068,53 +922,53 @@
   align-items: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #FIRST #wheelTWO {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo {
     margin-top: 3em;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #FIRST #wheelTWO {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo {
     margin-top: 3em;
   }
 }
-#midONE #allinone #FIRST #wheelTWO #pic {
+#G-midOne #midOneWheelsHolder #midOneWheelTwo #pic {
   display: flex;
   flex-direction: row;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #FIRST #wheelTWO #pic {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic {
     transform: scale(80%);
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #FIRST #wheelTWO #pic {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic {
     transform: scale(85%);
   }
 }
-#midONE #allinone #FIRST #wheelTWO #pic:hover {
+#G-midOne #midOneWheelsHolder #midOneWheelTwo #pic:hover {
   cursor: pointer;
 }
-#midONE #allinone #FIRST #wheelTWO #pic:hover #AG {
+#G-midOne #midOneWheelsHolder #midOneWheelTwo #pic:hover #bgTwo {
   filter: brightness(70%);
   transform: rotateZ(20deg);
 }
 @media (min-width: 310px) and (max-width: 767px) {
-  #midONE #allinone #FIRST #wheelTWO #pic:hover #AG {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic:hover #bgTwo {
     filter: brightness(100%);
     transform: none;
     cursor: default;
   }
 }
-#midONE #allinone #FIRST #wheelTWO #pic:hover #two {
+#G-midOne #midOneWheelsHolder #midOneWheelTwo #pic:hover #two {
   padding: 22px 27px;
 }
 @media (min-width: 310px) and (max-width: 767px) {
-  #midONE #allinone #FIRST #wheelTWO #pic:hover #two {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic:hover #two {
     padding: 25px 30px;
     cursor: default;
   }
 }
-#midONE #allinone #FIRST #wheelTWO #pic #AG {
+#G-midOne #midOneWheelsHolder #midOneWheelTwo #pic #bgTwo {
   background-image: url("../images/coffeeTWO.jpg");
   width: 17em;
   height: 17em;
@@ -1122,12 +976,12 @@
   transition: all 0.5s ease;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #midONE #allinone #FIRST #wheelTWO #pic #AG {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic #bgTwo {
     width: 14em;
     height: 14em;
   }
 }
-#midONE #allinone #FIRST #wheelTWO #pic #two {
+#G-midOne #midOneWheelsHolder #midOneWheelTwo #pic #two {
   position: absolute;
   padding: 25px 30px;
   background-color: rgb(77, 139, 85);
@@ -1137,48 +991,29 @@
   font-weight: 700;
   transition: all 0.5s ease;
 }
-#midONE #allinone #FIRST #wheelTWO #three {
+#G-midOne #midOneWheelsHolder #midOneWheelTwo #three {
   margin-top: 1em;
   color: rgb(0, 0, 0);
   font-size: 25px;
   font-weight: 700;
 }
-#midONE #allinone #FIRST #wheelTWO #four {
+#G-midOne #midOneWheelsHolder #midOneWheelTwo #four {
   width: min(100% - 0em, 20em);
   margin-top: 1.5em;
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #FIRST #wheelTWO #four {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #four {
     font-size: 13px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #midONE #allinone #FIRST #wheelTWO #four {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #four {
     font-size: 13px;
     width: min(100% - 0em, 17em);
   }
 }
-#midONE #allinone #SECOND {
-  display: flex;
-  flex-direction: row;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #SECOND {
-    flex-direction: column;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #SECOND {
-    flex-direction: column;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  #midONE #allinone #SECOND {
-    flex-direction: column;
-  }
-}
-#midONE #allinone #SECOND #wheelTHREE {
+#G-midOne #midOneWheelsHolder #midOneWheelThree {
   display: flex;
   flex-direction: column;
   margin: 4em 0 4em 0;
@@ -1186,53 +1021,53 @@
   align-items: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #SECOND #wheelTHREE {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree {
     margin-top: 3em;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #SECOND #wheelTHREE {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree {
     margin-top: 3em;
   }
 }
-#midONE #allinone #SECOND #wheelTHREE #pic {
+#G-midOne #midOneWheelsHolder #midOneWheelThree #pic {
   display: flex;
   flex-direction: row;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #SECOND #wheelTHREE #pic {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #pic {
     transform: scale(80%);
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #SECOND #wheelTHREE #pic {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #pic {
     transform: scale(85%);
   }
 }
-#midONE #allinone #SECOND #wheelTHREE #pic:hover {
+#G-midOne #midOneWheelsHolder #midOneWheelThree #pic:hover {
   cursor: pointer;
 }
-#midONE #allinone #SECOND #wheelTHREE #pic:hover #AG {
+#G-midOne #midOneWheelsHolder #midOneWheelThree #pic:hover #bgThree {
   filter: brightness(70%);
   transform: rotateZ(20deg);
 }
 @media (min-width: 310px) and (max-width: 767px) {
-  #midONE #allinone #SECOND #wheelTHREE #pic:hover #AG {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #pic:hover #bgThree {
     filter: brightness(100%);
     transform: none;
     cursor: default;
   }
 }
-#midONE #allinone #SECOND #wheelTHREE #pic:hover #two {
+#G-midOne #midOneWheelsHolder #midOneWheelThree #pic:hover #two {
   padding: 22px 27px;
 }
 @media (min-width: 310px) and (max-width: 767px) {
-  #midONE #allinone #SECOND #wheelTHREE #pic:hover #two {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #pic:hover #two {
     padding: 25px 30px;
     cursor: default;
   }
 }
-#midONE #allinone #SECOND #wheelTHREE #pic #AG {
+#G-midOne #midOneWheelsHolder #midOneWheelThree #pic #bgThree {
   background-image: url("../images/coffeeTHREE.jpg");
   width: 17em;
   height: 17em;
@@ -1240,12 +1075,12 @@
   transition: all 0.5s ease;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #midONE #allinone #SECOND #wheelTHREE #pic #AG {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #pic #bgThree {
     width: 14em;
     height: 14em;
   }
 }
-#midONE #allinone #SECOND #wheelTHREE #pic #two {
+#G-midOne #midOneWheelsHolder #midOneWheelThree #pic #two {
   position: absolute;
   padding: 25px 30px;
   background-color: rgb(77, 139, 85);
@@ -1255,29 +1090,29 @@
   font-weight: 700;
   transition: all 0.5s ease;
 }
-#midONE #allinone #SECOND #wheelTHREE #three {
+#G-midOne #midOneWheelsHolder #midOneWheelThree #three {
   margin-top: 1em;
   color: rgb(0, 0, 0);
   font-size: 25px;
   font-weight: 700;
 }
-#midONE #allinone #SECOND #wheelTHREE #four {
+#G-midOne #midOneWheelsHolder #midOneWheelThree #four {
   width: min(100% - 0em, 20em);
   margin-top: 1.5em;
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #SECOND #wheelTHREE #four {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #four {
     font-size: 13px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #midONE #allinone #SECOND #wheelTHREE #four {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #four {
     font-size: 13px;
     width: min(100% - 0em, 17em);
   }
 }
-#midONE #allinone #SECOND #wheelFOUR {
+#G-midOne #midOneWheelsHolder #midOneWheelFour {
   display: flex;
   flex-direction: column;
   margin: 4em 0 4em 0;
@@ -1285,53 +1120,53 @@
   align-items: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #SECOND #wheelFOUR {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour {
     margin-top: 3em;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #SECOND #wheelFOUR {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour {
     margin-top: 3em;
   }
 }
-#midONE #allinone #SECOND #wheelFOUR #pic {
+#G-midOne #midOneWheelsHolder #midOneWheelFour #pic {
   display: flex;
   flex-direction: row;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #SECOND #wheelFOUR #pic {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #pic {
     transform: scale(80%);
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midONE #allinone #SECOND #wheelFOUR #pic {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #pic {
     transform: scale(85%);
   }
 }
-#midONE #allinone #SECOND #wheelFOUR #pic:hover {
+#G-midOne #midOneWheelsHolder #midOneWheelFour #pic:hover {
   cursor: pointer;
 }
-#midONE #allinone #SECOND #wheelFOUR #pic:hover #AG {
+#G-midOne #midOneWheelsHolder #midOneWheelFour #pic:hover #bgFour {
   filter: brightness(70%);
   transform: rotateZ(20deg);
 }
 @media (min-width: 310px) and (max-width: 767px) {
-  #midONE #allinone #SECOND #wheelFOUR #pic:hover #AG {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #pic:hover #bgFour {
     filter: brightness(100%);
     transform: none;
     cursor: default;
   }
 }
-#midONE #allinone #SECOND #wheelFOUR #pic:hover #two {
+#G-midOne #midOneWheelsHolder #midOneWheelFour #pic:hover #two {
   padding: 22px 27px;
 }
 @media (min-width: 310px) and (max-width: 767px) {
-  #midONE #allinone #SECOND #wheelFOUR #pic:hover #two {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #pic:hover #two {
     padding: 25px 30px;
     cursor: default;
   }
 }
-#midONE #allinone #SECOND #wheelFOUR #pic #AG {
+#G-midOne #midOneWheelsHolder #midOneWheelFour #pic #bgFour {
   background-image: url("../images/coffeeFOUR.jpg");
   width: 17em;
   height: 17em;
@@ -1339,12 +1174,12 @@
   transition: all 0.5s ease;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #midONE #allinone #SECOND #wheelFOUR #pic #AG {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #pic #bgFour {
     width: 14em;
     height: 14em;
   }
 }
-#midONE #allinone #SECOND #wheelFOUR #pic #two {
+#G-midOne #midOneWheelsHolder #midOneWheelFour #pic #two {
   position: absolute;
   padding: 25px 30px;
   background-color: rgb(77, 139, 85);
@@ -1354,24 +1189,24 @@
   font-weight: 700;
   transition: all 0.5s ease;
 }
-#midONE #allinone #SECOND #wheelFOUR #three {
+#G-midOne #midOneWheelsHolder #midOneWheelFour #three {
   margin-top: 1em;
   color: rgb(0, 0, 0);
   font-size: 25px;
   font-weight: 700;
 }
-#midONE #allinone #SECOND #wheelFOUR #four {
+#G-midOne #midOneWheelsHolder #midOneWheelFour #four {
   width: min(100% - 0em, 20em);
   margin-top: 1.5em;
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midONE #allinone #SECOND #wheelFOUR #four {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #four {
     font-size: 13px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
-  #midONE #allinone #SECOND #wheelFOUR #four {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #four {
     font-size: 13px;
     width: min(100% - 0em, 17em);
   }

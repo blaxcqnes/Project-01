@@ -1,4 +1,4 @@
-#topTHREE {
+#F-topThree {
   display: flex;
   flex-direction: row;
   column-gap: 4%;
@@ -7,32 +7,22 @@
   padding: 30px 20px 30px 20px;
   background-color: #ffffff;
 
-  @include breakPoints(small) {
+  @media (min-width: 300px) and (max-width: 1023px) {
     flex-direction: column;
     row-gap: 90px;
   }
 
-  @include breakPoints(mobile) {
-    flex-direction: column;
-    row-gap: 90px;
-  }
-
-  @include breakPoints(tablet) {
-    flex-direction: column;
-    row-gap: 90px;
-  }
-
-  #left {
+  #topThreeLeft {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
     width: 58%;
 
     @media (min-width: 300px) and (max-width: 1023px) {
-      width: 100%;
+      width: inherit;
     }
 
-    #texts {
+    #topThreeTexts {
       display: flex;
       flex-direction: column;
 
@@ -83,35 +73,26 @@
       #three {
         width: 80%;
         margin-top: 25px;
-        font-size: 18px;
+        font-size: 17px;
         color: #000000;
         text-align: justify;
 
-        @include breakPoints(small) {
+        @media (min-width: 300px) and (max-width: 767px) {
           font-size: 13px;
           align-self: center;
         }
 
-        @include breakPoints(mobile) {
-          font-size: 13px;
-          align-self: center;
-        }
-
-        @include breakPoints(tablet) {
+        @media (min-width: 767px) and (max-width: 1439px) {
           font-size: 13px;
         }
 
-        @include breakPoints(laptop) {
-          font-size: 13px;
-        }
-
-        @include breakPoints(large) {
+        @media (min-width: 1439px) and (max-width: 1839px) {
           font-size: 14px;
         }
       }
     }
 
-    #contact {
+    #topThreeContacts {
       display: flex;
       flex-direction: row;
       column-gap: 45px;
@@ -125,13 +106,7 @@
         align-self: center;
       }
 
-      @include breakPoints(mobile) {
-        display: flex;
-        flex-direction: row;
-        align-self: center;
-      }
-
-      @include breakPoints(tablet) {
+      @media (min-width: 399px) and (max-width: 1023px) {
         display: flex;
         flex-direction: row;
         align-self: center;
@@ -149,11 +124,7 @@
           font-size: 15px;
         }
 
-        @include breakPoints(tablet) {
-          font-size: 16px;
-        }
-
-        @include breakPoints(laptop) {
+        @media (min-width: 767px) and (max-width: 1439px) {
           font-size: 16px;
         }
       }
@@ -187,7 +158,7 @@
       }
     }
 
-    #buttons {
+    #topThreeButtons {
       display: flex;
       flex-direction: row;
       column-gap: 40px;
@@ -223,12 +194,7 @@
           height: 60px;
         }
 
-        @include breakPoints(mobile) {
-          width: 360px;
-          height: 60px;
-        }
-
-        @include breakPoints(tablet) {
+        @media (min-width: 399px) and (max-width: 1023px) {
           width: 360px;
           height: 60px;
         }
@@ -241,11 +207,11 @@
         border-radius: 40px;
         background-color: #3c3c3c;
         font-size: 13px;
-        color: rgb(244, 244, 244);
+        color: #f4f4f4;
 
         &:hover {
           cursor: pointer;
-          background-color: rgb(20, 20, 20);
+          background-color: #141414;
         }
 
         @include breakPoints(small) {
@@ -253,12 +219,7 @@
           height: 60px;
         }
 
-        @include breakPoints(mobile) {
-          width: 360px;
-          height: 60px;
-        }
-
-        @include breakPoints(tablet) {
+        @media (min-width: 399px) and (max-width: 1023px) {
           width: 360px;
           height: 60px;
         }
@@ -266,13 +227,41 @@
     }
   }
 
-  #right {
+  #topThreeRight {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    column-gap: 5px;
     width: 38%;
     align-items: center;
     position: relative;
     align-self: center;
+
+    @media (min-width: 300px) and (max-width: 1023px) {
+      flex-direction: column;
+      row-gap: 5px;
+      width: inherit;
+    }
+
+    #one {
+      width: min-content;
+      align-self: flex-start;
+      color: #000000;
+      font-weight: 700;
+      padding: 30px;
+      border-radius: 50%;
+      box-shadow: 0em 0em 5px #969696;
+      text-align: center;
+
+      @media (min-width: 300px) and (max-width: 1023px) {
+        align-self: center;
+      }
+
+      span {
+        color: #4d8b55;
+        font-weight: 700;
+        text-align: start;
+      }
+    }
 
     #pic {
       background-image: url('../images/pouringBEANS.jpg');
@@ -283,54 +272,22 @@
       align-self: center;
 
       @include breakPoints(small) {
-        width: 16em;
-        height: 16em;
+        width: 280px;
+        height: 280px;
       }
 
       @include breakPoints(mobile) {
-        width: 18em;
-        height: 18em;
+        width: 300px;
+        height: 300px;
       }
 
       @include breakPoints(tablet) {
-        width: 20em;
-        height: 20em;
+        width: 380px;
+        height: 380px;
       }
 
-      @include breakPoints(laptop) {
-        width: 23em;
-        height: 23em;
-      }
-
-      #one {
-        position: absolute;
-        top: 0;
-        left: -3em;
-        width: min-content;
-        color: black;
-        font-weight: 700;
-        padding: 30px;
-        border-radius: 50%;
-        box-shadow: 0em 0em 0.5em #969696;
-        text-align: center;
-
-        @media (min-width: 310px) and (max-width: 1022.99px) {
-          left: -1em;
-        }
-
-        @media (min-width: 310px) and (max-width: 766.99px) {
-          top: 6em;
-        }
-
-        @media (min-width: 310px) and (max-width: 767px) {
-          padding: 25px;
-        }
-
-        span {
-          color: rgb(77, 139, 85);
-          font-weight: 700;
-          text-align: start;
-        }
+      @media (min-width: 1023px) and (max-width: 1199px) {
+        height: 280px;
       }
     }
   }

@@ -1,4 +1,4 @@
-#topONE {
+#D-topOne {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -6,11 +6,7 @@
   width: 100%;
   height: 800px;
 
-  @include breakPoints(small) {
-    height: 650px;
-  }
-
-  @include breakPoints(mobile) {
+  @media (min-width: 300px) and (max-width: 767px) {
     height: 650px;
   }
 
@@ -26,7 +22,7 @@
     height: 780px;
   }
 
-  #bgONE {
+  #topOneBgOne {
     position: absolute;
     background-image: url('../images/topCOFFE.jpg');
     width: inherit;
@@ -36,21 +32,17 @@
     z-index: -1;
   }
 
-  #header {
+  #topOneHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 35px;
 
-    @include breakPoints(small) {
+    @media (min-width: 300px) and (max-width: 767px) {
       margin-top: 0;
     }
 
-    @include breakPoints(mobile) {
-      margin-top: 0;
-    }
-
-    #left {
+    #topOneLeft {
       display: flex;
       flex-direction: row;
       column-gap: 10px;
@@ -70,12 +62,12 @@
         font-size: 14px;
       }
 
-      #iconsONE {
+      #topOneIconsOne {
         display: flex;
         flex-direction: row;
         column-gap: 20px;
 
-        #insta {
+        #instagram {
           background-image: url('/images/instagram.svg');
           width: 22px;
           height: 22px;
@@ -105,18 +97,14 @@
       }
     }
 
-    #mid {
+    #topOneMid {
       display: flex;
       flex-direction: column;
       row-gap: 25px;
       width: fit-content;
       align-items: center;
 
-      @include breakPoints(small) {
-        margin-top: 20px;
-      }
-
-      @include breakPoints(mobile) {
+      @media (min-width: 300px) and (max-width: 767px) {
         margin-top: 20px;
       }
 
@@ -135,19 +123,11 @@
         text-transform: capitalize;
         font-size: 17px;
 
-        @include breakPoints(small) {
+        @media (min-width: 300px) and (max-width: 1023px) {
           display: none;
         }
 
-        @include breakPoints(mobile) {
-          display: none;
-        }
-
-        @include breakPoints(tablet) {
-          display: none;
-        }
-
-        #homeONE {
+        #hoome {
           width: fit-content;
           color: #7bff8d;
           cursor: pointer;
@@ -161,21 +141,17 @@
       }
     }
 
-    #right {
+    #topOneRight {
       display: flex;
       flex-direction: row;
       width: fit-content;
       align-items: center;
 
-      @include breakPoints(small) {
+      @media (min-width: 300px) and (max-width: 767px) {
         display: none;
       }
 
-      @include breakPoints(mobile) {
-        display: none;
-      }
-
-      #iconsTWO {
+      #topOneIconsTwo {
         display: flex;
         flex-direction: row;
         column-gap: 40px;
@@ -204,7 +180,7 @@
     }
   }
 
-  #title {
+  #topOneTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,13 +225,7 @@
       color: rgb(244, 244, 244);
       text-align: justify;
 
-      @include breakPoints(small) {
-        width: 80%;
-        margin-top: 20px;
-        font-size: 13px;
-      }
-
-      @include breakPoints(mobile) {
+      @media (min-width: 300px) and (max-width: 767px) {
         width: 80%;
         margin-top: 20px;
         font-size: 13px;

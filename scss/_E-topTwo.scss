@@ -1,4 +1,4 @@
-#topTWO {
+#E-topTwo {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -6,7 +6,7 @@
   position: relative;
   align-items: center;
 
-  #bgONE {
+  #topTwobgOne {
     background-image: url('../images/leafPATTERNS.png');
     width: 100%;
     height: 295px;
@@ -33,7 +33,7 @@
     }
   }
 
-  #bgTWO {
+  #topTwobgTwo {
     background-image: url('../images/topBEANS.png');
     position: absolute;
     width: 774px;

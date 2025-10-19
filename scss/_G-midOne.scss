@@ -1,0 +1,424 @@
+#G-midOne {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  width: 100%;
+  height: fit-content;
+  padding: 60px 20px 60px 20px;
+  background-image: url('../images/paperBG.jpg');
+
+  #midOneTitle {
+    width: 85%;
+    font-size: 17px;
+    font-weight: 700;
+    align-self: center;
+    text-align: justify;
+    line-height: 45px;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/leafsANDBEANS.png');
+
+    @include breakPoints(small) {
+      font-size: 14px;
+    }
+  }
+
+  #midOneWheelsHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media (min-width: 300px) and (max-width: 1023px) {
+      flex-direction: column;
+    }
+
+    #midOneWheelOne {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      align-items: center;
+
+      #pic {
+        display: flex;
+        flex-direction: row;
+
+        @include breakPoints(small) {
+          transform: scale(80%);
+        }
+
+        @include breakPoints(mobile) {
+          transform: scale(85%);
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          #bgOne {
+            filter: brightness(70%);
+            transform: rotateZ(20deg);
+
+            @media (min-width: 300px) and (max-width: 1023px) {
+              filter: brightness(100%);
+              transform: none;
+              cursor: default;
+            }
+          }
+
+          #two {
+            padding: 22px 27px;
+
+            @media (min-width: 300px) and (max-width: 1023px) {
+              padding: unset;
+              cursor: default;
+            }
+          }
+        }
+
+        #bgOne {
+          background-image: url('../images/coffeeONE.jpg');
+          width: 17em;
+          height: 17em;
+          border-radius: 50%;
+          transition: all 0.5s ease;
+          background-position: 12% 12%;
+
+          @include breakPoints(laptop) {
+            width: 14em;
+            height: 14em;
+          }
+        }
+
+        #two {
+          position: absolute;
+          padding: 25px 30px;
+          background-color: rgb(77, 139, 85);
+          border-radius: 50%;
+          color: rgb(244, 244, 244);
+          font-size: 20px;
+          font-weight: 700;
+          transition: all 0.5s ease;
+        }
+      }
+
+      #three {
+        margin-top: 1em;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: 700;
+      }
+
+      #four {
+        width: min(100% - 0em, 20em);
+        margin-top: 1.5em;
+        text-align: center;
+
+        @include breakPoints(small) {
+          font-size: 13px;
+        }
+
+        @include breakPoints(laptop) {
+          font-size: 13px;
+          width: min(100% - 0em, 17em);
+        }
+      }
+    }
+
+    #midOneWheelTwo {
+      display: flex;
+      flex-direction: column;
+      margin: 4em 0 4em 0;
+      position: relative;
+      align-items: center;
+
+      @include breakPoints(small) {
+        margin-top: 3em;
+      }
+
+      @include breakPoints(mobile) {
+        margin-top: 3em;
+      }
+
+      #pic {
+        display: flex;
+        flex-direction: row;
+
+        @include breakPoints(small) {
+          transform: scale(80%);
+        }
+
+        @include breakPoints(mobile) {
+          transform: scale(85%);
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          #bgTwo {
+            filter: brightness(70%);
+            transform: rotateZ(20deg);
+
+            @media (min-width: 310px) and (max-width: 767px) {
+              filter: brightness(100%);
+              transform: none;
+              cursor: default;
+            }
+          }
+
+          #two {
+            padding: 22px 27px;
+
+            @media (min-width: 310px) and (max-width: 767px) {
+              padding: 25px 30px;
+              cursor: default;
+            }
+          }
+        }
+
+        #bgTwo {
+          background-image: url('../images/coffeeTWO.jpg');
+          width: 17em;
+          height: 17em;
+          border-radius: 50%;
+          transition: all 0.5s ease;
+
+          @include breakPoints(laptop) {
+            width: 14em;
+            height: 14em;
+          }
+        }
+
+        #two {
+          position: absolute;
+          padding: 25px 30px;
+          background-color: rgb(77, 139, 85);
+          border-radius: 50%;
+          color: rgb(244, 244, 244);
+          font-size: 20px;
+          font-weight: 700;
+          transition: all 0.5s ease;
+        }
+      }
+
+      #three {
+        margin-top: 1em;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: 700;
+      }
+
+      #four {
+        width: min(100% - 0em, 20em);
+        margin-top: 1.5em;
+        text-align: center;
+
+        @include breakPoints(small) {
+          font-size: 13px;
+        }
+
+        @include breakPoints(laptop) {
+          font-size: 13px;
+          width: min(100% - 0em, 17em);
+        }
+      }
+    }
+
+    #midOneWheelThree {
+      display: flex;
+      flex-direction: column;
+      margin: 4em 0 4em 0;
+      position: relative;
+      align-items: center;
+
+      @include breakPoints(small) {
+        margin-top: 3em;
+      }
+
+      @include breakPoints(mobile) {
+        margin-top: 3em;
+      }
+
+      #pic {
+        display: flex;
+        flex-direction: row;
+
+        @include breakPoints(small) {
+          transform: scale(80%);
+        }
+
+        @include breakPoints(mobile) {
+          transform: scale(85%);
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          #bgThree {
+            filter: brightness(70%);
+            transform: rotateZ(20deg);
+
+            @media (min-width: 310px) and (max-width: 767px) {
+              filter: brightness(100%);
+              transform: none;
+              cursor: default;
+            }
+          }
+
+          #two {
+            padding: 22px 27px;
+
+            @media (min-width: 310px) and (max-width: 767px) {
+              padding: 25px 30px;
+              cursor: default;
+            }
+          }
+        }
+
+        #bgThree {
+          background-image: url('../images/coffeeTHREE.jpg');
+          width: 17em;
+          height: 17em;
+          border-radius: 50%;
+          transition: all 0.5s ease;
+
+          @include breakPoints(laptop) {
+            width: 14em;
+            height: 14em;
+          }
+        }
+
+        #two {
+          position: absolute;
+          padding: 25px 30px;
+          background-color: rgb(77, 139, 85);
+          border-radius: 50%;
+          color: rgb(244, 244, 244);
+          font-size: 20px;
+          font-weight: 700;
+          transition: all 0.5s ease;
+        }
+      }
+
+      #three {
+        margin-top: 1em;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: 700;
+      }
+
+      #four {
+        width: min(100% - 0em, 20em);
+        margin-top: 1.5em;
+        text-align: center;
+
+        @include breakPoints(small) {
+          font-size: 13px;
+        }
+
+        @include breakPoints(laptop) {
+          font-size: 13px;
+          width: min(100% - 0em, 17em);
+        }
+      }
+    }
+
+    #midOneWheelFour {
+      display: flex;
+      flex-direction: column;
+      margin: 4em 0 4em 0;
+      position: relative;
+      align-items: center;
+
+      @include breakPoints(small) {
+        margin-top: 3em;
+      }
+
+      @include breakPoints(mobile) {
+        margin-top: 3em;
+      }
+
+      #pic {
+        display: flex;
+        flex-direction: row;
+
+        @include breakPoints(small) {
+          transform: scale(80%);
+        }
+
+        @include breakPoints(mobile) {
+          transform: scale(85%);
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          #bgFour {
+            filter: brightness(70%);
+            transform: rotateZ(20deg);
+
+            @media (min-width: 310px) and (max-width: 767px) {
+              filter: brightness(100%);
+              transform: none;
+              cursor: default;
+            }
+          }
+
+          #two {
+            padding: 22px 27px;
+
+            @media (min-width: 310px) and (max-width: 767px) {
+              padding: 25px 30px;
+              cursor: default;
+            }
+          }
+        }
+
+        #bgFour {
+          background-image: url('../images/coffeeFOUR.jpg');
+          width: 17em;
+          height: 17em;
+          border-radius: 50%;
+          transition: all 0.5s ease;
+
+          @include breakPoints(laptop) {
+            width: 14em;
+            height: 14em;
+          }
+        }
+
+        #two {
+          position: absolute;
+          padding: 25px 30px;
+          background-color: rgb(77, 139, 85);
+          border-radius: 50%;
+          color: rgb(244, 244, 244);
+          font-size: 20px;
+          font-weight: 700;
+          transition: all 0.5s ease;
+        }
+      }
+
+      #three {
+        margin-top: 1em;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: 700;
+      }
+
+      #four {
+        width: min(100% - 0em, 20em);
+        margin-top: 1.5em;
+        text-align: center;
+
+        @include breakPoints(small) {
+          font-size: 13px;
+        }
+
+        @include breakPoints(laptop) {
+          font-size: 13px;
+          width: min(100% - 0em, 17em);
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-#navMob {
+#C-navMob {
   display: flex;
   flex-direction: column;
   row-gap: 0;
@@ -11,7 +11,7 @@
     display: none;
   }
 
-  #burger {
+  #navMobBurger {
     width: 45px;
     height: 40px;
     position: fixed;
@@ -29,7 +29,7 @@
     cursor: pointer;
   }
 
-  #menu {
+  #navMobMenu {
     width: 0;
     height: 0;
     position: fixed;
@@ -40,7 +40,7 @@
     z-index: 1;
     transition: all 0.2s ease-in-out;
 
-    #navContent {
+    #navMobContent {
       display: flex;
       flex-direction: column;
       row-gap: 40px;
@@ -48,11 +48,11 @@
       opacity: 0;
       background-color: #4d8b55;
 
-      #account {
+      #navMobAccount {
         margin-top: 20px;
         align-self: center;
 
-        #iconsTWO {
+        #navMobIcons {
           display: flex;
           flex-direction: row;
           column-gap: 40px;
@@ -91,7 +91,7 @@
         font-weight: 700;
         font-size: 17px;
 
-        #homeONE {
+        #home {
           width: fit-content;
           color: #7bff8d;
           cursor: pointer;
@@ -104,7 +104,7 @@
         }
       }
 
-      #follow {
+      #navMobFollowUsOn {
         display: flex;
         flex-direction: column;
         width: fit-content;
@@ -115,13 +115,13 @@
           font-size: 14px;
         }
 
-        #iconsONE {
+        #icons {
           display: flex;
           flex-direction: row;
           column-gap: 25px;
           margin-top: 40px;
 
-          #insta {
+          #instagram {
             background-image: url('/images/mobile/instagram.svg');
             width: 20px;
             height: 20px;
@@ -151,7 +151,7 @@
         }
       }
 
-      #closeONE {
+      #navMobClose {
         width: 90%;
         height: 7%;
         margin-top: 15px;

@@ -16,47 +16,47 @@ let tabletScreen = window.matchMedia(
 
 let largeScreens = window.matchMedia('(min-width: 1023px)');
 
-let navMob = document.querySelector('#navMob');
+let navMob = document.querySelector('#C-navMob');
 
-let burger = document.querySelector('#burger');
+let navMobBurger = document.querySelector('#navMobBurger');
 
-let menu = document.querySelector('#menu');
+let navMobMenu = document.querySelector('#navMobMenu');
 
-let navContent = document.querySelector('#navContent');
+let navMobContent = document.querySelector('#navMobContent');
 
-let closeONE = document.querySelector('#closeONE');
+let navMobClose = document.querySelector('#navMobClose');
 
 if (smallAndMobileScreens.matches) {
-  burger.style.opacity = '1';
-  burger.addEventListener('click', function () {
-    burger.style.zIndex = '1';
+  navMobBurger.style.opacity = '1';
+  navMobBurger.addEventListener('click', function () {
+    navMobBurger.style.zIndex = '1';
     navMob.style.width = '100%';
     navMob.style.height = 'auto';
     navMob.style.transition = 'all 0.2s ease-in';
-    menu.style.height = '100%';
-    menu.style.opacity = '1';
-    menu.style.width = '88%';
-    menu.style.transition = 'all 0.2s ease-in';
-    navContent.style.opacity = '1';
-    navContent.style.width = '95%';
-    navContent.style.height = '100%';
-    navContent.style.transition = 'all 0.2s ease-in';
-    closeONE.style.zIndex = '2';
+    navMobMenu.style.height = '100%';
+    navMobMenu.style.opacity = '1';
+    navMobMenu.style.width = '88%';
+    navMobMenu.style.transition = 'all 0.2s ease-in';
+    navMobContent.style.opacity = '1';
+    navMobContent.style.width = '95%';
+    navMobContent.style.height = '100%';
+    navMobContent.style.transition = 'all 0.2s ease-in';
+    navMobClose.style.zIndex = '2';
 
-    closeONE.addEventListener('click', function () {
-      closeONE.style.zIndex = '-1';
+    navMobClose.addEventListener('click', function () {
+      navMobClose.style.zIndex = '-1';
       navMob.style.width = '0';
       navMob.style.height = '0';
       navMob.style.transition = 'all 0.2s ease-out';
-      menu.style.width = '0';
-      menu.style.opacity = '0';
-      menu.style.height = '0';
-      menu.style.transition = 'all 0.2s ease-out';
-      navContent.style.width = '0';
-      navContent.style.opacity = '0';
-      navContent.style.height = '0';
-      navContent.style.transition = 'all 0.2s ease-out';
-      burger.style.zIndex = '2';
+      navMobMenu.style.width = '0';
+      navMobMenu.style.opacity = '0';
+      navMobMenu.style.height = '0';
+      navMobMenu.style.transition = 'all 0.2s ease-out';
+      navMobContent.style.width = '0';
+      navMobContent.style.opacity = '0';
+      navMobContent.style.height = '0';
+      navMobContent.style.transition = 'all 0.2s ease-out';
+      navMobBurger.style.zIndex = '2';
     });
   });
 }
