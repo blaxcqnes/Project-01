@@ -24,7 +24,7 @@
 
   #topOneBgOne {
     position: absolute;
-    background-image: url('../images/topCOFFE.jpg');
+    background-image: url('../images/D-topOne/topOneBgOne.jpg');
     width: inherit;
     height: inherit;
     filter: brightness(27%);
@@ -57,39 +57,34 @@
         display: none;
       }
 
-      p {
-        color: #f4f4f4;
-        font-size: 14px;
-      }
-
       #topOneIconsOne {
         display: flex;
         flex-direction: row;
         column-gap: 20px;
 
         #instagram {
-          background-image: url('/images/instagram.svg');
+          background-image: url('/images/D-topOne/instagram.svg');
           width: 22px;
           height: 22px;
           cursor: pointer;
         }
 
         #x {
-          background-image: url('/images/x.svg');
+          background-image: url('/images/D-topOne/x.svg');
           width: 24px;
           height: 24px;
           cursor: pointer;
         }
 
         #telegram {
-          background-image: url('/images/telegram.svg');
+          background-image: url('/images/D-topOne/telegram.svg');
           width: 21px;
           height: 21px;
           cursor: pointer;
         }
 
         #youtube {
-          background-image: url('/images/youtube.svg');
+          background-image: url('/images/D-topOne/youtube.svg');
           width: 22px;
           height: 22px;
           cursor: pointer;
@@ -109,7 +104,7 @@
       }
 
       #logo {
-        background-image: url('../images/logo.png');
+        background-image: url('../images/D-topOne/logo.png');
         width: 100px;
         height: 94px;
         cursor: pointer;
@@ -157,21 +152,21 @@
         column-gap: 40px;
 
         #user {
-          background-image: url('/images/user.svg');
+          background-image: url('/images/D-topOne/user.svg');
           width: 30px;
           height: 30px;
           cursor: pointer;
         }
 
         #bag {
-          background-image: url('/images/bag.svg');
+          background-image: url('/images/D-topOne/bag.svg');
           width: 30px;
           height: 30px;
           cursor: pointer;
         }
 
         #search {
-          background-image: url('/images/search.svg');
+          background-image: url('/images/D-topOne/search.svg');
           width: 30px;
           height: 30px;
           cursor: pointer;

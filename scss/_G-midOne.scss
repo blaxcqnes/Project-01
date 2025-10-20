@@ -5,7 +5,7 @@
   width: 100%;
   height: fit-content;
   padding: 60px 20px 60px 20px;
-  background-image: url('../images/paperBG.jpg');
+  background-image: url('../images/G-midOne/paperBg.jpg');
 
   #midOneTitle {
     width: 85%;
@@ -18,7 +18,7 @@
     background-position-x: 50%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('../images/leafsANDBEANS.png');
+    background-image: url('../images/G-midOne/midOneTitleBg.png');
 
     @include breakPoints(small) {
       font-size: 14px;
@@ -80,7 +80,7 @@
         }
 
         #bgOne {
-          background-image: url('../images/coffeeONE.jpg');
+          background-image: url('../images/G-midOne/bgOne.jpg');
           width: 275px;
           height: 275px;
           border-radius: 50%;
@@ -182,7 +182,7 @@
         }
 
         #bgTwo {
-          background-image: url('../images/coffeeTWO.jpg');
+          background-image: url('../images/G-midOne/bgTwo.jpg');
           width: 275px;
           height: 275px;
           border-radius: 50%;
@@ -284,7 +284,7 @@
         }
 
         #bgThree {
-          background-image: url('../images/coffeeTHREE.jpg');
+          background-image: url('../images/G-midOne/bgThree.jpg');
           width: 275px;
           height: 275px;
           border-radius: 50%;
@@ -386,7 +386,7 @@
         }
 
         #bgFour {
-          background-image: url('../images/coffeeFOUR.jpg');
+          background-image: url('../images/G-midOne/bgFour.jpg');
           width: 275px;
           height: 275px;
           border-radius: 50%;

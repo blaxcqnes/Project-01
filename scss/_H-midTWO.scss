@@ -1,77 +1,63 @@
-#midTWO {
+#H-midTwo {
   display: flex;
-  width: inherit;
+  width: 100%;
 
-  #bgs {
+  #midTwoBackgrounds {
     display: flex;
     flex-direction: row;
-    width: inherit;
+    width: 100%;
 
-    #bgONE {
-      width: 33.333%;
-      height: 45em;
-      background-image: url('../images/midCOFFEE.jpg');
+    #bgOne {
+      width: 33%;
+      position: relative;
+      background-image: url('../images/H-midTwo/bgOne.jpg');
       background-position: 40% 0;
       background-size: cover;
 
-      @include breakPoints(small) {
-        display: none;
-      }
-
-      @include breakPoints(mobile) {
-        display: none;
-      }
-
-      @include breakPoints(tablet) {
+      @media (min-width: 300px) and (max-width: 1023px) {
         display: none;
       }
 
       #stamp {
-        width: 10.7em;
-        height: 10.7em;
-        position: relative;
-        bottom: -2em;
-        left: 10em;
-        background-image: url('../images/stamp.png');
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        background-image: url('../images/H-midTwo/stamp.png');
         background-repeat: no-repeat;
       }
     }
 
-    #bgTWO {
-      width: 33.333%;
-      height: 45em;
-      background-color: rgb(77, 139, 85);
+    #bgTwo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 50px;
+      width: 34%;
+      height: 650px;
+      padding-left: 20px;
+      background-color: #4d8b55;
       background-position: 40% 0;
       background-size: cover;
-      background-image: url('../images/leafsANDBEANS.png');
+      background-image: url('../images/H-midTwo/bgTwo.png');
 
       @include breakPoints(small) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 28em;
-        align-items: center;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: unset;
+        height: 500px;
       }
 
       @include breakPoints(mobile) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 30.5em;
-        align-items: center;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: unset;
+        height: 490px;
       }
 
       @include breakPoints(tablet) {
+        height: 505px;
+      }
+
+      @media (min-width: 300px) and (max-width: 1023px) {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 31.5em;
         align-items: center;
         background-repeat: no-repeat;
         background-position: 50%;
@@ -79,125 +65,49 @@
       }
 
       #one {
-        width: min(100% - 3em, 7em);
-        margin: 1.5em 0 0 0.5em;
+        width: min(100% - 48px, 335px);
         font-size: 48px;
-        color: rgb(0, 0, 0);
+        color: #000000;
         font-weight: 700;
-        align-self: center;
 
-        @include breakPoints(small) {
-          font-size: 30px;
-          margin-left: 0;
-        }
-
-        @include breakPoints(mobile) {
-          font-size: 33px;
-          margin-left: 0;
-        }
-
-        @include breakPoints(tablet) {
-          font-size: 36px;
-          margin-left: 0;
-        }
-
-        @include breakPoints(laptop) {
-          margin-left: 0.5em;
+        span {
+          width: min(100% - 48px, 335px);
+          font-size: 48px;
+          color: #ffffff;
+          font-weight: 700;
+          align-self: center;
         }
       }
 
       #two {
-        width: min(100% - 1em, 7em);
-        margin-left: 0.5em;
-        font-size: 48px;
-        color: rgb(244, 244, 244);
-        font-weight: 700;
-        align-self: center;
-
-        @include breakPoints(small) {
-          font-size: 30px;
-          margin: 0;
-        }
-
-        @include breakPoints(mobile) {
-          font-size: 33px;
-          margin: 0;
-        }
-
-        @include breakPoints(tablet) {
-          font-size: 36px;
-          margin: 0;
-        }
-      }
-
-      #three {
-        width: min(100% - 3em, 23em);
-        margin: 2em 0 0 2em;
-        color: rgb(244, 244, 244);
+        width: min(100% - 48px, 370px);
+        color: #ffffff;
         font-size: 16px;
         text-align: start;
-
-        @include breakPoints(small) {
-          width: min(100% - 1em, 18em);
-          font-size: 14px;
-          margin: 1em 0 0 0;
-        }
-
-        @include breakPoints(mobile) {
-          width: min(100% - 5em, 20em);
-          font-size: 16px;
-          margin: 1.5em 0 0 0;
-        }
-
-        @include breakPoints(tablet) {
-          width: min(100% - 5em, 18em);
-          font-size: 16px;
-          margin: 1.5em 0 0 0;
-        }
-
-        @include breakPoints(laptop) {
-          margin: 2em 0 0 0.5em;
-        }
       }
 
       #read {
-        width: 17.5em;
-        height: 3.5em;
-        margin: 5em 0 0 2em;
-        position: relative;
-        transition: all 0.5s ease;
+        width: 225px;
+        height: 45px;
         border: none;
         border-radius: 40px;
         background-color: rgb(60, 60, 60);
         font-size: 13px;
-        color: rgb(244, 244, 244);
-
-        @include breakPoints(small) {
-          margin-left: 0;
-        }
-
-        @include breakPoints(mobile) {
-          margin-left: 0;
-        }
-
-        @include breakPoints(tablet) {
-          margin-left: 0;
-        }
+        color: #f4f4f4;
 
         &:hover {
           cursor: pointer;
-          background-color: rgb(20, 20, 20);
+          background-color: #141414;
         }
       }
     }
 
-    #bgTHREE {
-      width: 33.333%;
-      height: 45em;
-      background-color: rgb(77, 139, 85);
+    #bgThree {
+      width: 33%;
+      background-color: #4d8b55;
       background-position: 40% 0;
       background-size: cover;
-      background-image: url('../images/aroma.jpg');
+      background-image: url('../images/H-midTwo/bgThree.jpg');
 
       @include breakPoints(small) {
         display: none;
