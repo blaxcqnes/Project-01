@@ -792,7 +792,7 @@
 #G-midOne {
   display: flex;
   flex-direction: column;
-  row-gap: 60px;
+  row-gap: 40px;
   width: 100%;
   height: fit-content;
   padding: 60px 20px 60px 20px;
@@ -800,6 +800,7 @@
 }
 #G-midOne #midOneTitle {
   width: 85%;
+  height: 200px;
   font-size: 17px;
   font-weight: 700;
   align-self: center;
@@ -813,6 +814,11 @@
 @media (min-width: 300px) and (max-width: 399px) {
   #G-midOne #midOneTitle {
     font-size: 14px;
+  }
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #G-midOne #midOneTitle {
+    height: unset;
   }
 }
 #G-midOne #midOneWheelsHolder {
@@ -852,20 +858,12 @@
   filter: brightness(70%);
   transform: rotateZ(20deg);
 }
-@media (min-width: 300px) and (max-width: 1023px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelOne #pic:hover #bgOne {
-    filter: brightness(100%);
-    transform: none;
-    cursor: default;
-  }
-}
 #G-midOne #midOneWheelsHolder #midOneWheelOne #pic:hover #two {
   padding: 22px 27px;
 }
-@media (min-width: 300px) and (max-width: 1023px) {
+@media (min-width: 300px) and (max-width: 767px) {
   #G-midOne #midOneWheelsHolder #midOneWheelOne #pic:hover #two {
-    padding: unset;
-    cursor: default;
+    padding: 25px 30px;
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelOne #pic #bgOne {
@@ -917,19 +915,8 @@
 #G-midOne #midOneWheelsHolder #midOneWheelTwo {
   display: flex;
   flex-direction: column;
-  margin: 4em 0 4em 0;
-  position: relative;
+  height: fit-content;
   align-items: center;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelTwo {
-    margin-top: 3em;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelTwo {
-    margin-top: 3em;
-  }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic {
   display: flex;
@@ -952,20 +939,12 @@
   filter: brightness(70%);
   transform: rotateZ(20deg);
 }
-@media (min-width: 310px) and (max-width: 767px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic:hover #bgTwo {
-    filter: brightness(100%);
-    transform: none;
-    cursor: default;
-  }
-}
 #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic:hover #two {
   padding: 22px 27px;
 }
-@media (min-width: 310px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic:hover #two {
     padding: 25px 30px;
-    cursor: default;
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic #bgTwo {
@@ -974,6 +953,7 @@
   height: 17em;
   border-radius: 50%;
   transition: all 0.5s ease;
+  background-position: 12% 12%;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic #bgTwo {
@@ -1016,19 +996,8 @@
 #G-midOne #midOneWheelsHolder #midOneWheelThree {
   display: flex;
   flex-direction: column;
-  margin: 4em 0 4em 0;
-  position: relative;
+  height: fit-content;
   align-items: center;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelThree {
-    margin-top: 3em;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelThree {
-    margin-top: 3em;
-  }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelThree #pic {
   display: flex;
@@ -1051,20 +1020,12 @@
   filter: brightness(70%);
   transform: rotateZ(20deg);
 }
-@media (min-width: 310px) and (max-width: 767px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelThree #pic:hover #bgThree {
-    filter: brightness(100%);
-    transform: none;
-    cursor: default;
-  }
-}
 #G-midOne #midOneWheelsHolder #midOneWheelThree #pic:hover #two {
   padding: 22px 27px;
 }
-@media (min-width: 310px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   #G-midOne #midOneWheelsHolder #midOneWheelThree #pic:hover #two {
     padding: 25px 30px;
-    cursor: default;
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelThree #pic #bgThree {
@@ -1073,6 +1034,7 @@
   height: 17em;
   border-radius: 50%;
   transition: all 0.5s ease;
+  background-position: 12% 12%;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelThree #pic #bgThree {
@@ -1115,19 +1077,8 @@
 #G-midOne #midOneWheelsHolder #midOneWheelFour {
   display: flex;
   flex-direction: column;
-  margin: 4em 0 4em 0;
-  position: relative;
+  height: fit-content;
   align-items: center;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelFour {
-    margin-top: 3em;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelFour {
-    margin-top: 3em;
-  }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelFour #pic {
   display: flex;
@@ -1150,20 +1101,12 @@
   filter: brightness(70%);
   transform: rotateZ(20deg);
 }
-@media (min-width: 310px) and (max-width: 767px) {
-  #G-midOne #midOneWheelsHolder #midOneWheelFour #pic:hover #bgFour {
-    filter: brightness(100%);
-    transform: none;
-    cursor: default;
-  }
-}
 #G-midOne #midOneWheelsHolder #midOneWheelFour #pic:hover #two {
   padding: 22px 27px;
 }
-@media (min-width: 310px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   #G-midOne #midOneWheelsHolder #midOneWheelFour #pic:hover #two {
     padding: 25px 30px;
-    cursor: default;
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelFour #pic #bgFour {
@@ -1172,6 +1115,7 @@
   height: 17em;
   border-radius: 50%;
   transition: all 0.5s ease;
+  background-position: 12% 12%;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelFour #pic #bgFour {

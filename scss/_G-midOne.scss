@@ -1,7 +1,7 @@
 #G-midOne {
   display: flex;
   flex-direction: column;
-  row-gap: 60px;
+  row-gap: 40px;
   width: 100%;
   height: fit-content;
   padding: 60px 20px 60px 20px;
@@ -9,6 +9,7 @@
 
   #midOneTitle {
     width: 85%;
+    height: 200px;
     font-size: 17px;
     font-weight: 700;
     align-self: center;
@@ -21,6 +22,10 @@
 
     @include breakPoints(small) {
       font-size: 14px;
+    }
+
+    @media (min-width: 300px) and (max-width: 767px) {
+      height: unset;
     }
   }
 
@@ -57,20 +62,13 @@
           #bgOne {
             filter: brightness(70%);
             transform: rotateZ(20deg);
-
-            @media (min-width: 300px) and (max-width: 1023px) {
-              filter: brightness(100%);
-              transform: none;
-              cursor: default;
-            }
           }
 
           #two {
             padding: 22px 27px;
 
-            @media (min-width: 300px) and (max-width: 1023px) {
-              padding: unset;
-              cursor: default;
+            @media (min-width: 300px) and (max-width: 767px) {
+              padding: 25px 30px;
             }
           }
         }
@@ -127,17 +125,8 @@
     #midOneWheelTwo {
       display: flex;
       flex-direction: column;
-      margin: 4em 0 4em 0;
-      position: relative;
+      height: fit-content;
       align-items: center;
-
-      @include breakPoints(small) {
-        margin-top: 3em;
-      }
-
-      @include breakPoints(mobile) {
-        margin-top: 3em;
-      }
 
       #pic {
         display: flex;
@@ -157,20 +146,13 @@
           #bgTwo {
             filter: brightness(70%);
             transform: rotateZ(20deg);
-
-            @media (min-width: 310px) and (max-width: 767px) {
-              filter: brightness(100%);
-              transform: none;
-              cursor: default;
-            }
           }
 
           #two {
             padding: 22px 27px;
 
-            @media (min-width: 310px) and (max-width: 767px) {
+            @media (min-width: 300px) and (max-width: 767px) {
               padding: 25px 30px;
-              cursor: default;
             }
           }
         }
@@ -181,6 +163,7 @@
           height: 17em;
           border-radius: 50%;
           transition: all 0.5s ease;
+          background-position: 12% 12%;
 
           @include breakPoints(laptop) {
             width: 14em;
@@ -226,17 +209,8 @@
     #midOneWheelThree {
       display: flex;
       flex-direction: column;
-      margin: 4em 0 4em 0;
-      position: relative;
+      height: fit-content;
       align-items: center;
-
-      @include breakPoints(small) {
-        margin-top: 3em;
-      }
-
-      @include breakPoints(mobile) {
-        margin-top: 3em;
-      }
 
       #pic {
         display: flex;
@@ -256,20 +230,13 @@
           #bgThree {
             filter: brightness(70%);
             transform: rotateZ(20deg);
-
-            @media (min-width: 310px) and (max-width: 767px) {
-              filter: brightness(100%);
-              transform: none;
-              cursor: default;
-            }
           }
 
           #two {
             padding: 22px 27px;
 
-            @media (min-width: 310px) and (max-width: 767px) {
+            @media (min-width: 300px) and (max-width: 767px) {
               padding: 25px 30px;
-              cursor: default;
             }
           }
         }
@@ -280,6 +247,7 @@
           height: 17em;
           border-radius: 50%;
           transition: all 0.5s ease;
+          background-position: 12% 12%;
 
           @include breakPoints(laptop) {
             width: 14em;
@@ -325,17 +293,8 @@
     #midOneWheelFour {
       display: flex;
       flex-direction: column;
-      margin: 4em 0 4em 0;
-      position: relative;
+      height: fit-content;
       align-items: center;
-
-      @include breakPoints(small) {
-        margin-top: 3em;
-      }
-
-      @include breakPoints(mobile) {
-        margin-top: 3em;
-      }
 
       #pic {
         display: flex;
@@ -355,20 +314,13 @@
           #bgFour {
             filter: brightness(70%);
             transform: rotateZ(20deg);
-
-            @media (min-width: 310px) and (max-width: 767px) {
-              filter: brightness(100%);
-              transform: none;
-              cursor: default;
-            }
           }
 
           #two {
             padding: 22px 27px;
 
-            @media (min-width: 310px) and (max-width: 767px) {
+            @media (min-width: 300px) and (max-width: 767px) {
               padding: 25px 30px;
-              cursor: default;
             }
           }
         }
@@ -379,6 +331,7 @@
           height: 17em;
           border-radius: 50%;
           transition: all 0.5s ease;
+          background-position: 12% 12%;
 
           @include breakPoints(laptop) {
             width: 14em;
