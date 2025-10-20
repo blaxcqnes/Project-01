@@ -406,7 +406,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: fit-content;
   position: relative;
   align-items: center;
 }
@@ -486,7 +485,6 @@
   flex-direction: row;
   column-gap: 4%;
   width: 100%;
-  height: fit-content;
   padding: 30px 20px 30px 20px;
   background-color: #ffffff;
 }
@@ -790,7 +788,6 @@
   flex-direction: column;
   row-gap: 40px;
   width: 100%;
-  height: fit-content;
   padding: 60px 20px 60px 20px;
   background-image: url("../images/G-midOne/paperBg.jpg");
 }
@@ -1369,25 +1366,24 @@
   }
 }
 
-#midTHREE {
-  width: inherit;
-  height: max-content;
+#I-midThree {
+  width: 100%;
 }
-#midTHREE #allinone {
+#I-midThree #midThreeAllInOne {
   display: flex;
   flex-direction: row;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTHREE #allinone {
+  #I-midThree #midThreeAllInOne {
     flex-direction: column;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone {
+  #I-midThree #midThreeAllInOne {
     flex-direction: column;
   }
 }
-#midTHREE #allinone #left {
+#I-midThree #midThreeAllInOne #midThreeLeft {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1396,7 +1392,7 @@
   background-color: rgb(255, 255, 255);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTHREE #allinone #left {
+  #I-midThree #midThreeAllInOne #midThreeLeft {
     width: 100%;
     background-image: url("../images/leafsANDBEANS.png");
     background-repeat: no-repeat;
@@ -1405,7 +1401,7 @@
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #left {
+  #I-midThree #midThreeAllInOne #midThreeLeft {
     width: 100%;
     background-image: url("../images/leafsANDBEANS.png");
     background-repeat: no-repeat;
@@ -1414,116 +1410,116 @@
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTHREE #allinone #left {
+  #I-midThree #midThreeAllInOne #midThreeLeft {
     width: 50%;
   }
 }
-#midTHREE #allinone #left #illuONE {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuOne {
   display: flex;
   flex-direction: row;
   margin-left: 1.5em;
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #left #illuONE {
+  #I-midThree #midThreeAllInOne #midThreeLeft #illuOne {
     margin-left: 4em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTHREE #allinone #left #illuONE {
+  #I-midThree #midThreeAllInOne #midThreeLeft #illuOne {
     margin-left: 15%;
   }
 }
-#midTHREE #allinone #left #illuONE #pic {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuOne #pic {
   width: 8em;
   height: 4em;
   background-image: url("../images/pure.svg");
   background-repeat: no-repeat;
   align-self: center;
 }
-#midTHREE #allinone #left #illuONE #desc {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuOne #info {
   display: flex;
   flex-direction: column;
   margin-left: 1em;
 }
-#midTHREE #allinone #left #illuONE #desc #one {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuOne #info #one {
   font-size: 18px;
   font-weight: 700;
 }
-#midTHREE #allinone #left #illuONE #desc #two {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuOne #info #two {
   width: min(100% - 3em, 14em);
   text-align: start;
 }
-#midTHREE #allinone #left #illuTWO {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuTwo {
   display: flex;
   flex-direction: row;
   margin-left: 1.5em;
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #left #illuTWO {
+  #I-midThree #midThreeAllInOne #midThreeLeft #illuTwo {
     margin-left: 4em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTHREE #allinone #left #illuTWO {
+  #I-midThree #midThreeAllInOne #midThreeLeft #illuTwo {
     margin-left: 15%;
   }
 }
-#midTHREE #allinone #left #illuTWO #pic {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuTwo #pic {
   width: 8em;
   height: 4em;
   background-image: url("../images/threebeansWBG.svg");
   background-repeat: no-repeat;
   align-self: center;
 }
-#midTHREE #allinone #left #illuTWO #desc {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuTwo #info {
   display: flex;
   flex-direction: column;
   margin-left: 1em;
 }
-#midTHREE #allinone #left #illuTWO #desc #one {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuTwo #info #one {
   font-size: 18px;
   font-weight: 700;
 }
-#midTHREE #allinone #left #illuTWO #desc #two {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuTwo #info #two {
   width: min(100% - 3em, 14em);
   text-align: start;
 }
-#midTHREE #allinone #left #illuTHREE {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuThree {
   display: flex;
   flex-direction: row;
   margin-left: 1.5em;
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #left #illuTHREE {
+  #I-midThree #midThreeAllInOne #midThreeLeft #illuThree {
     margin-left: 4em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTHREE #allinone #left #illuTHREE {
+  #I-midThree #midThreeAllInOne #midThreeLeft #illuThree {
     margin-left: 15%;
   }
 }
-#midTHREE #allinone #left #illuTHREE #pic {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuThree #pic {
   width: 8em;
   height: 4em;
   background-image: url("../images/roasting.svg");
   background-repeat: no-repeat;
   align-self: center;
 }
-#midTHREE #allinone #left #illuTHREE #desc {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuThree #info {
   display: flex;
   flex-direction: column;
   margin-left: 1em;
 }
-#midTHREE #allinone #left #illuTHREE #desc #one {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuThree #info #one {
   font-size: 18px;
   font-weight: 700;
 }
-#midTHREE #allinone #left #illuTHREE #desc #two {
+#I-midThree #midThreeAllInOne #midThreeLeft #illuThree #info #two {
   width: min(100% - 3em, 14em);
   text-align: start;
 }
-#midTHREE #allinone #mid {
+#I-midThree #midThreeAllInOne #midThreeMid {
   width: 40%;
   height: 45em;
   background-image: url("../images/coffee.jpg");
@@ -1533,21 +1529,21 @@
   background-position-y: 50%;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTHREE #allinone #mid {
+  #I-midThree #midThreeAllInOne #midThreeMid {
     display: none;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #mid {
+  #I-midThree #midThreeAllInOne #midThreeMid {
     display: none;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTHREE #allinone #mid {
+  #I-midThree #midThreeAllInOne #midThreeMid {
     display: none;
   }
 }
-#midTHREE #allinone #right {
+#I-midThree #midThreeAllInOne #midThreeRight {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1556,7 +1552,7 @@
   background-color: rgb(255, 255, 255);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTHREE #allinone #right {
+  #I-midThree #midThreeAllInOne #midThreeRight {
     width: 100%;
     background-image: url("../images/leafsANDBEANS.png");
     background-repeat: no-repeat;
@@ -1565,7 +1561,7 @@
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right {
+  #I-midThree #midThreeAllInOne #midThreeRight {
     width: 100%;
     background-image: url("../images/leafsANDBEANS.png");
     background-repeat: no-repeat;
@@ -1574,118 +1570,118 @@
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTHREE #allinone #right {
+  #I-midThree #midThreeAllInOne #midThreeRight {
     width: 50%;
   }
 }
-#midTHREE #allinone #right #illuONE {
+#I-midThree #midThreeAllInOne #midThreeRight #illuOne {
   display: flex;
   flex-direction: row-reverse;
   margin-right: 1.5em;
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuONE {
+  #I-midThree #midThreeAllInOne #midThreeRight #illuOne {
     margin-right: 4em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTHREE #allinone #right #illuONE {
+  #I-midThree #midThreeAllInOne #midThreeRight #illuOne {
     margin-right: 15%;
   }
 }
-#midTHREE #allinone #right #illuONE #pic {
+#I-midThree #midThreeAllInOne #midThreeRight #illuOne #pic {
   width: 9em;
   height: 4em;
   background-image: url("../images/quality.svg");
   background-repeat: no-repeat;
   align-self: center;
 }
-#midTHREE #allinone #right #illuONE #desc {
+#I-midThree #midThreeAllInOne #midThreeRight #illuOne #info {
   display: flex;
   flex-direction: column;
   margin-right: 1em;
   align-items: end;
 }
-#midTHREE #allinone #right #illuONE #desc #one {
+#I-midThree #midThreeAllInOne #midThreeRight #illuOne #info #one {
   font-size: 18px;
   font-weight: 700;
   text-align: end;
 }
-#midTHREE #allinone #right #illuONE #desc #two {
+#I-midThree #midThreeAllInOne #midThreeRight #illuOne #info #two {
   width: min(100% - 3em, 14em);
   text-align: end;
 }
-#midTHREE #allinone #right #illuTWO {
+#I-midThree #midThreeAllInOne #midThreeRight #illuTwo {
   display: flex;
   flex-direction: row-reverse;
   margin-right: 1.5em;
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuTWO {
+  #I-midThree #midThreeAllInOne #midThreeRight #illuTwo {
     margin-right: 4em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTHREE #allinone #right #illuTWO {
+  #I-midThree #midThreeAllInOne #midThreeRight #illuTwo {
     margin-right: 15%;
   }
 }
-#midTHREE #allinone #right #illuTWO #pic {
+#I-midThree #midThreeAllInOne #midThreeRight #illuTwo #pic {
   width: 9em;
   height: 4em;
   background-image: url("../images/twoBEANS.svg");
   background-repeat: no-repeat;
   align-self: center;
 }
-#midTHREE #allinone #right #illuTWO #desc {
+#I-midThree #midThreeAllInOne #midThreeRight #illuTwo #info {
   display: flex;
   flex-direction: column;
   margin-right: 1em;
   align-items: end;
 }
-#midTHREE #allinone #right #illuTWO #desc #one {
+#I-midThree #midThreeAllInOne #midThreeRight #illuTwo #info #one {
   font-size: 18px;
   font-weight: 700;
   text-align: end;
 }
-#midTHREE #allinone #right #illuTWO #desc #two {
+#I-midThree #midThreeAllInOne #midThreeRight #illuTwo #info #two {
   width: min(100% - 3em, 14em);
   text-align: end;
 }
-#midTHREE #allinone #right #illuTHREE {
+#I-midThree #midThreeAllInOne #midThreeRight #illuThree {
   display: flex;
   flex-direction: row-reverse;
   margin-right: 1.5em;
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTHREE #allinone #right #illuTHREE {
+  #I-midThree #midThreeAllInOne #midThreeRight #illuThree {
     margin-right: 4em;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTHREE #allinone #right #illuTHREE {
+  #I-midThree #midThreeAllInOne #midThreeRight #illuThree {
     margin-right: 15%;
   }
 }
-#midTHREE #allinone #right #illuTHREE #pic {
+#I-midThree #midThreeAllInOne #midThreeRight #illuThree #pic {
   width: 9em;
   height: 4em;
   background-image: url("../images/aromaCOFFEE.svg");
   background-repeat: no-repeat;
   align-self: center;
 }
-#midTHREE #allinone #right #illuTHREE #desc {
+#I-midThree #midThreeAllInOne #midThreeRight #illuThree #info {
   display: flex;
   flex-direction: column;
   margin-right: 1em;
   align-items: end;
 }
-#midTHREE #allinone #right #illuTHREE #desc #one {
+#I-midThree #midThreeAllInOne #midThreeRight #illuThree #info #one {
   font-size: 18px;
   font-weight: 700;
   text-align: end;
 }
-#midTHREE #allinone #right #illuTHREE #desc #two {
+#I-midThree #midThreeAllInOne #midThreeRight #illuThree #info #two {
   width: min(100% - 3em, 14em);
   text-align: end;
 }

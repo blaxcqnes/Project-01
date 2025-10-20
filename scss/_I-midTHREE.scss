@@ -1,8 +1,7 @@
-#midTHREE {
-  width: inherit;
-  height: max-content;
+#I-midThree {
+  width: 100%;
 
-  #allinone {
+  #midThreeAllInOne {
     display: flex;
     flex-direction: row;
 
@@ -14,7 +13,7 @@
       flex-direction: column;
     }
 
-    #left {
+    #midThreeLeft {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -42,7 +41,7 @@
         width: 50%;
       }
 
-      #illuONE {
+      #illuOne {
         display: flex;
         flex-direction: row;
         margin-left: 1.5em;
@@ -63,7 +62,7 @@
           align-self: center;
         }
 
-        #desc {
+        #info {
           display: flex;
           flex-direction: column;
           margin-left: 1em;
@@ -80,7 +79,7 @@
         }
       }
 
-      #illuTWO {
+      #illuTwo {
         display: flex;
         flex-direction: row;
         margin-left: 1.5em;
@@ -101,7 +100,7 @@
           align-self: center;
         }
 
-        #desc {
+        #info {
           display: flex;
           flex-direction: column;
           margin-left: 1em;
@@ -118,7 +117,7 @@
         }
       }
 
-      #illuTHREE {
+      #illuThree {
         display: flex;
         flex-direction: row;
         margin-left: 1.5em;
@@ -139,7 +138,7 @@
           align-self: center;
         }
 
-        #desc {
+        #info {
           display: flex;
           flex-direction: column;
           margin-left: 1em;
@@ -157,7 +156,7 @@
       }
     }
 
-    #mid {
+    #midThreeMid {
       width: 40%;
       height: 45em;
       background-image: url('../images/coffee.jpg');
@@ -179,7 +178,7 @@
       }
     }
 
-    #right {
+    #midThreeRight {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -207,7 +206,7 @@
         width: 50%;
       }
 
-      #illuONE {
+      #illuOne {
         display: flex;
         flex-direction: row-reverse;
         margin-right: 1.5em;
@@ -228,7 +227,7 @@
           align-self: center;
         }
 
-        #desc {
+        #info {
           display: flex;
           flex-direction: column;
           margin-right: 1em;
@@ -247,7 +246,7 @@
         }
       }
 
-      #illuTWO {
+      #illuTwo {
         display: flex;
         flex-direction: row-reverse;
         margin-right: 1.5em;
@@ -268,7 +267,7 @@
           align-self: center;
         }
 
-        #desc {
+        #info {
           display: flex;
           flex-direction: column;
           margin-right: 1em;
@@ -287,7 +286,7 @@
         }
       }
 
-      #illuTHREE {
+      #illuThree {
         display: flex;
         flex-direction: row-reverse;
         margin-right: 1.5em;
@@ -308,7 +307,7 @@
           align-self: center;
         }
 
-        #desc {
+        #info {
           display: flex;
           flex-direction: column;
           margin-right: 1em;
