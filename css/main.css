@@ -824,11 +824,12 @@
 #G-midOne #midOneWheelsHolder {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  width: 100%;
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   #G-midOne #midOneWheelsHolder {
     flex-direction: column;
+    row-gap: 100px;
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelOne {
@@ -836,6 +837,12 @@
   flex-direction: column;
   height: fit-content;
   align-items: center;
+  width: 25%;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne {
+    width: 100%;
+  }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelOne #pic {
   display: flex;
@@ -868,37 +875,35 @@
 }
 #G-midOne #midOneWheelsHolder #midOneWheelOne #pic #bgOne {
   background-image: url("../images/coffeeONE.jpg");
-  width: 17em;
-  height: 17em;
+  width: 275px;
+  height: 275px;
   border-radius: 50%;
-  transition: all 0.5s ease;
   background-position: 12% 12%;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelOne #pic #bgOne {
-    width: 14em;
-    height: 14em;
+    width: 220px;
+    height: 220px;
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelOne #pic #two {
   position: absolute;
   padding: 25px 30px;
-  background-color: rgb(77, 139, 85);
+  background-color: #4d8b55;
   border-radius: 50%;
-  color: rgb(244, 244, 244);
+  color: #f4f4f4;
   font-size: 20px;
   font-weight: 700;
-  transition: all 0.5s ease;
 }
 #G-midOne #midOneWheelsHolder #midOneWheelOne #three {
-  margin-top: 1em;
-  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
 }
 #G-midOne #midOneWheelsHolder #midOneWheelOne #four {
-  width: min(100% - 0em, 20em);
-  margin-top: 1.5em;
+  width: 85%;
+  margin-top: 15px;
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
@@ -906,10 +911,29 @@
     font-size: 13px;
   }
 }
+@media (min-width: 512px) and (max-width: 613px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #four {
+    width: 70%;
+  }
+}
+@media (min-width: 613px) and (max-width: 738px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #four {
+    width: 60%;
+  }
+}
+@media (min-width: 738px) and (max-width: 948px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #four {
+    width: 50%;
+  }
+}
+@media (min-width: 948px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelOne #four {
+    width: 35%;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelOne #four {
     font-size: 13px;
-    width: min(100% - 0em, 17em);
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelTwo {
@@ -917,6 +941,12 @@
   flex-direction: column;
   height: fit-content;
   align-items: center;
+  width: 25%;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo {
+    width: 100%;
+  }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic {
   display: flex;
@@ -949,37 +979,35 @@
 }
 #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic #bgTwo {
   background-image: url("../images/coffeeTWO.jpg");
-  width: 17em;
-  height: 17em;
+  width: 275px;
+  height: 275px;
   border-radius: 50%;
-  transition: all 0.5s ease;
   background-position: 12% 12%;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic #bgTwo {
-    width: 14em;
-    height: 14em;
+    width: 220px;
+    height: 220px;
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelTwo #pic #two {
   position: absolute;
   padding: 25px 30px;
-  background-color: rgb(77, 139, 85);
+  background-color: #4d8b55;
   border-radius: 50%;
-  color: rgb(244, 244, 244);
+  color: #f4f4f4;
   font-size: 20px;
   font-weight: 700;
-  transition: all 0.5s ease;
 }
 #G-midOne #midOneWheelsHolder #midOneWheelTwo #three {
-  margin-top: 1em;
-  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
 }
 #G-midOne #midOneWheelsHolder #midOneWheelTwo #four {
-  width: min(100% - 0em, 20em);
-  margin-top: 1.5em;
+  width: 85%;
+  margin-top: 15px;
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
@@ -987,10 +1015,29 @@
     font-size: 13px;
   }
 }
+@media (min-width: 512px) and (max-width: 613px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #four {
+    width: 70%;
+  }
+}
+@media (min-width: 613px) and (max-width: 738px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #four {
+    width: 60%;
+  }
+}
+@media (min-width: 738px) and (max-width: 948px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #four {
+    width: 50%;
+  }
+}
+@media (min-width: 948px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelTwo #four {
+    width: 35%;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelTwo #four {
     font-size: 13px;
-    width: min(100% - 0em, 17em);
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelThree {
@@ -998,6 +1045,12 @@
   flex-direction: column;
   height: fit-content;
   align-items: center;
+  width: 25%;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree {
+    width: 100%;
+  }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelThree #pic {
   display: flex;
@@ -1030,37 +1083,35 @@
 }
 #G-midOne #midOneWheelsHolder #midOneWheelThree #pic #bgThree {
   background-image: url("../images/coffeeTHREE.jpg");
-  width: 17em;
-  height: 17em;
+  width: 275px;
+  height: 275px;
   border-radius: 50%;
-  transition: all 0.5s ease;
   background-position: 12% 12%;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelThree #pic #bgThree {
-    width: 14em;
-    height: 14em;
+    width: 220px;
+    height: 220px;
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelThree #pic #two {
   position: absolute;
   padding: 25px 30px;
-  background-color: rgb(77, 139, 85);
+  background-color: #4d8b55;
   border-radius: 50%;
-  color: rgb(244, 244, 244);
+  color: #f4f4f4;
   font-size: 20px;
   font-weight: 700;
-  transition: all 0.5s ease;
 }
 #G-midOne #midOneWheelsHolder #midOneWheelThree #three {
-  margin-top: 1em;
-  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
 }
 #G-midOne #midOneWheelsHolder #midOneWheelThree #four {
-  width: min(100% - 0em, 20em);
-  margin-top: 1.5em;
+  width: 85%;
+  margin-top: 15px;
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
@@ -1068,10 +1119,29 @@
     font-size: 13px;
   }
 }
+@media (min-width: 512px) and (max-width: 613px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #four {
+    width: 70%;
+  }
+}
+@media (min-width: 613px) and (max-width: 738px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #four {
+    width: 60%;
+  }
+}
+@media (min-width: 738px) and (max-width: 948px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #four {
+    width: 50%;
+  }
+}
+@media (min-width: 948px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelThree #four {
+    width: 35%;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelThree #four {
     font-size: 13px;
-    width: min(100% - 0em, 17em);
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelFour {
@@ -1079,6 +1149,12 @@
   flex-direction: column;
   height: fit-content;
   align-items: center;
+  width: 25%;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour {
+    width: 100%;
+  }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelFour #pic {
   display: flex;
@@ -1111,37 +1187,35 @@
 }
 #G-midOne #midOneWheelsHolder #midOneWheelFour #pic #bgFour {
   background-image: url("../images/coffeeFOUR.jpg");
-  width: 17em;
-  height: 17em;
+  width: 275px;
+  height: 275px;
   border-radius: 50%;
-  transition: all 0.5s ease;
   background-position: 12% 12%;
 }
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelFour #pic #bgFour {
-    width: 14em;
-    height: 14em;
+    width: 220px;
+    height: 220px;
   }
 }
 #G-midOne #midOneWheelsHolder #midOneWheelFour #pic #two {
   position: absolute;
   padding: 25px 30px;
-  background-color: rgb(77, 139, 85);
+  background-color: #4d8b55;
   border-radius: 50%;
-  color: rgb(244, 244, 244);
+  color: #f4f4f4;
   font-size: 20px;
   font-weight: 700;
-  transition: all 0.5s ease;
 }
 #G-midOne #midOneWheelsHolder #midOneWheelFour #three {
-  margin-top: 1em;
-  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  color: #000000;
   font-size: 25px;
   font-weight: 700;
 }
 #G-midOne #midOneWheelsHolder #midOneWheelFour #four {
-  width: min(100% - 0em, 20em);
-  margin-top: 1.5em;
+  width: 85%;
+  margin-top: 15px;
   text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
@@ -1149,10 +1223,29 @@
     font-size: 13px;
   }
 }
+@media (min-width: 512px) and (max-width: 613px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #four {
+    width: 70%;
+  }
+}
+@media (min-width: 613px) and (max-width: 738px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #four {
+    width: 60%;
+  }
+}
+@media (min-width: 738px) and (max-width: 948px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #four {
+    width: 50%;
+  }
+}
+@media (min-width: 948px) and (max-width: 1023px) {
+  #G-midOne #midOneWheelsHolder #midOneWheelFour #four {
+    width: 35%;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1439px) {
   #G-midOne #midOneWheelsHolder #midOneWheelFour #four {
     font-size: 13px;
-    width: min(100% - 0em, 17em);
   }
 }
 
