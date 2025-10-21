@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   position: relative;
+  padding-top: 50px;
   background-color: #ffffff;
 
   #bottomTwoBg {
@@ -79,7 +80,7 @@
     }
 
     #left {
-      background-image: url('../images/ethioFIRST.jpg');
+      background-image: url('../images/L-bottomTwo/bottomTwoMidSecEthio.jpg');
       width: 768px;
       height: 768px;
       background-repeat: no-repeat;
@@ -99,6 +100,10 @@
       @media (min-width: 549px) and (max-width: 1023px) {
         margin-top: -64px;
         transform: scale(62%);
+      }
+
+      @media (min-width: 1023px) and (max-width: 1059px) {
+        margin-left: -30px;
       }
 
       @include breakPoints(laptop) {
@@ -149,7 +154,7 @@
           #three,
           #four,
           #five {
-            background-image: url('../images/star.svg');
+            background-image: url('../images/L-bottomTwo/star.svg');
             width: 20px;
             height: 20px;
             background-repeat: no-repeat;
@@ -205,7 +210,7 @@
               column-gap: 15px;
 
               #check {
-                background-image: url('../images/check.svg');
+                background-image: url('../images/L-bottomTwo/check.svg');
                 width: 15px;
                 height: 15px;
               }
@@ -275,12 +280,12 @@
             }
 
             #info {
-              background-color: rgb(60, 60, 60);
-              color: rgb(244, 244, 244);
+              background-color: #3c3c3c;
+              color: #f4f4f4;
 
               &:hover {
                 cursor: pointer;
-                background-color: rgb(20, 20, 20);
+                background-color: #141414;
               }
             }
           }
@@ -294,32 +299,27 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: -8em;
+    margin-top: -80px;
 
-    @include breakPoints(small) {
-      margin-top: 3em;
-    }
-
-    @include breakPoints(mobile) {
-      margin-top: 3em;
-    }
-
-    @include breakPoints(tablet) {
-      margin-top: 3em;
-    }
-
-    @media (min-width: 310px) and (max-width: 780px) {
+    @media (min-width: 300px) and (max-width: 767px) {
+      margin-top: 48px;
       flex-direction: column;
       align-content: center;
     }
 
-    @media (min-width: 2100px) {
-      margin-top: -4em;
+    @include breakPoints(tablet) {
+      margin-top: unset;
+      align-items: baseline;
+    }
+
+    @media (min-width: 2199px) {
+      margin-top: -64px;
     }
 
     #first {
       display: flex;
       flex-direction: column;
+      row-gap: 25px;
       position: relative;
       height: fit-content;
       transform: scale(80%);
@@ -334,36 +334,34 @@
         height: fit-content;
 
         @include breakPoints(small) {
-          height: 29em;
+          height: 465px;
         }
 
         #pic {
           display: flex;
-          background-image: url('../images/peru.jpg');
-          width: 21em;
-          height: 29em;
+          background-image: url('../images/L-bottomTwo/peru.jpg');
+          width: 335px;
+          height: 465px;
           background-size: cover;
           border-radius: 10px;
-          transition: all 0.5s ease;
           align-items: center;
         }
 
         #cart {
           opacity: 0;
-          width: 11em;
-          height: 4em;
+          width: 155px;
+          height: 55px;
           position: absolute;
           bottom: 50%;
           left: 50%;
           right: 50%;
-          transition: all 0.5s ease;
           transform: translate(-50%, -50%);
-          border-radius: 2em;
+          border-radius: 28px;
           border-style: none;
-          background-color: rgb(123, 255, 141);
+          background-color: #7bff8d;
           font-size: 14px;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             display: none;
           }
 
@@ -372,14 +370,14 @@
           }
 
           &:hover {
-            background-color: rgb(109, 223, 124);
+            background-color: #6ddf7c;
           }
         }
 
         &:hover {
           cursor: pointer;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             cursor: default;
           }
         }
@@ -387,7 +385,7 @@
         &:hover #pic {
           opacity: 0.5;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             opacity: 1;
           }
         }
@@ -402,68 +400,18 @@
         display: flex;
         flex-direction: row;
         width: fit-content;
-        margin-top: 2em;
 
-        #one {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #two {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #three {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #four {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
+        #one,
+        #two,
+        #three,
+        #four,
         #five {
-          background-image: url('../images/star.svg');
+          background-image: url('../images/L-bottomTwo/star.svg');
           width: 20px;
           height: 20px;
-          margin-right: 0.3em;
           background-repeat: no-repeat;
 
-          @media (min-width: 1100px) {
+          @media (min-width: 1099px) {
             width: 24px;
             height: 24px;
           }
@@ -471,7 +419,6 @@
       }
 
       #type {
-        margin-top: 1.5em;
         font-size: 19px;
         font-weight: 700;
 
@@ -481,8 +428,7 @@
       }
 
       #priceOne {
-        margin-top: 0.5em;
-        color: rgb(77, 139, 85);
+        color: #4d8b55;
         font-size: 19px;
         font-weight: 700;
 
@@ -493,13 +439,11 @@
 
       #cartOne {
         display: none;
-        width: 11em;
-        height: 4em;
-        margin-top: 2em;
-        transition: all 0.5s ease;
-        border-radius: 2em;
+        width: 155px;
+        height: 55px;
+        border-radius: 28px;
         border-style: none;
-        background-color: rgb(123, 255, 141);
+        background-color: #7bff8d;
         font-size: 14px;
 
         @include breakPoints(small) {
@@ -512,7 +456,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: rgb(109, 223, 124);
+          background-color: #6ddf7c;
         }
       }
     }
@@ -520,6 +464,7 @@
     #sec {
       display: flex;
       flex-direction: column;
+      row-gap: 25px;
       position: relative;
       height: fit-content;
       transform: scale(80%);
@@ -529,45 +474,39 @@
         transform: scale(70%);
       }
 
-      @media (min-width: 400px) and (max-width: 780px) {
-        margin-top: -2em;
-      }
-
       #all {
         width: fit-content;
         height: fit-content;
 
         @include breakPoints(small) {
-          height: 29em;
+          height: 465px;
         }
 
         #pic {
           display: flex;
-          background-image: url('../images/ethio.jpg');
-          width: 21em;
-          height: 29em;
+          background-image: url('../images/L-bottomTwo/ethio.jpg');
+          width: 335px;
+          height: 465px;
           background-size: cover;
           border-radius: 10px;
-          transition: all 0.5s ease;
           align-items: center;
         }
 
         #cart {
           opacity: 0;
-          width: 11em;
-          height: 4em;
+          width: 155px;
+          height: 55px;
           position: absolute;
           bottom: 50%;
           left: 50%;
           right: 50%;
-          transition: all 0.5s ease;
           transform: translate(-50%, -50%);
-          border-radius: 2em;
+          border-radius: 28px;
           border-style: none;
-          background-color: rgb(123, 255, 141);
+          background-color: #7bff8d;
           font-size: 14px;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             display: none;
           }
 
@@ -576,14 +515,14 @@
           }
 
           &:hover {
-            background-color: rgb(109, 223, 124);
+            background-color: #6ddf7c;
           }
         }
 
         &:hover {
           cursor: pointer;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             cursor: default;
           }
         }
@@ -591,7 +530,7 @@
         &:hover #pic {
           opacity: 0.5;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             opacity: 1;
           }
         }
@@ -606,68 +545,18 @@
         display: flex;
         flex-direction: row;
         width: fit-content;
-        margin-top: 2em;
 
-        #one {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #two {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #three {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #four {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
+        #one,
+        #two,
+        #three,
+        #four,
         #five {
-          background-image: url('../images/star.svg');
+          background-image: url('../images/L-bottomTwo/star.svg');
           width: 20px;
           height: 20px;
-          margin-right: 0.3em;
           background-repeat: no-repeat;
 
-          @media (min-width: 1100px) {
+          @media (min-width: 1099px) {
             width: 24px;
             height: 24px;
           }
@@ -675,7 +564,6 @@
       }
 
       #type {
-        margin-top: 1.5em;
         font-size: 19px;
         font-weight: 700;
 
@@ -685,8 +573,7 @@
       }
 
       #priceTwo {
-        margin-top: 0.5em;
-        color: rgb(77, 139, 85);
+        color: #4d8b55;
         font-size: 19px;
         font-weight: 700;
 
@@ -697,13 +584,11 @@
 
       #cartTwo {
         display: none;
-        width: 11em;
-        height: 4em;
-        margin-top: 2em;
-        transition: all 0.5s ease;
-        border-radius: 2em;
+        width: 155px;
+        height: 55px;
+        border-radius: 28px;
         border-style: none;
-        background-color: rgb(123, 255, 141);
+        background-color: #7bff8d;
         font-size: 14px;
 
         @include breakPoints(small) {
@@ -716,7 +601,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: rgb(109, 223, 124);
+          background-color: #6ddf7c;
         }
       }
     }
@@ -724,6 +609,7 @@
     #third {
       display: flex;
       flex-direction: column;
+      row-gap: 25px;
       position: relative;
       height: fit-content;
       transform: scale(80%);
@@ -733,45 +619,39 @@
         transform: scale(70%);
       }
 
-      @media (min-width: 400px) and (max-width: 780px) {
-        margin-top: -2em;
-      }
-
       #all {
         width: fit-content;
         height: fit-content;
 
         @include breakPoints(small) {
-          height: 29em;
+          height: 465px;
         }
 
         #pic {
           display: flex;
-          background-image: url('../images/columb.jpg');
-          width: 21em;
-          height: 29em;
+          background-image: url('../images/L-bottomTwo/columb.jpg');
+          width: 335px;
+          height: 465px;
           background-size: cover;
           border-radius: 10px;
-          transition: all 0.5s ease;
           align-items: center;
         }
 
         #cart {
           opacity: 0;
-          width: 11em;
-          height: 4em;
+          width: 155px;
+          height: 55px;
           position: absolute;
           bottom: 50%;
           left: 50%;
           right: 50%;
-          transition: all 0.5s ease;
           transform: translate(-50%, -50%);
-          border-radius: 2em;
+          border-radius: 28px;
           border-style: none;
-          background-color: rgb(123, 255, 141);
+          background-color: #7bff8d;
           font-size: 14px;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             display: none;
           }
 
@@ -780,14 +660,14 @@
           }
 
           &:hover {
-            background-color: rgb(109, 223, 124);
+            background-color: #6ddf7c;
           }
         }
 
         &:hover {
           cursor: pointer;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             cursor: default;
           }
         }
@@ -795,7 +675,7 @@
         &:hover #pic {
           opacity: 0.5;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             opacity: 1;
           }
         }
@@ -810,68 +690,18 @@
         display: flex;
         flex-direction: row;
         width: fit-content;
-        margin-top: 2em;
 
-        #one {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #two {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #three {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #four {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
+        #one,
+        #two,
+        #three,
+        #four,
         #five {
-          background-image: url('../images/star.svg');
+          background-image: url('../images/L-bottomTwo/star.svg');
           width: 20px;
           height: 20px;
-          margin-right: 0.3em;
           background-repeat: no-repeat;
 
-          @media (min-width: 1100px) {
+          @media (min-width: 1099px) {
             width: 24px;
             height: 24px;
           }
@@ -879,7 +709,6 @@
       }
 
       #type {
-        margin-top: 1.5em;
         font-size: 19px;
         font-weight: 700;
 
@@ -889,8 +718,7 @@
       }
 
       #priceThree {
-        margin-top: 0.5em;
-        color: rgb(77, 139, 85);
+        color: #4d8b55;
         font-size: 19px;
         font-weight: 700;
 
@@ -901,13 +729,11 @@
 
       #cartThree {
         display: none;
-        width: 11em;
-        height: 4em;
-        margin-top: 2em;
-        transition: all 0.5s ease;
-        border-radius: 2em;
+        width: 155px;
+        height: 55px;
+        border-radius: 28px;
         border-style: none;
-        background-color: rgb(123, 255, 141);
+        background-color: #7bff8d;
         font-size: 14px;
 
         @include breakPoints(small) {
@@ -920,7 +746,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: rgb(109, 223, 124);
+          background-color: #6ddf7c;
         }
       }
     }
@@ -928,6 +754,7 @@
     #fourth {
       display: flex;
       flex-direction: column;
+      row-gap: 25px;
       position: relative;
       height: fit-content;
       transform: scale(80%);
@@ -937,45 +764,39 @@
         transform: scale(70%);
       }
 
-      @media (min-width: 400px) and (max-width: 780px) {
-        margin-top: -4em;
-      }
-
       #all {
         width: fit-content;
         height: fit-content;
 
         @include breakPoints(small) {
-          height: 29em;
+          height: 465px;
         }
 
         #pic {
           display: flex;
-          background-image: url('../images/nica.jpg');
-          width: 21em;
-          height: 29em;
+          background-image: url('../images/L-bottomTwo/nica.jpg');
+          width: 335px;
+          height: 465px;
           background-size: cover;
           border-radius: 10px;
-          transition: all 0.5s ease;
           align-items: center;
         }
 
         #cart {
           opacity: 0;
-          width: 11em;
-          height: 4em;
+          width: 155px;
+          height: 55px;
           position: absolute;
           bottom: 50%;
           left: 50%;
           right: 50%;
-          transition: all 0.5s ease;
           transform: translate(-50%, -50%);
-          border-radius: 2em;
+          border-radius: 28px;
           border-style: none;
-          background-color: rgb(123, 255, 141);
+          background-color: #7bff8d;
           font-size: 14px;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             display: none;
           }
 
@@ -984,14 +805,14 @@
           }
 
           &:hover {
-            background-color: rgb(109, 223, 124);
+            background-color: #6ddf7c;
           }
         }
 
         &:hover {
           cursor: pointer;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             cursor: default;
           }
         }
@@ -999,7 +820,7 @@
         &:hover #pic {
           opacity: 0.5;
 
-          @media (min-width: 310px) and (max-width: 767px) {
+          @media (min-width: 300px) and (max-width: 767px) {
             opacity: 1;
           }
         }
@@ -1014,68 +835,18 @@
         display: flex;
         flex-direction: row;
         width: fit-content;
-        margin-top: 2em;
 
-        #one {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #two {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #three {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        #four {
-          background-image: url('../images/star.svg');
-          width: 20px;
-          height: 20px;
-          margin-right: 0.3em;
-          background-repeat: no-repeat;
-
-          @media (min-width: 1100px) {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
+        #one,
+        #two,
+        #three,
+        #four,
         #five {
-          background-image: url('../images/star.svg');
+          background-image: url('../images/L-bottomTwo/star.svg');
           width: 20px;
           height: 20px;
-          margin-right: 0.3em;
           background-repeat: no-repeat;
 
-          @media (min-width: 1100px) {
+          @media (min-width: 1099px) {
             width: 24px;
             height: 24px;
           }
@@ -1083,7 +854,6 @@
       }
 
       #type {
-        margin-top: 1.5em;
         font-size: 19px;
         font-weight: 700;
 
@@ -1093,8 +863,7 @@
       }
 
       #priceFour {
-        margin-top: 0.5em;
-        color: rgb(77, 139, 85);
+        color: #4d8b55;
         font-size: 19px;
         font-weight: 700;
 
@@ -1105,13 +874,11 @@
 
       #cartFour {
         display: none;
-        width: 11em;
-        height: 4em;
-        margin-top: 2em;
-        transition: all 0.5s ease;
-        border-radius: 2em;
+        width: 155px;
+        height: 55px;
+        border-radius: 28px;
         border-style: none;
-        background-color: rgb(123, 255, 141);
+        background-color: #7bff8d;
         font-size: 14px;
 
         @include breakPoints(small) {
@@ -1124,7 +891,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: rgb(109, 223, 124);
+          background-color: #6ddf7c;
         }
       }
     }
