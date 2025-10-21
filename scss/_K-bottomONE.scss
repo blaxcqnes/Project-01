@@ -1,23 +1,27 @@
-#bottomONE {
+#K-bottomOne {
   display: flex;
   flex-direction: row;
   width: inherit;
-  height: 28em;
+  height: 448px;
   align-items: center;
 
-  @media (min-width: 310px) and (max-width: 400px) {
-    height: 32em;
+  @include breakPoints(small) {
+    height: 685px;
   }
 
-  @media (min-width: 399px) and (max-width: 745px) {
-    height: 40em;
+  @media (min-width: 399px) and (max-width: 599px) {
+    height: 750px;
   }
 
-  #bg {
+  @media (min-width: 599px) and (max-width: 749px) {
+    height: 800px;
+  }
+
+  #bottomOneBg {
     width: 100%;
     height: inherit;
     position: absolute;
-    background-image: url('../images/greenBEANS.jpg');
+    background-image: url('../images/K-bottomOne/bottomOneBg.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,12 +36,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    column-gap: 60px;
+    row-gap: 60px;
     width: 100%;
-    margin: 0 1em 0 1em;
     align-items: center;
+    padding-inline: 20px;
 
-    @media (min-width: 490px) and (max-width: 745px) {
+    @media (min-width: 300px) and (max-width: 749px) {
       flex-direction: column;
+      row-gap: 70px;
     }
 
     #first {
@@ -45,32 +52,31 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 1em 1em 1em 1em;
 
       #one {
         font-size: 40px;
-        color: rgb(255, 255, 255);
+        color: #ffffff;
         font-weight: 700;
 
         @include breakPoints(small) {
           font-size: 33px;
         }
 
-        @media (min-width: 399px) and (max-width: 600px) {
+        @media (min-width: 399px) and (max-width: 599px) {
           font-size: 36px;
         }
       }
 
       #two {
         font-size: 28px;
-        color: rgb(255, 255, 255);
+        color: #ffffff;
         font-weight: 700;
 
         @include breakPoints(small) {
           font-size: 20px;
         }
 
-        @media (min-width: 399px) and (max-width: 600px) {
+        @media (min-width: 399px) and (max-width: 599px) {
           font-size: 23px;
         }
       }
@@ -81,32 +87,31 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 1em 1em 1em 1em;
 
       #one {
         font-size: 40px;
-        color: rgb(255, 255, 255);
+        color: #ffffff;
         font-weight: 700;
 
         @include breakPoints(small) {
           font-size: 33px;
         }
 
-        @media (min-width: 399px) and (max-width: 600px) {
+        @media (min-width: 399px) and (max-width: 599px) {
           font-size: 36px;
         }
       }
 
       #two {
         font-size: 28px;
-        color: rgb(255, 255, 255);
+        color: #ffffff;
         font-weight: 700;
 
         @include breakPoints(small) {
           font-size: 20px;
         }
 
-        @media (min-width: 399px) and (max-width: 600px) {
+        @media (min-width: 399px) and (max-width: 599px) {
           font-size: 23px;
         }
       }
@@ -118,32 +123,31 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 1em 1em 1em 1em;
 
     #one {
       font-size: 40px;
-      color: rgb(255, 255, 255);
+      color: #ffffff;
       font-weight: 700;
 
       @include breakPoints(small) {
         font-size: 33px;
       }
 
-      @media (min-width: 399px) and (max-width: 600px) {
+      @media (min-width: 399px) and (max-width: 599px) {
         font-size: 36px;
       }
     }
 
     #two {
       font-size: 28px;
-      color: rgb(255, 255, 255);
+      color: #ffffff;
       font-weight: 700;
 
       @include breakPoints(small) {
         font-size: 20px;
       }
 
-      @media (min-width: 399px) and (max-width: 600px) {
+      @media (min-width: 399px) and (max-width: 599px) {
         font-size: 23px;
       }
     }
@@ -154,32 +158,31 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 1em 1em 1em 1em;
 
     #one {
       font-size: 40px;
-      color: rgb(255, 255, 255);
+      color: #ffffff;
       font-weight: 700;
 
       @include breakPoints(small) {
         font-size: 33px;
       }
 
-      @media (min-width: 399px) and (max-width: 600px) {
+      @media (min-width: 399px) and (max-width: 599px) {
         font-size: 36px;
       }
     }
 
     #two {
       font-size: 28px;
-      color: rgb(255, 255, 255);
+      color: #ffffff;
       font-weight: 700;
 
       @include breakPoints(small) {
         font-size: 20px;
       }
 
-      @media (min-width: 399px) and (max-width: 600px) {
+      @media (min-width: 399px) and (max-width: 599px) {
         font-size: 23px;
       }
     }

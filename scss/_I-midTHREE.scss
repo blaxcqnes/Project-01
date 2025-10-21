@@ -1,15 +1,14 @@
 #I-midThree {
+  display: flex;
+  flex-direction: row;
   width: 100%;
 
   #midThreeAllInOne {
     display: flex;
     flex-direction: row;
+    width: inherit;
 
-    @include breakPoints(small) {
-      flex-direction: column;
-    }
-
-    @include breakPoints(mobile) {
+    @media (min-width: 300px) and (max-width: 767px) {
       flex-direction: column;
     }
 
@@ -18,46 +17,32 @@
       flex-direction: column;
       justify-content: space-evenly;
       width: 30%;
-      height: 45em;
-      background-color: rgb(255, 255, 255);
+      padding-left: 20px;
+      background-color: #ffffff;
 
-      @include breakPoints(small) {
+      @media (min-width: 300px) and (max-width: 767px) {
         width: 100%;
-        background-image: url('../images/leafsANDBEANS.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: 50%;
-      }
-
-      @include breakPoints(mobile) {
-        width: 100%;
-        background-image: url('../images/leafsANDBEANS.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: 50%;
+        row-gap: 80px;
+        padding: 100px 0 20px 30px;
+        background-image: url('../images/I-midThree/midThreeLeftAndRightBg.png');
+        background-size: cover;
       }
 
       @include breakPoints(tablet) {
+        row-gap: 50px;
         width: 50%;
+        padding: 80px 0 80px 30px;
       }
 
       #illuOne {
         display: flex;
         flex-direction: row;
-        margin-left: 1.5em;
-
-        @include breakPoints(mobile) {
-          margin-left: 4em;
-        }
-
-        @include breakPoints(tablet) {
-          margin-left: 15%;
-        }
+        column-gap: 20px;
 
         #pic {
-          width: 8em;
-          height: 4em;
-          background-image: url('../images/pure.svg');
+          width: 197.3px;
+          height: 52px;
+          background-image: url('../images/I-midThree/pure.svg');
           background-repeat: no-repeat;
           align-self: center;
         }
@@ -65,16 +50,24 @@
         #info {
           display: flex;
           flex-direction: column;
-          margin-left: 1em;
 
           #one {
             font-size: 18px;
             font-weight: 700;
+            text-transform: capitalize;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 17px;
+            }
           }
 
           #two {
-            width: min(100% - 3em, 14em);
-            text-align: start;
+            width: min(100% - 48px, 224px);
+            text-align: justify;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -82,20 +75,12 @@
       #illuTwo {
         display: flex;
         flex-direction: row;
-        margin-left: 1.5em;
-
-        @include breakPoints(mobile) {
-          margin-left: 4em;
-        }
-
-        @include breakPoints(tablet) {
-          margin-left: 15%;
-        }
+        column-gap: 20px;
 
         #pic {
-          width: 8em;
-          height: 4em;
-          background-image: url('../images/threebeansWBG.svg');
+          width: 197.3px;
+          height: 52px;
+          background-image: url('../images/I-midThree/assortment.svg');
           background-repeat: no-repeat;
           align-self: center;
         }
@@ -103,16 +88,24 @@
         #info {
           display: flex;
           flex-direction: column;
-          margin-left: 1em;
 
           #one {
             font-size: 18px;
             font-weight: 700;
+            text-transform: capitalize;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 17px;
+            }
           }
 
           #two {
-            width: min(100% - 3em, 14em);
-            text-align: start;
+            width: min(100% - 48px, 224px);
+            text-align: justify;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -120,20 +113,12 @@
       #illuThree {
         display: flex;
         flex-direction: row;
-        margin-left: 1.5em;
-
-        @include breakPoints(mobile) {
-          margin-left: 4em;
-        }
-
-        @include breakPoints(tablet) {
-          margin-left: 15%;
-        }
+        column-gap: 20px;
 
         #pic {
-          width: 8em;
-          height: 4em;
-          background-image: url('../images/roasting.svg');
+          width: 197.3px;
+          height: 52px;
+          background-image: url('../images/I-midThree/roasting.svg');
           background-repeat: no-repeat;
           align-self: center;
         }
@@ -141,16 +126,24 @@
         #info {
           display: flex;
           flex-direction: column;
-          margin-left: 1em;
 
           #one {
             font-size: 18px;
             font-weight: 700;
+            text-transform: capitalize;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 17px;
+            }
           }
 
           #two {
-            width: min(100% - 3em, 14em);
-            text-align: start;
+            width: min(100% - 48px, 224px);
+            text-align: justify;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -158,22 +151,14 @@
 
     #midThreeMid {
       width: 40%;
-      height: 45em;
-      background-image: url('../images/coffee.jpg');
+      height: 720px;
+      background-image: url('../images/I-midThree/coffee.jpg');
       background-size: contain;
       background-repeat: no-repeat;
-      background-color: rgb(255, 255, 255);
+      background-color: #ffffff;
       background-position-y: 50%;
 
-      @include breakPoints(small) {
-        display: none;
-      }
-
-      @include breakPoints(mobile) {
-        display: none;
-      }
-
-      @include breakPoints(tablet) {
+      @media (min-width: 300px) and (max-width: 1023px) {
         display: none;
       }
     }
@@ -183,46 +168,32 @@
       flex-direction: column;
       justify-content: space-evenly;
       width: 30%;
-      height: 45em;
-      background-color: rgb(255, 255, 255);
+      padding-right: 20px;
+      background-color: #ffffff;
 
-      @include breakPoints(small) {
+      @media (min-width: 300px) and (max-width: 767px) {
         width: 100%;
-        background-image: url('../images/leafsANDBEANS.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: 50%;
-      }
-
-      @include breakPoints(mobile) {
-        width: 100%;
-        background-image: url('../images/leafsANDBEANS.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: 50%;
+        row-gap: 80px;
+        padding: 80px 30px 100px 0;
+        background-image: url('../images/I-midThree/midThreeLeftAndRightBg.png');
+        background-size: cover;
       }
 
       @include breakPoints(tablet) {
+        row-gap: 50px;
         width: 50%;
+        padding: 80px 30px 80px 0;
       }
 
       #illuOne {
         display: flex;
         flex-direction: row-reverse;
-        margin-right: 1.5em;
-
-        @include breakPoints(mobile) {
-          margin-right: 4em;
-        }
-
-        @include breakPoints(tablet) {
-          margin-right: 15%;
-        }
+        column-gap: 20px;
 
         #pic {
-          width: 9em;
-          height: 4em;
-          background-image: url('../images/quality.svg');
+          width: 197.3px;
+          height: 52px;
+          background-image: url('../images/I-midThree/quality.svg');
           background-repeat: no-repeat;
           align-self: center;
         }
@@ -230,18 +201,25 @@
         #info {
           display: flex;
           flex-direction: column;
-          margin-right: 1em;
           align-items: end;
 
           #one {
             font-size: 18px;
             font-weight: 700;
-            text-align: end;
+            text-transform: capitalize;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 17px;
+            }
           }
 
           #two {
-            width: min(100% - 3em, 14em);
-            text-align: end;
+            width: min(100% - 48px, 224px);
+            text-align: justify;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -249,20 +227,12 @@
       #illuTwo {
         display: flex;
         flex-direction: row-reverse;
-        margin-right: 1.5em;
-
-        @include breakPoints(mobile) {
-          margin-right: 4em;
-        }
-
-        @include breakPoints(tablet) {
-          margin-right: 15%;
-        }
+        column-gap: 20px;
 
         #pic {
-          width: 9em;
-          height: 4em;
-          background-image: url('../images/twoBEANS.svg');
+          width: 197.3px;
+          height: 52px;
+          background-image: url('../images/I-midThree/grinding.svg');
           background-repeat: no-repeat;
           align-self: center;
         }
@@ -270,18 +240,25 @@
         #info {
           display: flex;
           flex-direction: column;
-          margin-right: 1em;
           align-items: end;
 
           #one {
             font-size: 18px;
             font-weight: 700;
-            text-align: end;
+            text-transform: capitalize;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 17px;
+            }
           }
 
           #two {
-            width: min(100% - 3em, 14em);
-            text-align: end;
+            width: min(100% - 48px, 224px);
+            text-align: justify;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -289,20 +266,12 @@
       #illuThree {
         display: flex;
         flex-direction: row-reverse;
-        margin-right: 1.5em;
-
-        @include breakPoints(mobile) {
-          margin-right: 4em;
-        }
-
-        @include breakPoints(tablet) {
-          margin-right: 15%;
-        }
+        column-gap: 20px;
 
         #pic {
-          width: 9em;
-          height: 4em;
-          background-image: url('../images/aromaCOFFEE.svg');
+          width: 197.3px;
+          height: 52px;
+          background-image: url('../images/I-midThree/aroma.svg');
           background-repeat: no-repeat;
           align-self: center;
         }
@@ -310,18 +279,25 @@
         #info {
           display: flex;
           flex-direction: column;
-          margin-right: 1em;
           align-items: end;
 
           #one {
             font-size: 18px;
             font-weight: 700;
-            text-align: end;
+            text-transform: capitalize;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 17px;
+            }
           }
 
           #two {
-            width: min(100% - 3em, 14em);
-            text-align: end;
+            width: min(100% - 48px, 224px);
+            text-align: justify;
+
+            @media (min-width: 1023px) and (max-width: 1123px) {
+              font-size: 14px;
+            }
           }
         }
       }

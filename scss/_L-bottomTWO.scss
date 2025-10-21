@@ -88,9 +88,9 @@
       background-size: contain;
       transform: scale(75%);
 
-      @media (min-width: 310px) and (max-width: 400px) {
+      @media (min-width: 300px) and (max-width: 400px) {
         margin-top: -8em;
-        transform: scale(42%);
+        transform: scale(38%);
       }
 
       @media (min-width: 400px) and (max-width: 555px) {

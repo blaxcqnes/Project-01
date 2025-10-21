@@ -1,20 +1,22 @@
-#midFOUR {
+#J-midFour {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  row-gap: 50px;
   width: inherit;
-  height: 28em;
+  height: 608px;
+  position: relative;
   align-items: center;
 
-  @media (min-width: 613px) {
-    height: 38em;
+  @media (min-width: 300px) and (max-width: 349px) {
+    height: 448px;
   }
 
-  #bg {
+  #midFourBg {
     width: 100%;
     height: inherit;
     position: absolute;
-    background-image: url('../images/thumbnailCOFFEE.jpg');
+    background-image: url('../images/J-midFour/midFourBg.jpg');
     filter: brightness(35%);
     opacity: 0.5;
     background-size: cover;
@@ -25,58 +27,48 @@
       background-position-x: 50%;
     }
 
-    @include breakPoints(mobile) {
-      background-position-x: 30%;
-    }
-
-    @include breakPoints(tablet) {
+    @media (min-width: 399px) and (max-width: 1023px) {
       background-position-x: 30%;
     }
   }
 
   #one {
-    width: min(100% - 2em, 12em);
+    width: min(100% - 120px, 720px);
     font-size: 60px;
-    color: rgb(77, 139, 85);
+    color: #4d8b55;
     font-weight: 700;
     text-align: center;
-    line-height: 1em;
+    line-height: 95px;
 
-    @media (min-width: 310px) and (max-width: 357px) {
+    @media (min-width: 300px) and (max-width: 492px) {
+      width: 100%;
+    }
+
+    @media (min-width: 300px) and (max-width: 349px) {
       font-size: 46px;
+      line-height: 70px;
     }
   }
 
   #play {
-    width: 17.5em;
-    height: 3.5em;
-    margin: 6em 0 0 2em;
+    width: 228px;
+    height: 46px;
     position: relative;
-    transition: all 0.2s ease;
     border: none;
     border-radius: 40px;
-    background-color: rgb(60, 60, 60);
+    background-color: #3c3c3c;
     font-size: 13px;
-    color: rgb(244, 244, 244);
+    color: #f4f4f4;
 
     @include breakPoints(small) {
-      margin: 3em 0 0 0;
-      width: 16em;
-      height: 3.2em;
+      width: 190px;
+      height: 40px;
       font-size: 12px;
-    }
-
-    @include breakPoints(mobile) {
-      margin-left: 0;
-    }
-
-    @include breakPoints(tablet) {
-      margin-left: 0;
     }
 
     &:hover {
       cursor: pointer;
-      background-color: rgb(20, 20, 20);
+      background-color: #141414;
     }
   }
 }
