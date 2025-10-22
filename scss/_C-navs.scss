@@ -1,0 +1,263 @@
+#navs {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #1d1d1d;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 0;
+    opacity: 0;
+
+    #leftSide {
+      background-image: url('../images/D-topOne/logo.png');
+      width: 100px;
+      height: 94px;
+      transform: scale(60%);
+      align-self: center;
+      cursor: pointer;
+    }
+
+    #mid {
+      display: flex;
+      flex-direction: row;
+      column-gap: 25px;
+      list-style: none;
+      text-transform: capitalize;
+      font-size: 17px;
+      align-items: center;
+
+      @include breakPoints(tablet) {
+        font-size: 13px;
+      }
+
+      #home {
+        width: fit-content;
+        color: #7bff8d;
+        cursor: pointer;
+      }
+
+      li {
+        width: fit-content;
+        color: #f4f4f4;
+        cursor: pointer;
+      }
+    }
+
+    #rightSide {
+      display: flex;
+      flex-direction: row;
+      column-gap: 40px;
+      align-items: center;
+
+      @media (min-width: 300px) and (max-width: 767px) {
+        display: none;
+      }
+
+      #user {
+        background-image: url('/images/D-topOne/user.svg');
+      }
+
+      #bag {
+        background-image: url('/images/D-topOne/bag.svg');
+      }
+
+      #search {
+        background-image: url('/images/D-topOne/search.svg');
+      }
+
+      #user,
+      #bag,
+      #search {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+        @include breakPoints(tablet) {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+
+  #navMob {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    width: 0;
+    height: 0;
+    position: relative;
+    overflow-y: hidden;
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+
+    #navMobBurger {
+      width: 45px;
+      height: 40px;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      padding: 5px;
+      background-color: #4d8b55;
+      color: #fff9f1;
+      box-shadow: 0 0 3px #000000;
+      border-radius: 5px;
+      font-size: 20px;
+      text-align: center;
+      opacity: 0;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    #navMobMenu {
+      width: 0;
+      height: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #3f7146;
+      opacity: 0;
+      z-index: 1;
+      transition: all 0.2s ease-in-out;
+
+      #navMobContent {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 0;
+        opacity: 0;
+        background-color: #4d8b55;
+
+        #navMobAccount {
+          margin-top: 20px;
+          align-self: center;
+
+          #navMobIcons {
+            display: flex;
+            flex-direction: row;
+            column-gap: 40px;
+
+            #user {
+              background-image: url('/images/C-navMob/user.svg');
+            }
+
+            #bag {
+              background-image: url('/images/C-navMob/bag.svg');
+            }
+
+            #search {
+              background-image: url('/images/C-navMob/search.svg');
+            }
+
+            #user,
+            #bag,
+            #search {
+              width: 30px;
+              height: 30px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          row-gap: 25px;
+          padding: 10px 0 0 25px;
+          list-style: none;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 17px;
+
+          #home {
+            width: fit-content;
+            color: #7bff8d;
+            cursor: pointer;
+          }
+
+          li {
+            width: fit-content;
+            color: #f4f4f4;
+            cursor: pointer;
+          }
+        }
+
+        #navMobFollowUsOn {
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
+          padding: 10px 0 0 25px;
+
+          p {
+            color: #f4f4f4;
+            font-size: 14px;
+          }
+
+          #icons {
+            display: flex;
+            flex-direction: row;
+            column-gap: 25px;
+            margin-top: 40px;
+
+            #instagram {
+              background-image: url('/images/C-navMob/instagram.svg');
+              width: 20px;
+              height: 20px;
+              cursor: pointer;
+            }
+
+            #x {
+              background-image: url('/images/C-navMob/x.svg');
+              width: 22px;
+              height: 22px;
+              cursor: pointer;
+            }
+
+            #telegram {
+              background-image: url('/images/C-navMob/telegram.svg');
+              width: 19px;
+              height: 19px;
+              cursor: pointer;
+            }
+
+            #youtube {
+              background-image: url('/images/C-navMob/youtube.svg');
+              width: 20px;
+              height: 20px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        #navMobClose {
+          width: 90%;
+          height: 7%;
+          margin-top: 15px;
+          align-self: center;
+          transition: all 0.5s ease;
+          border: none;
+          border-radius: 40px;
+          background-color: rgb(123, 255, 141);
+          font-size: 14px;
+          color: #1d1d1d;
+          z-index: -1;
+
+          &:hover {
+            cursor: pointer;
+            background-color: rgb(109, 223, 124);
+          }
+        }
+      }
+    }
+  }
+}

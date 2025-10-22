@@ -36,54 +36,71 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 35px;
+    padding-top: 35px;
 
     @media (min-width: 300px) and (max-width: 767px) {
-      margin-top: 0;
+      padding-top: 0;
+    }
+
+    @include breakPoints(tablet) {
+      padding-inline: 20px;
     }
 
     #topOneLeft {
       display: flex;
       flex-direction: row;
-      column-gap: 10px;
-      width: fit-content;
+      column-gap: 20px;
       align-items: center;
 
       @media (min-width: 300px) and (max-width: 767px) {
         display: none;
       }
 
-      #topOneIconsOne {
-        display: flex;
-        flex-direction: row;
-        column-gap: 20px;
+      #instagram {
+        background-image: url('/images/D-topOne/instagram.svg');
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
 
-        #instagram {
-          background-image: url('/images/D-topOne/instagram.svg');
+        @include breakPoints(tablet) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      #x {
+        background-image: url('/images/D-topOne/x.svg');
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+
+        @include breakPoints(tablet) {
           width: 22px;
           height: 22px;
-          cursor: pointer;
         }
+      }
 
-        #x {
-          background-image: url('/images/D-topOne/x.svg');
-          width: 24px;
-          height: 24px;
-          cursor: pointer;
+      #telegram {
+        background-image: url('/images/D-topOne/telegram.svg');
+        width: 21px;
+        height: 21px;
+        cursor: pointer;
+
+        @include breakPoints(tablet) {
+          width: 19px;
+          height: 19px;
         }
+      }
 
-        #telegram {
-          background-image: url('/images/D-topOne/telegram.svg');
-          width: 21px;
-          height: 21px;
-          cursor: pointer;
-        }
+      #youtube {
+        background-image: url('/images/D-topOne/youtube.svg');
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
 
-        #youtube {
-          background-image: url('/images/D-topOne/youtube.svg');
-          width: 22px;
-          height: 22px;
-          cursor: pointer;
+        @include breakPoints(tablet) {
+          width: 20px;
+          height: 20px;
         }
       }
     }
@@ -114,19 +131,21 @@
         text-transform: capitalize;
         font-size: 17px;
 
-        @media (min-width: 300px) and (max-width: 1023px) {
+        @media (min-width: 300px) and (max-width: 767px) {
           display: none;
         }
 
         #home {
           width: fit-content;
           color: #7bff8d;
+          font-size: 14px;
           cursor: pointer;
         }
 
         li {
           width: fit-content;
           color: #f4f4f4;
+          font-size: 14px;
           cursor: pointer;
         }
       }
@@ -135,36 +154,35 @@
     #topOneRight {
       display: flex;
       flex-direction: row;
-      width: fit-content;
+      column-gap: 40px;
       align-items: center;
 
       @media (min-width: 300px) and (max-width: 767px) {
         display: none;
       }
 
-      #topOneIconsTwo {
-        display: flex;
-        flex-direction: row;
-        column-gap: 40px;
+      #user {
+        background-image: url('/images/D-topOne/user.svg');
+      }
 
-        #user {
-          background-image: url('/images/D-topOne/user.svg');
-        }
+      #bag {
+        background-image: url('/images/D-topOne/bag.svg');
+      }
 
-        #bag {
-          background-image: url('/images/D-topOne/bag.svg');
-        }
+      #search {
+        background-image: url('/images/D-topOne/search.svg');
+      }
 
-        #search {
-          background-image: url('/images/D-topOne/search.svg');
-        }
+      #user,
+      #bag,
+      #search {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
 
-        #user,
-        #bag,
-        #search {
-          width: 30px;
-          height: 30px;
-          cursor: pointer;
+        @include breakPoints(tablet) {
+          width: 27px;
+          height: 27px;
         }
       }
     }
