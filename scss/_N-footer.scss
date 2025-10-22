@@ -1,0 +1,13 @@
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  align-items: center;
+  border-top: solid 2px #272727;
+  background-color: #000000;
+
+  #one {
+    color: rgb(95, 95, 95);
+  }
+}

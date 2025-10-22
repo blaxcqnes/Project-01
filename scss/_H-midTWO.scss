@@ -91,7 +91,7 @@
         height: 45px;
         border: none;
         border-radius: 40px;
-        background-color: rgb(60, 60, 60);
+        background-color: #3c3c3c;
         font-size: 13px;
         color: #f4f4f4;
 
@@ -109,15 +109,7 @@
       background-size: cover;
       background-image: url('../images/H-midTwo/bgThree.jpg');
 
-      @include breakPoints(small) {
-        display: none;
-      }
-
-      @include breakPoints(mobile) {
-        display: none;
-      }
-
-      @include breakPoints(tablet) {
+      @media (min-width: 300px) and (max-width: 1023px) {
         display: none;
       }
     }

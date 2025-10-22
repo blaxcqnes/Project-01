@@ -49,11 +49,7 @@
       width: fit-content;
       align-items: center;
 
-      @include breakPoints(small) {
-        display: none;
-      }
-
-      @include breakPoints(mobile) {
+      @media (min-width: 300px) and (max-width: 767px) {
         display: none;
       }
 
@@ -153,20 +149,19 @@
 
         #user {
           background-image: url('/images/D-topOne/user.svg');
-          width: 30px;
-          height: 30px;
-          cursor: pointer;
         }
 
         #bag {
           background-image: url('/images/D-topOne/bag.svg');
-          width: 30px;
-          height: 30px;
-          cursor: pointer;
         }
 
         #search {
           background-image: url('/images/D-topOne/search.svg');
+        }
+
+        #user,
+        #bag,
+        #search {
           width: 30px;
           height: 30px;
           cursor: pointer;

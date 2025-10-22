@@ -50,11 +50,11 @@
         #info {
           display: flex;
           flex-direction: column;
+          row-gap: 20px;
 
           #one {
             font-size: 18px;
             font-weight: 700;
-            text-transform: capitalize;
 
             @media (min-width: 1023px) and (max-width: 1123px) {
               font-size: 17px;
@@ -88,11 +88,11 @@
         #info {
           display: flex;
           flex-direction: column;
+          row-gap: 20px;
 
           #one {
             font-size: 18px;
             font-weight: 700;
-            text-transform: capitalize;
 
             @media (min-width: 1023px) and (max-width: 1123px) {
               font-size: 17px;
@@ -126,11 +126,11 @@
         #info {
           display: flex;
           flex-direction: column;
+          row-gap: 20px;
 
           #one {
             font-size: 18px;
             font-weight: 700;
-            text-transform: capitalize;
 
             @media (min-width: 1023px) and (max-width: 1123px) {
               font-size: 17px;
@@ -201,12 +201,12 @@
         #info {
           display: flex;
           flex-direction: column;
+          row-gap: 20px;
           align-items: end;
 
           #one {
             font-size: 18px;
             font-weight: 700;
-            text-transform: capitalize;
 
             @media (min-width: 1023px) and (max-width: 1123px) {
               font-size: 17px;
@@ -240,12 +240,12 @@
         #info {
           display: flex;
           flex-direction: column;
+          row-gap: 20px;
           align-items: end;
 
           #one {
             font-size: 18px;
             font-weight: 700;
-            text-transform: capitalize;
 
             @media (min-width: 1023px) and (max-width: 1123px) {
               font-size: 17px;
@@ -279,12 +279,12 @@
         #info {
           display: flex;
           flex-direction: column;
+          row-gap: 20px;
           align-items: end;
 
           #one {
             font-size: 18px;
             font-weight: 700;
-            text-transform: capitalize;
 
             @media (min-width: 1023px) and (max-width: 1123px) {
               font-size: 17px;

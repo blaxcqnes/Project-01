@@ -59,20 +59,19 @@
 
           #user {
             background-image: url('/images/C-navMob/user.svg');
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
           }
 
           #bag {
             background-image: url('/images/C-navMob/bag.svg');
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
           }
 
           #search {
             background-image: url('/images/C-navMob/search.svg');
+          }
+
+          #user,
+          #bag,
+          #search {
             width: 30px;
             height: 30px;
             cursor: pointer;
