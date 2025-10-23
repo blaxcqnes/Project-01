@@ -30,9 +30,25 @@ let navMobContent = document.querySelector('#navMobContent');
 
 let navMobClose = document.querySelector('#navMobClose');
 
+let navBarHome = document.querySelector('#navBarHome');
+
+let homeFront = document.querySelector('#homeFront');
+
+let homeLists = document.querySelector('#homeLists');
+
+let navBarAboutUs = document.querySelector('#navBarAboutUs');
+
+let aboutUsFront = document.querySelector('#aboutUsFront');
+
+let aboutUsLists = document.querySelector('#aboutUsLists');
+
 //////////////////////////////////////////////////////////////
 
 let topOne = document.querySelector('#D-topOne');
+
+let topOneHeader = document.querySelector('#topOneHeader');
+
+//////////////////////////////////////////////////////////////
 
 let topTwo = document.querySelector('#E-topTwo');
 
@@ -104,69 +120,127 @@ function hideNavMob() {
   //////////////////////////////////////////////////////////////
 }
 
+function showNavMob() {
+  navMobBurger.style.zIndex = '1';
+  navMob.style.width = '100%';
+  navMob.style.height = 'auto';
+  navMob.style.transition = 'all 0.2s ease-in';
+  navMobMenu.style.height = '100%';
+  navMobMenu.style.opacity = '1';
+  navMobMenu.style.width = '280px';
+  navMobMenu.style.transition = 'all 0.2s ease-in';
+  navMobContent.style.opacity = '1';
+  navMobContent.style.width = '95%';
+  navMobContent.style.height = '100%';
+  navMobContent.style.transition = 'all 0.2s ease-in';
+  navMobClose.style.zIndex = '2';
+  navMobClose.addEventListener('click', hideNavMob);
+  /////////////////////////////////////////////////////////////
+  topOne.style.transition = 'all 0.2s ease';
+  topOne.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  topTwo.style.transition = 'all 0.2s ease';
+  topTwo.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  topThree.style.transition = 'all 0.2s ease';
+  topThree.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  midOne.style.transition = 'all 0.2s ease';
+  midOne.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  midTwo.style.transition = 'all 0.2s ease';
+  midTwo.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  midThree.style.transition = 'all 0.2s ease';
+  midThree.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  midFour.style.transition = 'all 0.2s ease';
+  midFour.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  bottomOne.style.transition = 'all 0.2s ease';
+  bottomOne.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  bottomTwo.style.transition = 'all 0.2s ease';
+  bottomTwo.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  bottomThree.style.transition = 'all 0.2s ease';
+  bottomThree.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+  footer.style.transition = 'all 0.2s ease';
+  footer.style.opacity = '0.5';
+  ////////////////////////////////////////////////////////////
+}
+
+//////////////////////////////////////////////////////////////
+homeFront.addEventListener('click', function () {
+  if (homeLists.classList.contains('homeLists')) {
+    navBarHome.style.height = 'auto';
+    homeLists.classList.remove('homeLists');
+    homeLists.classList.add('homeListsVisible');
+    /////////////////////////////////////////////////////////////
+    navBarAboutUs.style.opacity = '0';
+    navBarAboutUs.style.visibility = 'hidden';
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+  } else {
+    homeLists.classList.remove('homeListsVisible');
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+    /////////////////////////////////////////////////////////////
+    navBarAboutUs.style.opacity = '1';
+    navBarAboutUs.style.visibility = 'visible';
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+  }
+});
+//////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////
+aboutUsFront.addEventListener('click', function () {
+  if (aboutUsLists.classList.contains('aboutUsLists')) {
+    navBarAboutUs.style.opacity = '1';
+    navBarAboutUs.style.visibility = 'visible';
+    navBarAboutUs.style.height = 'auto';
+    aboutUsLists.classList.remove('aboutUsLists');
+    aboutUsLists.classList.add('aboutUsListsVisible');
+    /////////////////////////////////////////////////////////////
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+  } else {
+    aboutUsLists.classList.remove('aboutUsListsVisible');
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+    /////////////////////////////////////////////////////////////
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+  }
+});
+//////////////////////////////////////////////////////////////
+
 if (smallAndMobileScreens.matches) {
   navMobBurger.style.opacity = '1';
-  navMobBurger.addEventListener('click', function () {
-    navMobBurger.style.zIndex = '1';
-    navMob.style.width = '100%';
-    navMob.style.height = 'auto';
-    navMob.style.transition = 'all 0.2s ease-in';
-    navMobMenu.style.height = '100%';
-    navMobMenu.style.opacity = '1';
-    navMobMenu.style.width = '280px';
-    navMobMenu.style.transition = 'all 0.2s ease-in';
-    navMobContent.style.opacity = '1';
-    navMobContent.style.width = '95%';
-    navMobContent.style.height = '100%';
-    navMobContent.style.transition = 'all 0.2s ease-in';
-    navMobClose.style.zIndex = '2';
-    navMobClose.addEventListener('click', hideNavMob);
-    /////////////////////////////////////////////////////////////
-    topOne.style.transition = 'all 0.2s ease';
-    topOne.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    topTwo.style.transition = 'all 0.2s ease';
-    topTwo.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    topThree.style.transition = 'all 0.2s ease';
-    topThree.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    midOne.style.transition = 'all 0.2s ease';
-    midOne.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    midTwo.style.transition = 'all 0.2s ease';
-    midTwo.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    midThree.style.transition = 'all 0.2s ease';
-    midThree.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    midFour.style.transition = 'all 0.2s ease';
-    midFour.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    bottomOne.style.transition = 'all 0.2s ease';
-    bottomOne.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    bottomTwo.style.transition = 'all 0.2s ease';
-    bottomTwo.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    bottomThree.style.transition = 'all 0.2s ease';
-    bottomThree.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-    footer.style.transition = 'all 0.2s ease';
-    footer.style.opacity = '0.5';
-    ////////////////////////////////////////////////////////////
-  });
-
+  navMobBurger.addEventListener('click', showNavMob);
+  //////////////////////////////////////////////////////////////
   topOne.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   topTwo.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   topThree.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   midOne.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   midTwo.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   midThree.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   midFour.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   bottomOne.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   bottomTwo.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   bottomThree.addEventListener('click', hideNavMob);
+  //////////////////////////////////////////////////////////////
   footer.addEventListener('click', hideNavMob);
 }
 
@@ -175,9 +249,11 @@ if (tabletAndlargeScreens.matches) {
     if (window.scrollY >= 100) {
       navBar.style.opacity = '1';
       navBar.style.zIndex = '2';
+      topOneHeader.style.opacity = '0';
     } else {
       navBar.style.opacity = '0';
       navBar.style.zIndex = '0';
+      topOneHeader.style.opacity = '1';
     }
   });
 }
