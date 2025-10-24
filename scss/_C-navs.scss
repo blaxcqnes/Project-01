@@ -92,7 +92,7 @@
           background-color: #f4f4f4;
           list-style: none;
 
-          #homeList {
+          #list {
             padding: 10px;
             color: #1d1d1d;
             font-size: 14px;
@@ -169,7 +169,7 @@
           background-color: #f4f4f4;
           list-style: none;
 
-          #aboutUsList {
+          #list {
             padding: 10px;
             color: #1d1d1d;
             font-size: 14px;
@@ -246,7 +246,7 @@
           background-color: #f4f4f4;
           list-style: none;
 
-          #productsList {
+          #list {
             padding: 10px;
             color: #1d1d1d;
             font-size: 14px;
@@ -323,7 +323,7 @@
           background-color: #f4f4f4;
           list-style: none;
 
-          #blogsList {
+          #list {
             padding: 10px;
             color: #1d1d1d;
             font-size: 14px;
@@ -342,6 +342,7 @@
         display: flex;
         height: inherit;
         align-items: center;
+        cursor: pointer;
 
         p {
           width: fit-content;

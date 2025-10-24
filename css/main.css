@@ -121,13 +121,13 @@
   background-color: #f4f4f4;
   list-style: none;
 }
-#navs #navBar #midSide #home #hidden #homeList {
+#navs #navBar #midSide #home #hidden #list {
   padding: 10px;
   color: #1d1d1d;
   font-size: 14px;
   cursor: pointer;
 }
-#navs #navBar #midSide #home #hidden #homeList:hover {
+#navs #navBar #midSide #home #hidden #list:hover {
   padding: 10px;
   border-radius: 5px;
   background-color: #d0d0d0;
@@ -188,13 +188,13 @@
   background-color: #f4f4f4;
   list-style: none;
 }
-#navs #navBar #midSide #aboutUs #hidden #aboutUsList {
+#navs #navBar #midSide #aboutUs #hidden #list {
   padding: 10px;
   color: #1d1d1d;
   font-size: 14px;
   cursor: pointer;
 }
-#navs #navBar #midSide #aboutUs #hidden #aboutUsList:hover {
+#navs #navBar #midSide #aboutUs #hidden #list:hover {
   padding: 10px;
   border-radius: 5px;
   background-color: #d0d0d0;
@@ -255,13 +255,13 @@
   background-color: #f4f4f4;
   list-style: none;
 }
-#navs #navBar #midSide #products #hidden #productsList {
+#navs #navBar #midSide #products #hidden #list {
   padding: 10px;
   color: #1d1d1d;
   font-size: 14px;
   cursor: pointer;
 }
-#navs #navBar #midSide #products #hidden #productsList:hover {
+#navs #navBar #midSide #products #hidden #list:hover {
   padding: 10px;
   border-radius: 5px;
   background-color: #d0d0d0;
@@ -322,13 +322,13 @@
   background-color: #f4f4f4;
   list-style: none;
 }
-#navs #navBar #midSide #blogs #hidden #blogsList {
+#navs #navBar #midSide #blogs #hidden #list {
   padding: 10px;
   color: #1d1d1d;
   font-size: 14px;
   cursor: pointer;
 }
-#navs #navBar #midSide #blogs #hidden #blogsList:hover {
+#navs #navBar #midSide #blogs #hidden #list:hover {
   padding: 10px;
   border-radius: 5px;
   background-color: #d0d0d0;
@@ -337,6 +337,7 @@
   display: flex;
   height: inherit;
   align-items: center;
+  cursor: pointer;
 }
 #navs #navBar #midSide #contacts p {
   width: fit-content;
@@ -964,30 +965,299 @@
   height: 94px;
   cursor: pointer;
 }
-#D-topOne #topOneHeader #topOneMid ul {
+#D-topOne #topOneHeader #topOneMid #topOneNavBar {
   display: flex;
   flex-direction: row;
-  column-gap: 25px;
-  list-style: none;
-  text-transform: capitalize;
-  font-size: 17px;
+  align-items: center;
+  column-gap: 10px;
 }
-@media (min-width: 300px) and (max-width: 767px) {
-  #D-topOne #topOneHeader #topOneMid ul {
-    display: none;
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #home:hover #arrow {
+  transform: rotateZ(90deg);
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #home:hover #hidden {
+  visibility: visible;
+  height: auto;
+  padding: 10px;
+  z-index: 1;
+  opacity: 1;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #home #front {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #home #front p {
+  width: fit-content;
+  color: #cacaca;
+  font-size: 14px;
+}
+@media (min-width: 767px) and (max-width: 849px) {
+  #D-topOne #topOneHeader #topOneMid #topOneNavBar #home #front p {
+    font-size: 12px;
   }
 }
-#D-topOne #topOneHeader #topOneMid ul #home {
-  width: fit-content;
-  color: #7bff8d;
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #home #front #arrow {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  background-image: url("../images/C-navMob/svgs/right-arrow.svg");
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #home #hidden {
+  opacity: 0;
+  z-index: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 200px;
+  height: 0;
+  position: absolute;
+  top: 45px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  list-style: none;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #home #hidden #list {
+  padding: 10px;
+  color: #1d1d1d;
   font-size: 14px;
   cursor: pointer;
 }
-#D-topOne #topOneHeader #topOneMid ul li {
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #home #hidden #list:hover {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d0d0d0;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs:hover #arrow {
+  transform: rotateZ(90deg);
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs:hover #hidden {
+  visibility: visible;
+  height: auto;
+  padding: 10px;
+  z-index: 1;
+  opacity: 1;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs #front {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs #front p {
   width: fit-content;
-  color: #f4f4f4;
+  color: #cacaca;
+  font-size: 14px;
+}
+@media (min-width: 767px) and (max-width: 849px) {
+  #D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs #front p {
+    font-size: 12px;
+  }
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs #front #arrow {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  background-image: url("../images/C-navMob/svgs/right-arrow.svg");
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs #hidden {
+  opacity: 0;
+  z-index: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 200px;
+  height: 0;
+  position: absolute;
+  top: 45px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  list-style: none;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs #hidden #list {
+  padding: 10px;
+  color: #1d1d1d;
   font-size: 14px;
   cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #aboutUs #hidden #list:hover {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d0d0d0;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #products:hover #arrow {
+  transform: rotateZ(90deg);
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #products:hover #hidden {
+  visibility: visible;
+  height: auto;
+  padding: 10px;
+  z-index: 1;
+  opacity: 1;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #products #front {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #products #front p {
+  width: fit-content;
+  color: #cacaca;
+  font-size: 14px;
+}
+@media (min-width: 767px) and (max-width: 849px) {
+  #D-topOne #topOneHeader #topOneMid #topOneNavBar #products #front p {
+    font-size: 12px;
+  }
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #products #front #arrow {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  background-image: url("../images/C-navMob/svgs/right-arrow.svg");
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #products #hidden {
+  opacity: 0;
+  z-index: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 200px;
+  height: 0;
+  position: absolute;
+  top: 45px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  list-style: none;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #products #hidden #list {
+  padding: 10px;
+  color: #1d1d1d;
+  font-size: 14px;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #products #hidden #list:hover {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d0d0d0;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs:hover #arrow {
+  transform: rotateZ(90deg);
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs:hover #hidden {
+  visibility: visible;
+  height: auto;
+  padding: 10px;
+  z-index: 1;
+  opacity: 1;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs #front {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs #front p {
+  width: fit-content;
+  color: #cacaca;
+  font-size: 14px;
+}
+@media (min-width: 767px) and (max-width: 849px) {
+  #D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs #front p {
+    font-size: 12px;
+  }
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs #front #arrow {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  background-image: url("../images/C-navMob/svgs/right-arrow.svg");
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs #hidden {
+  opacity: 0;
+  z-index: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 200px;
+  height: 0;
+  position: absolute;
+  top: 45px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  list-style: none;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs #hidden #list {
+  padding: 10px;
+  color: #1d1d1d;
+  font-size: 14px;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #blogs #hidden #list:hover {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d0d0d0;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #contacts {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  cursor: pointer;
+}
+#D-topOne #topOneHeader #topOneMid #topOneNavBar #contacts p {
+  width: fit-content;
+  color: #cacaca;
+  font-size: 14px;
+}
+@media (min-width: 767px) and (max-width: 849px) {
+  #D-topOne #topOneHeader #topOneMid #topOneNavBar #contacts p {
+    font-size: 12px;
+  }
 }
 #D-topOne #topOneHeader #topOneRight {
   display: flex;
