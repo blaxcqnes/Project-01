@@ -5,7 +5,33 @@
   height: auto;
   position: relative;
 
-  // #backToTopFunction{
+  #backToTopFunction {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 81px;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #1d1d1d;
+    opacity: 0;
+    z-index: -1;
 
-  // }
+    #pic {
+      width: 35px;
+      height: 35px;
+      background-image: url('../images/svgs/backToTop.svg');
+      background-repeat: no-repeat;
+    }
+
+    p {
+      font-size: 11px;
+      font-weight: 500;
+      color: #cacaca;
+      text-transform: uppercase;
+    }
+  }
 }

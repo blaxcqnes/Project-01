@@ -45,11 +45,10 @@
 
           #hidden {
             visibility: visible;
-            width: 200px;
             height: auto;
-            padding: 20px;
-            opacity: 1;
+            padding: 10px;
             z-index: 1;
+            opacity: 1;
           }
         }
 
@@ -79,26 +78,31 @@
         }
 
         #hidden {
+          opacity: 0;
+          z-index: 0;
           visibility: hidden;
           display: flex;
           flex-direction: column;
-          row-gap: 30px;
-          width: 0;
+          row-gap: 10px;
+          width: 200px;
           height: 0;
           position: absolute;
           top: 60px;
           border-radius: 5px;
           background-color: #f4f4f4;
           list-style: none;
-          opacity: 0;
-          z-index: 0;
 
           #homeList {
-            width: fit-content;
-            height: fit-content;
+            padding: 10px;
             color: #1d1d1d;
             font-size: 14px;
             cursor: pointer;
+
+            &:hover {
+              padding: 10px;
+              border-radius: 5px;
+              background-color: #d0d0d0;
+            }
           }
         }
       }
@@ -118,11 +122,10 @@
 
           #hidden {
             visibility: visible;
-            width: 200px;
             height: auto;
-            padding: 20px;
-            opacity: 1;
+            padding: 10px;
             z-index: 1;
+            opacity: 1;
           }
         }
 
@@ -152,26 +155,31 @@
         }
 
         #hidden {
+          opacity: 0;
+          z-index: 0;
           visibility: hidden;
           display: flex;
           flex-direction: column;
-          row-gap: 30px;
-          width: 0;
+          row-gap: 10px;
+          width: 200px;
           height: 0;
           position: absolute;
           top: 60px;
           border-radius: 5px;
           background-color: #f4f4f4;
           list-style: none;
-          opacity: 0;
-          z-index: 0;
 
-          .aboutUsList {
-            width: fit-content;
-            height: fit-content;
+          #aboutUsList {
+            padding: 10px;
             color: #1d1d1d;
             font-size: 14px;
             cursor: pointer;
+
+            &:hover {
+              padding: 10px;
+              border-radius: 5px;
+              background-color: #d0d0d0;
+            }
           }
         }
       }
@@ -191,11 +199,10 @@
 
           #hidden {
             visibility: visible;
-            width: 200px;
             height: auto;
-            padding: 20px;
-            opacity: 1;
+            padding: 10px;
             z-index: 1;
+            opacity: 1;
           }
         }
 
@@ -225,26 +232,31 @@
         }
 
         #hidden {
+          opacity: 0;
+          z-index: 0;
           visibility: hidden;
           display: flex;
           flex-direction: column;
-          row-gap: 30px;
-          width: 0;
+          row-gap: 10px;
+          width: 200px;
           height: 0;
           position: absolute;
           top: 60px;
           border-radius: 5px;
           background-color: #f4f4f4;
           list-style: none;
-          opacity: 0;
-          z-index: 0;
 
-          .productsList {
-            width: fit-content;
-            height: fit-content;
+          #productsList {
+            padding: 10px;
             color: #1d1d1d;
             font-size: 14px;
             cursor: pointer;
+
+            &:hover {
+              padding: 10px;
+              border-radius: 5px;
+              background-color: #d0d0d0;
+            }
           }
         }
       }
@@ -264,11 +276,10 @@
 
           #hidden {
             visibility: visible;
-            width: 200px;
             height: auto;
-            padding: 20px;
-            opacity: 1;
+            padding: 10px;
             z-index: 1;
+            opacity: 1;
           }
         }
 
@@ -298,26 +309,31 @@
         }
 
         #hidden {
+          opacity: 0;
+          z-index: 0;
           visibility: hidden;
           display: flex;
           flex-direction: column;
-          row-gap: 30px;
-          width: 0;
+          row-gap: 10px;
+          width: 200px;
           height: 0;
           position: absolute;
           top: 60px;
           border-radius: 5px;
           background-color: #f4f4f4;
           list-style: none;
-          opacity: 0;
-          z-index: 0;
 
-          .blogsList {
-            width: fit-content;
-            height: fit-content;
+          #blogsList {
+            padding: 10px;
             color: #1d1d1d;
             font-size: 14px;
             cursor: pointer;
+
+            &:hover {
+              padding: 10px;
+              border-radius: 5px;
+              background-color: #d0d0d0;
+            }
           }
         }
       }
@@ -381,7 +397,7 @@
     flex-direction: column;
     row-gap: 0;
     width: 0;
-    height: 0;
+    height: 100%;
     position: relative;
     overflow-y: hidden;
 
@@ -409,11 +425,11 @@
 
     #navMobMenu {
       width: 0;
-      height: 0;
+      height: 100%;
       position: fixed;
       top: 0;
       left: 0;
-      background-color: #142416;
+      background-color: #1d3520;
       opacity: 0;
       z-index: 1;
       transition: all 0.2s ease-in-out;
@@ -424,6 +440,7 @@
         row-gap: 40px;
         position: relative;
         width: 0;
+        height: 100%;
         opacity: 0;
         background-color: #1d1d1d;
 
@@ -478,7 +495,9 @@
           flex-direction: column;
           row-gap: 15px;
           width: 100%;
-          padding-inline: 10px;
+          height: 55%;
+          overflow-y: scroll;
+          padding: 0 15px 20px 15px;
 
           #navBarHome {
             display: flex;
@@ -544,8 +563,8 @@
               background-color: #181818;
               list-style: none;
               z-index: 0;
-              width: 0;
-              height: 0;
+              width: 100%;
+              height: 0.1px;
               padding: 20px;
               border-radius: 5px;
 
@@ -564,6 +583,7 @@
             display: flex;
             flex-direction: column;
             row-gap: 10px;
+            height: 30px;
             list-style: none;
 
             #aboutUsFront {
@@ -623,8 +643,8 @@
               background-color: #181818;
               list-style: none;
               z-index: 0;
-              width: 0;
-              height: 0;
+              width: 100%;
+              height: 0.1px;
               padding: 20px;
               border-radius: 5px;
 
@@ -637,6 +657,173 @@
                 cursor: pointer;
               }
             }
+          }
+
+          #navBarProducts {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            height: 30px;
+            list-style: none;
+
+            #productsFront {
+              display: flex;
+              flex-direction: row;
+              column-gap: 5px;
+              align-items: center;
+              cursor: pointer;
+
+              p {
+                width: fit-content;
+                color: #cacaca;
+                font-size: 14px;
+                font-weight: 500;
+              }
+
+              #arrow {
+                width: 25px;
+                height: 25px;
+                align-self: center;
+                background-image: url('../images/C-navMob/svgs/right-arrow.svg');
+              }
+            }
+
+            .productsListsVisible {
+              visibility: visible;
+              display: flex;
+              flex-direction: column;
+              row-gap: 30px;
+              background-color: #181818;
+              list-style: none;
+              transition: all 0.2s ease;
+              opacity: 1;
+              z-index: 1;
+              width: 100%;
+              height: auto;
+              padding: 20px;
+              border-radius: 5px;
+
+              #productsList {
+                width: 100%;
+                height: auto;
+                color: #cacaca;
+                font-size: 12px;
+                cursor: pointer;
+                opacity: 1;
+              }
+            }
+
+            .productsLists {
+              opacity: 0;
+              transition: all 0.2s ease;
+              visibility: hidden;
+              display: flex;
+              flex-direction: column;
+              row-gap: 30px;
+              background-color: #181818;
+              list-style: none;
+              z-index: 0;
+              width: 100%;
+              height: 0.1px;
+              padding: 20px;
+              border-radius: 5px;
+
+              #productsList {
+                opacity: 0;
+                color: #cacaca;
+                font-size: 12px;
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+              }
+            }
+          }
+
+          #navBarBlogs {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            height: 30px;
+            list-style: none;
+
+            #blogsFront {
+              display: flex;
+              flex-direction: row;
+              column-gap: 5px;
+              align-items: center;
+              cursor: pointer;
+
+              p {
+                width: fit-content;
+                color: #cacaca;
+                font-size: 14px;
+                font-weight: 500;
+              }
+
+              #arrow {
+                width: 25px;
+                height: 25px;
+                align-self: center;
+                background-image: url('../images/C-navMob/svgs/right-arrow.svg');
+              }
+            }
+
+            .blogListsVisible {
+              visibility: visible;
+              display: flex;
+              flex-direction: column;
+              row-gap: 30px;
+              background-color: #181818;
+              list-style: none;
+              transition: all 0.2s ease;
+              opacity: 1;
+              z-index: 1;
+              width: 100%;
+              height: auto;
+              padding: 20px;
+              border-radius: 5px;
+
+              #blogList {
+                width: 100%;
+                height: auto;
+                color: #cacaca;
+                font-size: 12px;
+                cursor: pointer;
+                opacity: 1;
+              }
+            }
+
+            .blogLists {
+              opacity: 0;
+              transition: all 0.2s ease;
+              visibility: hidden;
+              display: flex;
+              flex-direction: column;
+              row-gap: 30px;
+              background-color: #181818;
+              list-style: none;
+              z-index: 0;
+              width: 100%;
+              height: 0.1px;
+              padding: 20px;
+              border-radius: 5px;
+
+              #blogList {
+                opacity: 0;
+                color: #cacaca;
+                font-size: 12px;
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+              }
+            }
+          }
+
+          #contacts {
+            width: fit-content;
+            color: #cacaca;
+            font-size: 14px;
+            font-weight: 500;
           }
         }
 
@@ -694,14 +881,14 @@
           transition: all 0.5s ease;
           border: none;
           border-radius: 40px;
-          background-color: #446a48;
+          background-color: #4d8b55;
           font-size: 14px;
           color: #cacaca;
           z-index: -1;
 
           &:hover {
             cursor: pointer;
-            background-color: rgb(40, 69, 44);
+            background-color: #407447;
           }
         }
       }
