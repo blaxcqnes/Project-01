@@ -18,11 +18,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins';
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   transition: all 0.2s ease;
+
+  @media (min-width: 300px) {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
 
 html {

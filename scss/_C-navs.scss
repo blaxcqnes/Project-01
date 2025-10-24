@@ -359,7 +359,7 @@
     #rightSide {
       display: flex;
       flex-direction: row;
-      column-gap: 40px;
+      column-gap: 25px;
       align-items: center;
 
       @media (min-width: 300px) and (max-width: 767px) {
@@ -544,7 +544,7 @@
               padding: 20px;
               border-radius: 5px;
 
-              #homeList {
+              #list {
                 width: 100%;
                 height: auto;
                 color: #cacaca;
@@ -569,7 +569,7 @@
               padding: 20px;
               border-radius: 5px;
 
-              #homeList {
+              #list {
                 opacity: 0;
                 color: #cacaca;
                 font-size: 12px;
@@ -624,7 +624,7 @@
               padding: 20px;
               border-radius: 5px;
 
-              #aboutUsList {
+              #list {
                 width: 100%;
                 height: auto;
                 color: #cacaca;
@@ -649,7 +649,7 @@
               padding: 20px;
               border-radius: 5px;
 
-              #aboutUsList {
+              #list {
                 opacity: 0;
                 color: #cacaca;
                 font-size: 12px;
@@ -704,7 +704,7 @@
               padding: 20px;
               border-radius: 5px;
 
-              #productsList {
+              #list {
                 width: 100%;
                 height: auto;
                 color: #cacaca;
@@ -729,7 +729,7 @@
               padding: 20px;
               border-radius: 5px;
 
-              #productsList {
+              #list {
                 opacity: 0;
                 color: #cacaca;
                 font-size: 12px;
@@ -784,7 +784,7 @@
               padding: 20px;
               border-radius: 5px;
 
-              #blogList {
+              #list {
                 width: 100%;
                 height: auto;
                 color: #cacaca;
@@ -809,7 +809,7 @@
               padding: 20px;
               border-radius: 5px;
 
-              #blogList {
+              #list {
                 opacity: 0;
                 color: #cacaca;
                 font-size: 12px;

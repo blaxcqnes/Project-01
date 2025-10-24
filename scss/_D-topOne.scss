@@ -129,6 +129,11 @@
         align-items: center;
         column-gap: 10px;
 
+        @media (min-width: 300px) and (max-width: 767px) {
+          height: 0;
+          visibility: hidden;
+        }
+
         #home {
           display: flex;
           flex-direction: row;
@@ -160,7 +165,7 @@
             cursor: pointer;
 
             p {
-              width: fit-content;
+              width: max-content;
               color: #cacaca;
               font-size: 14px;
 
@@ -238,7 +243,7 @@
             cursor: pointer;
 
             p {
-              width: fit-content;
+              width: max-content;
               color: #cacaca;
               font-size: 14px;
 
@@ -316,7 +321,7 @@
             cursor: pointer;
 
             p {
-              width: fit-content;
+              width: max-content;
               color: #cacaca;
               font-size: 14px;
 
@@ -394,7 +399,7 @@
             cursor: pointer;
 
             p {
-              width: fit-content;
+              width: max-content;
               color: #cacaca;
               font-size: 14px;
 
@@ -448,7 +453,7 @@
           cursor: pointer;
 
           p {
-            width: fit-content;
+            width: max-content;
             color: #cacaca;
             font-size: 14px;
 
@@ -463,7 +468,7 @@
     #topOneRight {
       display: flex;
       flex-direction: row;
-      column-gap: 40px;
+      column-gap: 22px;
       align-items: center;
 
       @media (min-width: 300px) and (max-width: 767px) {
