@@ -38,11 +38,15 @@ let navBarHome = document.querySelector('#navBarHome');
 
 let homeFront = document.querySelector('#homeFront');
 
+let homeArrow = document.querySelector('#homeArrow');
+
 let homeLists = document.querySelector('#homeLists');
 
 let navBarAboutUs = document.querySelector('#navBarAboutUs');
 
 let aboutUsFront = document.querySelector('#aboutUsFront');
+
+let aboutUsArrow = document.querySelector('#aboutUsArrow');
 
 let aboutUsLists = document.querySelector('#aboutUsLists');
 
@@ -50,11 +54,15 @@ let navBarProducts = document.querySelector('#navBarProducts');
 
 let productsFront = document.querySelector('#productsFront');
 
+let productsArrow = document.querySelector('#productsArrow');
+
 let productsLists = document.querySelector('#productsLists');
 
 let navBarBlogs = document.querySelector('#navBarBlogs');
 
 let blogsFront = document.querySelector('#blogsFront');
+
+let blogsArrow = document.querySelector('#blogsArrow');
 
 let blogLists = document.querySelector('#blogLists');
 
@@ -122,15 +130,19 @@ function hideNavMob() {
   homeLists.classList.remove('homeListsVisible');
   homeLists.classList.add('homeLists');
   navBarHome.style.height = '30px';
+  homeArrow.style.transform = 'unset';
   aboutUsLists.classList.remove('aboutUsListsVisible');
   aboutUsLists.classList.add('aboutUsLists');
   navBarAboutUs.style.height = '30px';
+  aboutUsArrow.style.transform = 'unset';
   productsLists.classList.remove('productsListsVisible');
   productsLists.classList.add('productsLists');
   navBarProducts.style.height = '30px';
+  productsArrow.style.transform = 'unset';
   blogLists.classList.remove('blogListsVisible');
   blogLists.classList.add('blogLists');
   navBarBlogs.style.height = '30px';
+  blogsArrow.style.transform = 'unset';
   //////////////////////////////////////////////////////////////
   topOne.style.transition = 'all 0.2s ease';
   topOne.style.opacity = '1';
@@ -215,6 +227,161 @@ function showNavMob() {
   ////////////////////////////////////////////////////////////
 }
 
+homeFront.addEventListener('click', function () {
+  if (homeLists.classList.contains('homeLists')) {
+    homeArrow.style.transform = 'rotate(90deg)';
+    navBarHome.style.height = 'auto';
+    homeLists.classList.remove('homeLists');
+    homeLists.classList.add('homeListsVisible');
+    /////////////////////////////////////////////////////////////
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+    aboutUsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    productsLists.classList.add('productsLists');
+    navBarProducts.style.height = '30px';
+    productsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    blogLists.classList.add('blogLists');
+    navBarBlogs.style.height = '30px';
+    blogsArrow.style.transform = 'unset';
+  } else {
+    homeArrow.style.transform = 'unset';
+    homeLists.classList.remove('homeListsVisible');
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+    /////////////////////////////////////////////////////////////
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+    aboutUsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    productsLists.classList.add('productsLists');
+    navBarProducts.style.height = '30px';
+    productsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    blogLists.classList.add('blogLists');
+    navBarBlogs.style.height = '30px';
+    blogsArrow.style.transform = 'unset';
+  }
+});
+
+//////////////////////////////////////////////////////////////
+aboutUsFront.addEventListener('click', function () {
+  if (aboutUsLists.classList.contains('aboutUsLists')) {
+    aboutUsArrow.style.transform = 'rotate(90deg)';
+    navBarAboutUs.style.height = 'auto';
+    aboutUsLists.classList.remove('aboutUsLists');
+    aboutUsLists.classList.add('aboutUsListsVisible');
+    /////////////////////////////////////////////////////////////
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+    homeArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    productsLists.classList.add('productsLists');
+    navBarProducts.style.height = '30px';
+    productsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    blogLists.classList.add('blogLists');
+    navBarBlogs.style.height = '30px';
+    blogsArrow.style.transform = 'unset';
+  } else {
+    aboutUsArrow.style.transform = 'unset';
+    aboutUsLists.classList.remove('aboutUsListsVisible');
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+    /////////////////////////////////////////////////////////////
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+    homeArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    productsLists.classList.add('productsLists');
+    navBarProducts.style.height = '30px';
+    productsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    blogLists.classList.add('blogLists');
+    navBarBlogs.style.height = '30px';
+    blogsArrow.style.transform = 'unset';
+  }
+});
+
+//////////////////////////////////////////////////////////////
+productsFront.addEventListener('click', function () {
+  if (productsLists.classList.contains('productsLists')) {
+    productsArrow.style.transform = 'rotate(90deg)';
+    navBarProducts.style.height = 'auto';
+    productsLists.classList.remove('productsLists');
+    productsLists.classList.add('productsListsVisible');
+    /////////////////////////////////////////////////////////////
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+    homeArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+    aboutUsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    blogLists.classList.add('blogLists');
+    navBarBlogs.style.height = '30px';
+    blogsArrow.style.transform = 'unset';
+  } else {
+    productsArrow.style.transform = 'unset';
+    productsLists.classList.remove('productsListsVisible');
+    productsLists.classList.add('productsLists');
+    navBarProducts.style.height = '30px';
+    /////////////////////////////////////////////////////////////
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+    homeArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+    aboutUsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    blogLists.classList.add('blogLists');
+    navBarBlogs.style.height = '30px';
+    blogsArrow.style.transform = 'unset';
+  }
+});
+
+//////////////////////////////////////////////////////////////
+blogsFront.addEventListener('click', function () {
+  if (blogLists.classList.contains('blogLists')) {
+    blogsArrow.style.transform = 'rotate(90deg)';
+    navBarBlogs.style.height = 'auto';
+    blogLists.classList.remove('blogLists');
+    blogLists.classList.add('blogListsVisible');
+    /////////////////////////////////////////////////////////////
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+    homeArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+    aboutUsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    productsLists.classList.add('productsLists');
+    navBarProducts.style.height = '30px';
+    productsArrow.style.transform = 'unset';
+  } else {
+    blogsArrow.style.transform = 'unset';
+    blogLists.classList.remove('blogListsVisible');
+    blogLists.classList.add('blogLists');
+    navBarBlogs.style.height = '30px';
+    /////////////////////////////////////////////////////////////
+    homeLists.classList.add('homeLists');
+    navBarHome.style.height = '30px';
+    homeArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    aboutUsLists.classList.add('aboutUsLists');
+    navBarAboutUs.style.height = '30px';
+    aboutUsArrow.style.transform = 'unset';
+    /////////////////////////////////////////////////////////////
+    productsLists.classList.add('productsLists');
+    navBarProducts.style.height = '30px';
+    productsArrow.style.transform = 'unset';
+  }
+});
+
 if (smallAndMobileScreens.matches) {
   navMobBurger.style.opacity = '1';
   navMobBurger.addEventListener('click', showNavMob);
@@ -241,129 +408,6 @@ if (smallAndMobileScreens.matches) {
   //////////////////////////////////////////////////////////////
   footer.addEventListener('click', hideNavMob);
 }
-
-homeFront.addEventListener('click', function () {
-  if (homeLists.classList.contains('homeLists')) {
-    navBarHome.style.height = 'auto';
-    homeLists.classList.remove('homeLists');
-    homeLists.classList.add('homeListsVisible');
-    /////////////////////////////////////////////////////////////
-    aboutUsLists.classList.add('aboutUsLists');
-    navBarAboutUs.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    productsLists.classList.add('productsLists');
-    navBarProducts.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    blogLists.classList.add('blogLists');
-    navBarBlogs.style.height = '30px';
-  } else {
-    homeLists.classList.remove('homeListsVisible');
-    homeLists.classList.add('homeLists');
-    navBarHome.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    aboutUsLists.classList.add('aboutUsLists');
-    navBarAboutUs.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    productsLists.classList.add('productsLists');
-    navBarProducts.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    blogLists.classList.add('blogLists');
-    navBarBlogs.style.height = '30px';
-  }
-});
-
-//////////////////////////////////////////////////////////////
-aboutUsFront.addEventListener('click', function () {
-  if (aboutUsLists.classList.contains('aboutUsLists')) {
-    navBarAboutUs.style.height = 'auto';
-    aboutUsLists.classList.remove('aboutUsLists');
-    aboutUsLists.classList.add('aboutUsListsVisible');
-    /////////////////////////////////////////////////////////////
-    homeLists.classList.add('homeLists');
-    navBarHome.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    productsLists.classList.add('productsLists');
-    navBarProducts.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    blogLists.classList.add('blogLists');
-    navBarBlogs.style.height = '30px';
-  } else {
-    aboutUsLists.classList.remove('aboutUsListsVisible');
-    aboutUsLists.classList.add('aboutUsLists');
-    navBarAboutUs.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    homeLists.classList.add('homeLists');
-    navBarHome.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    productsLists.classList.add('productsLists');
-    navBarProducts.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    blogLists.classList.add('blogLists');
-    navBarBlogs.style.height = '30px';
-  }
-});
-
-//////////////////////////////////////////////////////////////
-productsFront.addEventListener('click', function () {
-  if (productsLists.classList.contains('productsLists')) {
-    navBarProducts.style.height = 'auto';
-    productsLists.classList.remove('productsLists');
-    productsLists.classList.add('productsListsVisible');
-    /////////////////////////////////////////////////////////////
-    homeLists.classList.add('homeLists');
-    navBarHome.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    aboutUsLists.classList.add('aboutUsLists');
-    navBarAboutUs.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    blogLists.classList.add('blogLists');
-    navBarBlogs.style.height = '30px';
-  } else {
-    productsLists.classList.remove('productsListsVisible');
-    productsLists.classList.add('productsLists');
-    navBarProducts.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    homeLists.classList.add('homeLists');
-    navBarHome.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    aboutUsLists.classList.add('aboutUsLists');
-    navBarAboutUs.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    blogLists.classList.add('blogLists');
-    navBarBlogs.style.height = '30px';
-  }
-});
-
-//////////////////////////////////////////////////////////////
-blogsFront.addEventListener('click', function () {
-  if (blogLists.classList.contains('blogLists')) {
-    navBarBlogs.style.height = 'auto';
-    blogLists.classList.remove('blogLists');
-    blogLists.classList.add('blogListsVisible');
-    /////////////////////////////////////////////////////////////
-    homeLists.classList.add('homeLists');
-    navBarHome.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    aboutUsLists.classList.add('aboutUsLists');
-    navBarAboutUs.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    productsLists.classList.add('productsLists');
-    navBarProducts.style.height = '30px';
-  } else {
-    blogLists.classList.remove('blogListsVisible');
-    blogLists.classList.add('blogLists');
-    navBarBlogs.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    homeLists.classList.add('homeLists');
-    navBarHome.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    aboutUsLists.classList.add('aboutUsLists');
-    navBarAboutUs.style.height = '30px';
-    /////////////////////////////////////////////////////////////
-    productsLists.classList.add('productsLists');
-    navBarProducts.style.height = '30px';
-  }
-});
 
 if (tabletAndlargeScreens.matches) {
   window.addEventListener('scroll', function () {

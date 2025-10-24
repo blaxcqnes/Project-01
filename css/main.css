@@ -19,6 +19,7 @@
   background-color: #1d1d1d;
   opacity: 0;
   z-index: -1;
+  cursor: pointer;
 }
 #B-container #backToTopFunction #pic {
   width: 35px;
@@ -501,7 +502,7 @@
   font-size: 14px;
   font-weight: 500;
 }
-#navs #navMob #navMobMenu #navMobContent #navMobSecondSec #navBarHome #homeFront #arrow {
+#navs #navMob #navMobMenu #navMobContent #navMobSecondSec #navBarHome #homeFront #homeArrow {
   width: 25px;
   height: 25px;
   align-self: center;
@@ -573,7 +574,7 @@
   font-size: 14px;
   font-weight: 500;
 }
-#navs #navMob #navMobMenu #navMobContent #navMobSecondSec #navBarAboutUs #aboutUsFront #arrow {
+#navs #navMob #navMobMenu #navMobContent #navMobSecondSec #navBarAboutUs #aboutUsFront #aboutUsArrow {
   width: 25px;
   height: 25px;
   align-self: center;
@@ -645,7 +646,7 @@
   font-size: 14px;
   font-weight: 500;
 }
-#navs #navMob #navMobMenu #navMobContent #navMobSecondSec #navBarProducts #productsFront #arrow {
+#navs #navMob #navMobMenu #navMobContent #navMobSecondSec #navBarProducts #productsFront #productsArrow {
   width: 25px;
   height: 25px;
   align-self: center;
@@ -717,7 +718,7 @@
   font-size: 14px;
   font-weight: 500;
 }
-#navs #navMob #navMobMenu #navMobContent #navMobSecondSec #navBarBlogs #blogsFront #arrow {
+#navs #navMob #navMobMenu #navMobContent #navMobSecondSec #navBarBlogs #blogsFront #blogsArrow {
   width: 25px;
   height: 25px;
   align-self: center;
