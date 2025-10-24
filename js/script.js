@@ -101,9 +101,11 @@ let footer = document.querySelector('#N-footer');
 window.addEventListener('scroll', function () {
   if (window.scrollY >= 300) {
     backToTopFunction.style.opacity = '1';
+    backToTopFunction.style.transition = 'all 0.2s ease';
     backToTopFunction.style.zIndex = '1';
   } else {
     backToTopFunction.style.opacity = '0';
+    backToTopFunction.style.transition = 'all 0.2s ease';
     backToTopFunction.style.zIndex = '-1';
   }
 });
