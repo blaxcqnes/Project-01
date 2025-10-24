@@ -57,7 +57,7 @@
       }
 
       #instagram {
-        background-image: url('/images/D-topOne/instagram.svg');
+        background-image: url('/images/D-topOne/svgs/instagram.svg');
         width: 22px;
         height: 22px;
         cursor: pointer;
@@ -69,7 +69,7 @@
       }
 
       #x {
-        background-image: url('/images/D-topOne/x.svg');
+        background-image: url('/images/D-topOne/svgs/x.svg');
         width: 24px;
         height: 24px;
         cursor: pointer;
@@ -81,7 +81,7 @@
       }
 
       #telegram {
-        background-image: url('/images/D-topOne/telegram.svg');
+        background-image: url('/images/D-topOne/svgs/telegram.svg');
         width: 21px;
         height: 21px;
         cursor: pointer;
@@ -93,7 +93,7 @@
       }
 
       #youtube {
-        background-image: url('/images/D-topOne/youtube.svg');
+        background-image: url('/images/D-topOne/svgs/youtube.svg');
         width: 22px;
         height: 22px;
         cursor: pointer;
@@ -128,8 +128,11 @@
         flex-direction: row;
         align-items: center;
         column-gap: 10px;
+        width: 100%;
+        height: auto;
 
         @media (min-width: 300px) and (max-width: 767px) {
+          width: 0;
           height: 0;
           visibility: hidden;
         }
@@ -178,7 +181,7 @@
               width: 25px;
               height: 25px;
               align-self: center;
-              background-image: url('../images/C-navMob/svgs/right-arrow.svg');
+              background-image: url('../images/D-topOne/svgs/right-arrow.svg');
             }
           }
 
@@ -256,7 +259,7 @@
               width: 25px;
               height: 25px;
               align-self: center;
-              background-image: url('../images/C-navMob/svgs/right-arrow.svg');
+              background-image: url('../images/D-topOne/svgs/right-arrow.svg');
             }
           }
 
@@ -334,7 +337,7 @@
               width: 25px;
               height: 25px;
               align-self: center;
-              background-image: url('../images/C-navMob/svgs/right-arrow.svg');
+              background-image: url('../images/D-topOne/svgs/right-arrow.svg');
             }
           }
 
@@ -412,7 +415,7 @@
               width: 25px;
               height: 25px;
               align-self: center;
-              background-image: url('../images/C-navMob/svgs/right-arrow.svg');
+              background-image: url('../images/D-topOne/svgs/right-arrow.svg');
             }
           }
 
@@ -476,15 +479,15 @@
       }
 
       #user {
-        background-image: url('/images/D-topOne/user.svg');
+        background-image: url('/images/D-topOne/svgs/user.svg');
       }
 
       #bag {
-        background-image: url('/images/D-topOne/bag.svg');
+        background-image: url('/images/D-topOne/svgs/bag.svg');
       }
 
       #search {
-        background-image: url('/images/D-topOne/search.svg');
+        background-image: url('/images/D-topOne/svgs/search.svg');
       }
 
       #user,
@@ -510,7 +513,7 @@
     #one {
       font-size: 75px;
       font-weight: 700;
-      color: rgb(77, 139, 85);
+      color: #4d8b55;
 
       @include breakPoints(small) {
         font-size: 53px;
@@ -526,7 +529,7 @@
       text-align: center;
       font-size: 75px;
       font-weight: 700;
-      color: #f4f4f4;
+      color: #cacaca;
 
       @include breakPoints(small) {
         font-size: 53px;
@@ -544,7 +547,7 @@
     #three {
       width: 40em;
       font-size: 16px;
-      color: rgb(244, 244, 244);
+      color: #cacaca;
       text-align: justify;
 
       @media (min-width: 300px) and (max-width: 767px) {

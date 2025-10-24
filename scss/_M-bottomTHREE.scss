@@ -73,7 +73,8 @@
 
       #leftOne {
         width: 85%;
-        color: #a8a8a8;
+        color: #cacaca;
+        text-align: justify;
 
         @media (min-width: 300px) and (max-width: 767px) {
           font-size: 15px;
@@ -159,7 +160,7 @@
 
         #midOne {
           width: 90%;
-          color: #ffffff;
+          color: #cacaca;
 
           @media (min-width: 300px) and (max-width: 767px) {
             font-size: 15px;
@@ -190,7 +191,7 @@
 
         #midTwo {
           width: 90%;
-          color: #ffffff;
+          color: #cacaca;
 
           @media (min-width: 300px) and (max-width: 767px) {
             font-size: 15px;
@@ -214,12 +215,24 @@
       width: 34%;
       row-gap: 30px;
 
-      @media (min-width: 300px) and (max-width: 767px) {
-        width: min(100% - 20%, 80%);
+      @media (min-width: 300px) and (max-width: 549px) {
+        width: 80%;
       }
 
-      @include breakPoints(tablet) {
-        width: min(100% - 35%, 65%);
+      @media (min-width: 549px) and (max-width: 767px) {
+        width: 70%;
+      }
+
+      @media (min-width: 767px) and (max-width: 829px) {
+        width: 65%;
+      }
+
+      @media (min-width: 829px) and (max-width: 949px) {
+        width: 60%;
+      }
+
+      @media (min-width: 949px) and (max-width: 1023px) {
+        width: 55%;
       }
 
       #title {
@@ -245,15 +258,16 @@
           border-radius: 25px;
           outline: none;
 
-          @media (min-width: 300px) and (max-width: 349px) {
-            width: 85%;
-            height: 45px;
-            font-size: 9px;
-          }
-
-          @media (min-width: 349px) and (max-width: 1266px) {
+          @media (min-width: 300px) and (max-width: 379px) {
+            width: 88%;
             height: 45px;
             font-size: 10px;
+          }
+
+          @media (min-width: 379px) and (max-width: 1266px) {
+            width: 71%;
+            height: 45px;
+            font-size: 11px;
           }
         }
 
@@ -264,26 +278,26 @@
           right: 65px;
           border: none;
           border-radius: 40px;
-          background-color: #7bff8d;
+          background-color: #4d8b55;
           font-size: 13px;
-          color: #1d1d1d;
+          color: #efefef;
 
-          @media (min-width: 300px) and (max-width: 349px) {
-            width: 45%;
+          @media (min-width: 300px) and (max-width: 379px) {
+            width: 48%;
             height: 45px;
             right: 37px;
             font-size: 10px;
           }
 
-          @media (min-width: 349px) and (max-width: 1266px) {
-            width: 31%;
+          @media (min-width: 379px) and (max-width: 1266px) {
+            width: 33%;
             height: 45px;
             font-size: 12px;
           }
 
           &:hover {
             cursor: pointer;
-            background-color: #6ddf7c;
+            background-color: #1d3520;
           }
         }
       }
@@ -295,12 +309,23 @@
         column-gap: 10px;
 
         input {
-          width: 20px;
-          height: 20px;
+          width: 18px;
+          height: 18px;
+
+          @include breakPoints(small) {
+            width: 16px;
+            height: 16px;
+          }
+
+          @include breakPoints(mobile) {
+            width: 17px;
+            height: 17px;
+          }
         }
 
         #rightOne {
-          color: #ffffff;
+          color: #cacaca;
+          font-size: 14px;
 
           @media (min-width: 300px) and (max-width: 767px) {
             font-size: 12px;

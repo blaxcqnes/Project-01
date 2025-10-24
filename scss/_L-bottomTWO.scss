@@ -43,7 +43,7 @@
     #two {
       font-size: 45px;
       font-weight: 700;
-      color: #000000;
+      color: #4e4e4e;
       text-align: center;
 
       @media (min-width: 300px) and (max-width: 448px) {
@@ -53,7 +53,7 @@
 
     #three {
       width: min(100% - 64px, 800px);
-      color: #000000;
+      color: #4e4e4e;
       text-align: center;
 
       @media (min-width: 300px) and (max-width: 419px) {
@@ -172,6 +172,11 @@
           #one {
             font-size: 27px;
             font-weight: 700;
+            color: #4e4e4e;
+          }
+
+          #two {
+            color: #4e4e4e;
           }
         }
 
@@ -194,6 +199,7 @@
             row-gap: 10px;
             width: fit-content;
             align-items: start;
+            color: #4e4e4e;
 
             @media (min-width: 300px) and (max-width: 1023px) {
               padding-inline: 40px;
@@ -253,39 +259,31 @@
 
             #add,
             #info {
-              width: 228px;
-              height: 46px;
+              width: 250px;
+              height: 60px;
               border: none;
               border-radius: 40px;
               font-size: 13px;
               z-index: 1;
-
-              @include breakPoints(small) {
-                width: 182px;
-              }
-
-              @include breakPoints(mobile) {
-                width: 195px;
-              }
             }
 
             #add {
-              background-color: #7bff8d;
-              color: #1d1d1d;
+              background-color: #4d8b55;
+              color: #efefef;
 
               &:hover {
                 cursor: pointer;
-                background-color: #6ddf7c;
+                background-color: #1d3520;
               }
             }
 
             #info {
-              background-color: #3c3c3c;
-              color: #f4f4f4;
+              background-color: #1d1d1d;
+              color: #cacaca;
 
               &:hover {
                 cursor: pointer;
-                background-color: #141414;
+                background-color: #4b4b4b;
               }
             }
           }
@@ -358,7 +356,8 @@
           transform: translate(-50%, -50%);
           border-radius: 28px;
           border-style: none;
-          background-color: #7bff8d;
+          background-color: #4d8b55;
+          color: #efefef;
           font-size: 14px;
 
           @media (min-width: 300px) and (max-width: 767px) {
@@ -370,7 +369,7 @@
           }
 
           &:hover {
-            background-color: #6ddf7c;
+            background-color: #1d3520;
           }
         }
 
@@ -378,7 +377,7 @@
           cursor: pointer;
 
           @media (min-width: 300px) and (max-width: 767px) {
-            cursor: default;
+            cursor: unset;
           }
         }
 
@@ -421,6 +420,7 @@
       #type {
         font-size: 19px;
         font-weight: 700;
+        color: #4e4e4e;
 
         @media (min-width: 1100px) {
           font-size: 22px;
@@ -443,7 +443,8 @@
         height: 55px;
         border-radius: 28px;
         border-style: none;
-        background-color: #7bff8d;
+        background-color: #4d8b55;
+        color: #efefef;
         font-size: 14px;
 
         @include breakPoints(small) {
@@ -456,7 +457,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: #6ddf7c;
+          background-color: #1d3520;
         }
       }
     }
@@ -503,7 +504,8 @@
           transform: translate(-50%, -50%);
           border-radius: 28px;
           border-style: none;
-          background-color: #7bff8d;
+          background-color: #4d8b55;
+          color: #efefef;
           font-size: 14px;
 
           @media (min-width: 300px) and (max-width: 767px) {
@@ -515,7 +517,7 @@
           }
 
           &:hover {
-            background-color: #6ddf7c;
+            background-color: #1d3520;
           }
         }
 
@@ -566,6 +568,7 @@
       #type {
         font-size: 19px;
         font-weight: 700;
+        color: #4e4e4e;
 
         @media (min-width: 1100px) {
           font-size: 22px;
@@ -588,7 +591,8 @@
         height: 55px;
         border-radius: 28px;
         border-style: none;
-        background-color: #7bff8d;
+        background-color: #4d8b55;
+        color: #efefef;
         font-size: 14px;
 
         @include breakPoints(small) {
@@ -601,7 +605,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: #6ddf7c;
+          background-color: #1d3520;
         }
       }
     }
@@ -648,7 +652,8 @@
           transform: translate(-50%, -50%);
           border-radius: 28px;
           border-style: none;
-          background-color: #7bff8d;
+          background-color: #4d8b55;
+          color: #efefef;
           font-size: 14px;
 
           @media (min-width: 300px) and (max-width: 767px) {
@@ -660,7 +665,7 @@
           }
 
           &:hover {
-            background-color: #6ddf7c;
+            background-color: #1d3520;
           }
         }
 
@@ -711,6 +716,7 @@
       #type {
         font-size: 19px;
         font-weight: 700;
+        color: #4e4e4e;
 
         @media (min-width: 1100px) {
           font-size: 22px;
@@ -733,7 +739,8 @@
         height: 55px;
         border-radius: 28px;
         border-style: none;
-        background-color: #7bff8d;
+        background-color: #4d8b55;
+        color: #efefef;
         font-size: 14px;
 
         @include breakPoints(small) {
@@ -746,7 +753,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: #6ddf7c;
+          background-color: #1d3520;
         }
       }
     }
@@ -793,7 +800,8 @@
           transform: translate(-50%, -50%);
           border-radius: 28px;
           border-style: none;
-          background-color: #7bff8d;
+          background-color: #4d8b55;
+          color: #efefef;
           font-size: 14px;
 
           @media (min-width: 300px) and (max-width: 767px) {
@@ -805,7 +813,7 @@
           }
 
           &:hover {
-            background-color: #6ddf7c;
+            background-color: #1d3520;
           }
         }
 
@@ -856,6 +864,7 @@
       #type {
         font-size: 19px;
         font-weight: 700;
+        color: #4e4e4e;
 
         @media (min-width: 1100px) {
           font-size: 22px;
@@ -878,7 +887,8 @@
         height: 55px;
         border-radius: 28px;
         border-style: none;
-        background-color: #7bff8d;
+        background-color: #4d8b55;
+        color: #efefef;
         font-size: 14px;
 
         @include breakPoints(small) {
@@ -891,7 +901,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: #6ddf7c;
+          background-color: #1d3520;
         }
       }
     }

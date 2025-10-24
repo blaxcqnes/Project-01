@@ -14,6 +14,7 @@
     align-self: center;
     text-align: justify;
     line-height: 45px;
+    color: #4e4e4e;
     background-position-x: 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -69,7 +70,7 @@
             transform: rotateZ(20deg);
           }
 
-          #two {
+          #one {
             padding: 22px 27px;
 
             @media (min-width: 300px) and (max-width: 767px) {
@@ -91,28 +92,29 @@
           }
         }
 
-        #two {
+        #one {
           position: absolute;
           padding: 25px 30px;
           background-color: #4d8b55;
           border-radius: 50%;
-          color: #f4f4f4;
+          color: #efefef;
           font-size: 20px;
           font-weight: 700;
         }
       }
 
-      #three {
+      #two {
         margin-top: 20px;
-        color: #000000;
+        color: #4e4e4e;
         font-size: 25px;
         font-weight: 700;
       }
 
-      #four {
+      #three {
         width: 85%;
         margin-top: 15px;
         text-align: center;
+        color: #4e4e4e;
 
         @include breakPoints(small) {
           font-size: 13px;
@@ -171,7 +173,7 @@
             transform: rotateZ(20deg);
           }
 
-          #two {
+          #one {
             padding: 22px 27px;
 
             @media (min-width: 300px) and (max-width: 767px) {
@@ -193,28 +195,29 @@
           }
         }
 
-        #two {
+        #one {
           position: absolute;
           padding: 25px 30px;
           background-color: #4d8b55;
           border-radius: 50%;
-          color: #f4f4f4;
+          color: #efefef;
           font-size: 20px;
           font-weight: 700;
         }
       }
 
-      #three {
+      #two {
         margin-top: 20px;
-        color: #000000;
+        color: #4e4e4e;
         font-size: 25px;
         font-weight: 700;
       }
 
-      #four {
+      #three {
         width: 85%;
         margin-top: 15px;
         text-align: center;
+        color: #4e4e4e;
 
         @include breakPoints(small) {
           font-size: 13px;
@@ -273,7 +276,7 @@
             transform: rotateZ(20deg);
           }
 
-          #two {
+          #one {
             padding: 22px 27px;
 
             @media (min-width: 300px) and (max-width: 767px) {
@@ -295,28 +298,29 @@
           }
         }
 
-        #two {
+        #one {
           position: absolute;
           padding: 25px 30px;
           background-color: #4d8b55;
           border-radius: 50%;
-          color: #f4f4f4;
+          color: #efefef;
           font-size: 20px;
           font-weight: 700;
         }
       }
 
-      #three {
+      #two {
         margin-top: 20px;
-        color: #000000;
+        color: #4e4e4e;
         font-size: 25px;
         font-weight: 700;
       }
 
-      #four {
+      #three {
         width: 85%;
         margin-top: 15px;
         text-align: center;
+        color: #4e4e4e;
 
         @include breakPoints(small) {
           font-size: 13px;
@@ -375,7 +379,7 @@
             transform: rotateZ(20deg);
           }
 
-          #two {
+          #one {
             padding: 22px 27px;
 
             @media (min-width: 300px) and (max-width: 767px) {
@@ -397,28 +401,29 @@
           }
         }
 
-        #two {
+        #one {
           position: absolute;
           padding: 25px 30px;
           background-color: #4d8b55;
           border-radius: 50%;
-          color: #f4f4f4;
+          color: #efefef;
           font-size: 20px;
           font-weight: 700;
         }
       }
 
-      #three {
+      #two {
         margin-top: 20px;
-        color: #000000;
+        color: #4e4e4e;
         font-size: 25px;
         font-weight: 700;
       }
 
-      #four {
+      #three {
         width: 85%;
         margin-top: 15px;
         text-align: center;
+        color: #4e4e4e;
 
         @include breakPoints(small) {
           font-size: 13px;

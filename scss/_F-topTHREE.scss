@@ -14,7 +14,7 @@
   #topThreeLeft {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 50px;
     width: 58%;
 
     @media (min-width: 300px) and (max-width: 1023px) {
@@ -52,7 +52,7 @@
       #two {
         font-size: 40px;
         font-weight: 700;
-        color: #000000;
+        color: #353535;
 
         @include breakPoints(small) {
           font-size: 22px;
@@ -73,7 +73,7 @@
         width: 80%;
         margin-top: 25px;
         font-size: 17px;
-        color: #000000;
+        color: #353535;
         text-align: justify;
 
         @media (min-width: 300px) and (max-width: 767px) {
@@ -114,6 +114,7 @@
       p {
         font-size: 17px;
         font-weight: 700;
+        color: #353535;
 
         @include breakPoints(small) {
           font-size: 14px;
@@ -136,7 +137,7 @@
         cursor: pointer;
 
         #pic {
-          background-image: url('../images/F-topThree/download.svg');
+          background-image: url('../images/F-topThree/svgs/download.svg');
           width: 21px;
           height: 21px;
         }
@@ -150,7 +151,7 @@
         cursor: pointer;
 
         #pic {
-          background-image: url('../images/F-topThree/call.svg');
+          background-image: url('../images/F-topThree/svgs/call.svg');
           width: 21px;
           height: 21px;
         }
@@ -170,57 +171,43 @@
         align-items: center;
       }
 
+      @media (min-width: 399px) and (max-width: 719px) {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+      }
+
       @include breakPoints(tablet) {
         justify-content: center;
       }
 
       #read {
-        width: 360px;
+        width: 250px;
         height: 60px;
         border: none;
         border-radius: 40px;
-        background-color: #7bff8d;
+        background-color: #4d8b55;
         font-size: 13px;
-        color: #1d1d1d;
+        color: #efefef;
 
         &:hover {
           cursor: pointer;
-          background-color: #6ddf7c;
-        }
-
-        @include breakPoints(small) {
-          width: 100%;
-          height: 60px;
-        }
-
-        @media (min-width: 399px) and (max-width: 1023px) {
-          width: 360px;
-          height: 60px;
+          background-color: #1d3520;
         }
       }
 
       #shop {
-        width: 360px;
+        width: 250px;
         height: 60px;
         border: none;
         border-radius: 40px;
-        background-color: #3c3c3c;
+        background-color: #1d1d1d;
         font-size: 13px;
-        color: #f4f4f4;
+        color: #cacaca;
 
         &:hover {
           cursor: pointer;
-          background-color: #141414;
-        }
-
-        @include breakPoints(small) {
-          width: 100%;
-          height: 60px;
-        }
-
-        @media (min-width: 399px) and (max-width: 1023px) {
-          width: 360px;
-          height: 60px;
+          background-color: #4b4b4b;
         }
       }
     }
@@ -244,7 +231,7 @@
     #one {
       width: min-content;
       align-self: flex-start;
-      color: #000000;
+      color: #353535;
       font-weight: 700;
       padding: 30px;
       border-radius: 50%;

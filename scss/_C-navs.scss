@@ -1,5 +1,5 @@
-#navs {
-  display: block;
+#C-navs {
+  display: flex;
   width: 100%;
   height: 100%;
   position: relative;
@@ -367,15 +367,15 @@
       }
 
       #user {
-        background-image: url('/images/D-topOne/user.svg');
+        background-image: url('/images/C-navMob/svgs/user.svg');
       }
 
       #bag {
-        background-image: url('/images/D-topOne/bag.svg');
+        background-image: url('/images/C-navMob/svgs/bag.svg');
       }
 
       #search {
-        background-image: url('/images/D-topOne/search.svg');
+        background-image: url('/images/C-navMob/svgs/search.svg');
       }
 
       #user,
@@ -400,7 +400,6 @@
     width: 0;
     height: 100%;
     position: relative;
-    overflow-y: hidden;
 
     @media (min-width: 767px) {
       display: none;
@@ -414,7 +413,7 @@
       left: 15px;
       padding: 5px;
       background-color: #4d8b55;
-      color: #fff9f1;
+      color: #efefef;
       box-shadow: 0 0 3px #000000;
       border-radius: 5px;
       font-size: 20px;
@@ -422,6 +421,10 @@
       opacity: 0;
       z-index: 2;
       cursor: pointer;
+
+      &:hover {
+        background-color: #1d3520;
+      }
     }
 
     #navMobMenu {
@@ -433,7 +436,6 @@
       background-color: #1d3520;
       opacity: 0;
       z-index: 1;
-      transition: all 0.2s ease-in-out;
 
       #navMobContent {
         display: flex;
@@ -469,15 +471,15 @@
               column-gap: 25px;
 
               #user {
-                background-image: url('/images/C-navMob/user.svg');
+                background-image: url('/images/C-navMob/svgs/mobile/user.svg');
               }
 
               #bag {
-                background-image: url('/images/C-navMob/bag.svg');
+                background-image: url('/images/C-navMob/svgs/mobile/bag.svg');
               }
 
               #search {
-                background-image: url('/images/C-navMob/search.svg');
+                background-image: url('/images/C-navMob/svgs/mobile/search.svg');
               }
 
               #user,
@@ -843,28 +845,28 @@
             margin-top: 40px;
 
             #instagram {
-              background-image: url('/images/C-navMob/instagram.svg');
+              background-image: url('/images/C-navMob/svgs/mobile/instagram.svg');
               width: 20px;
               height: 20px;
               cursor: pointer;
             }
 
             #x {
-              background-image: url('/images/C-navMob/x.svg');
+              background-image: url('/images/C-navMob/svgs/mobile/x.svg');
               width: 22px;
               height: 22px;
               cursor: pointer;
             }
 
             #telegram {
-              background-image: url('/images/C-navMob/telegram.svg');
+              background-image: url('/images/C-navMob/svgs/mobile/telegram.svg');
               width: 19px;
               height: 19px;
               cursor: pointer;
             }
 
             #youtube {
-              background-image: url('/images/C-navMob/youtube.svg');
+              background-image: url('/images/C-navMob/svgs/mobile/youtube.svg');
               width: 20px;
               height: 20px;
               cursor: pointer;
@@ -884,12 +886,12 @@
           border-radius: 40px;
           background-color: #4d8b55;
           font-size: 14px;
-          color: #cacaca;
+          color: #efefef;
           z-index: -1;
 
           &:hover {
             cursor: pointer;
-            background-color: #407447;
+            background-color: #1d3520;
           }
         }
       }

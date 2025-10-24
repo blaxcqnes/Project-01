@@ -44,14 +44,17 @@
 
       @include breakPoints(small) {
         height: 500px;
+        padding-left: 0;
       }
 
       @include breakPoints(mobile) {
         height: 490px;
+        padding-left: 0;
       }
 
       @include breakPoints(tablet) {
         height: 505px;
+        padding-left: 0;
       }
 
       @media (min-width: 300px) and (max-width: 1023px) {
@@ -67,13 +70,13 @@
       #one {
         width: min(100% - 48px, 335px);
         font-size: 48px;
-        color: #000000;
+        color: #353535;
         font-weight: 700;
 
         span {
           width: min(100% - 48px, 335px);
           font-size: 48px;
-          color: #ffffff;
+          color: #efefef;
           font-weight: 700;
           align-self: center;
         }
@@ -81,23 +84,23 @@
 
       #two {
         width: min(100% - 48px, 370px);
-        color: #ffffff;
+        color: #efefef;
         font-size: 16px;
         text-align: start;
       }
 
       #read {
-        width: 225px;
-        height: 45px;
+        width: 250px;
+        height: 60px;
         border: none;
         border-radius: 40px;
-        background-color: #3c3c3c;
+        background-color: #1d1d1d;
         font-size: 13px;
-        color: #f4f4f4;
+        color: #cacaca;
 
         &:hover {
           cursor: pointer;
-          background-color: #141414;
+          background-color: #4b4b4b;
         }
       }
     }
