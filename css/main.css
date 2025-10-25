@@ -8,35 +8,263 @@
 }
 #B-container #backToTopFunction {
   display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  width: 81px;
-  align-items: center;
+  flex-direction: column-reverse;
+  row-gap: 5px;
+  width: fit-content;
+  height: fit-content;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #1d1d1d;
-  opacity: 0;
-  z-index: -1;
+  opacity: 1;
+  z-index: 1;
   cursor: pointer;
 }
-#B-container #backToTopFunction:hover {
+#B-container #backToTopFunction #goToButton {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  align-self: end;
+  width: 81px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1d1d1d;
+}
+#B-container #backToTopFunction #goToButton:hover {
   background-color: #4b4b4b;
-  box-shadow: 0px 0px 20px 1px #4d8b55;
 }
-#B-container #backToTopFunction #pic {
-  width: 35px;
-  height: 35px;
-  background-image: url("../images/svgs/backToTop.svg");
-  background-repeat: no-repeat;
+#B-container #backToTopFunction #goToButton #oneArrow {
+  font-size: 11px;
+  font-weight: 500;
+  color: #cacaca;
 }
-#B-container #backToTopFunction p {
+#B-container #backToTopFunction #goToButton #two {
   font-size: 11px;
   font-weight: 500;
   color: #cacaca;
   text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: baseline;
+  padding: 5px;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToTopOne {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToTopOne:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToTopThree {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToTopThree:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToMidOne {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToMidOne:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToMidTwo {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToMidTwo:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToMidThree {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToMidThree:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToMidFour {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToMidFour:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToBottomOne {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToBottomOne:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToBottomTwo {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToBottomTwo:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToBottomThree {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContentsVisible #goToBottomThree:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContents {
+  visibility: hidden;
+  z-index: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: baseline;
+  padding: 5px;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+}
+#B-container #backToTopFunction .goToContents #goToTopOne {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContents #goToTopOne:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContents #goToTopThree {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContents #goToTopThree:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContents #goToMidOne {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContents #goToMidOne:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContents #goToMidTwo {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContents #goToMidTwo:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContents #goToMidThree {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContents #goToMidThree:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContents #goToMidFour {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContents #goToMidFour:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContents #goToBottomOne {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContents #goToBottomOne:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContents #goToBottomTwo {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContents #goToBottomTwo:hover {
+  background-color: #4b4b4b;
+}
+#B-container #backToTopFunction .goToContents #goToBottomThree {
+  width: 100%;
+  padding: 10px;
+  font-size: 11px;
+  color: #cacaca;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#B-container #backToTopFunction .goToContents #goToBottomThree:hover {
+  background-color: #4b4b4b;
 }
 
 #C-navs {
@@ -433,6 +661,7 @@
   z-index: 1;
 }
 #C-navs #navMob #navMobMenu #navMobContent {
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   row-gap: 40px;

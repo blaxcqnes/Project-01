@@ -438,6 +438,7 @@
       z-index: 1;
 
       #navMobContent {
+        visibility: hidden;
         display: flex;
         flex-direction: column;
         row-gap: 40px;
